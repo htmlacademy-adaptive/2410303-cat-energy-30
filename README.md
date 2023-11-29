@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Ярослав Новиков](https://up.htmlacademy.ru/adaptive/30/user/2410303).
-* Наставник: `Неизвестно`.
+* Наставник: `Иван Жарков`.
 
 ---
 
@@ -18,13 +18,13 @@ _`.github`, `.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `pa
 
 ### Памятка
 
-#### 1. Зарегистрируйтесь на Гитхабе
+#### 1. Аккаунт Гитхаба
 
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
+[github.com](https://github.com/YaroslavNE-Frontend)
 
-#### 2. Создайте форк
+#### 2. форк
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/2410303-cat-energy-30) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
+[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/2410303-cat-energy-30)
 
 <img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808133-3a7ace00-a190-11e9-9d29-401b02036a9c.jpg">
 
