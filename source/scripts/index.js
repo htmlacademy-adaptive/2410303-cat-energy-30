@@ -9,7 +9,7 @@ const shopData = {
         lon: 37.61556,
         name: 'Кэт Энерджи',
         iconDefault: 'default#image',
-        iconHref: '../source/images/icons/cat.png',
+        iconHref: '../raw/images/cat.png',
         iconSize: [113, 106],
         iconOffset: [-5, -38]
     }],
