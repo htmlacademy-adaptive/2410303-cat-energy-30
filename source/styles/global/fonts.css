@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* здесь подключите шрифты*/
+/* Font */
+/* cyrillic */
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Oswald"), url("../../fonts/oswald/oswald-regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato"), url("../../fonts/lato/lato-regular.woff2") format("woff2"), url("../../fonts/lato/lato-regular.ttf") format("truetype");
+  font-display: swap;
+}/*# sourceMappingURL=fonts.css.map */
