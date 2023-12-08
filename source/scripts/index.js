@@ -18,7 +18,7 @@ const init = () => {
     zoom: 14
   });
 
-  let activeShop = "shop1";
+  let activeShop = 'shop1';
 
   const showShop = (shop) => {
     map.geoObjects.removeAll();
@@ -40,7 +40,7 @@ const init = () => {
     });
 
     activeShop = shop;
-  }
+  };
 
   showShop(activeShop);
 };
