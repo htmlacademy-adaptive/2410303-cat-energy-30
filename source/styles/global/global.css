@@ -1,6 +1,5 @@
+@charset "UTF-8";
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
-
-
 *,
 *::before,
 *::after {
@@ -35,7 +34,8 @@ html {
 img {
   max-width: 100%;
   height: auto;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .main-container {
@@ -44,4 +44,4 @@ img {
   min-height: 100%;
   width: 1200px;
   margin: 0 auto;
-}
+}/*# sourceMappingURL=global.css.map */
