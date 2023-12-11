@@ -18,8 +18,14 @@
       <nav class="page-header__nav">
         <a class="page-header__logo logo">
           <h3 class="visually-hidden">Cat Energy</h3>
-          <img class="logo__image logo__image--icon" src="#" width="202" height="59" alt="Логотип Шапки">
-          <img class="logo__image logo__image--text" src="#" width="101" height="18" alt="Текст логотипа шапки">
+          <picture>
+            <source media="(min-width:1440px)" srcset="../raw/images/icons/logo-image-desktop.svg">
+            <source media="(min-width: 768px)" srcset="../raw/images/icons/logo-image-tablet.svg">
+            <img class="logo__image logo__image--icon" src="../raw/images/icons/logo-image-mobile.svg" width="202"
+              height="59" alt="Логотип Шапки">
+          </picture>
+          <img class="logo__image logo__image--text" src="../raw/images/icons/logo-text.svg" width="101" height="18"
+            alt="Текст логотипа шапки" style="display: none;">
         </a>
         <ul class="page-header__list">
           <li class="page-header__item page-header-item">
