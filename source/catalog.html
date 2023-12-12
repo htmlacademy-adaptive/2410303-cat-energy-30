@@ -48,8 +48,15 @@
         <ul class="product-card__list">
           <li class="product-card__item">
             <a class="product-card__image-link" href="#">
-              <img class="product-card__image" src="../raw/images/catalog-1.png" width="161" height="172"
+              <picture>
+                <source media="(min-width:1440px)" srcset="images/catalog-small-1-desktop@1x.webp 1x, images/catalog-small-1-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width:1440px)" srcset="images/catalog-small-1-desktop@1x.png 1x, images/catalog-small-1-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="images/catalog-small-1-tablet@1x.webp 1x, images/catalog-small-1-tablet@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="images/catalog-small-1-tablet@1x.png 1x, images/catalog-small-1-tablet@2x.png 2x">
+                <source srcset="images/catalog-small-1-mobile@1x.webp 1x, images/catalog-small-1-mobile@2x.webp 2x" type="image/webp">
+                <img class="product-card__image" src="images/catalog-small-1-mobile@1x.png" srcset="images/catalog-small-1-mobile@1x.png 1x, images/catalog-small-1-mobile@2x.png 2x" width="161" height="172"
                 alt="Cat Energy Pro 500 грамм">
+              </picture>
             </a>
             <div class="product-card__info">
               <a class="product-card__title-link" href="#">
