@@ -138,11 +138,17 @@
               <span class="living-example__expenses-sum">15 000 РУБ.</span>
             </div>
           </div>
-          <picture>
-            <source media="(min-width:1440px)" srcset="images/living-example-cat-desktop@1x.png 1x, images/living-example-cat-desktop@2x.png 2x" width="560" height="512" type="image/png">
-            <source media="(min-width: 768px)" srcset="images/living-example-cat-tablet@1x.png 1x, images/living-example-cat-tablet@2x.png 2x" width="560" height="512" type="image/png">
-            <img src="images/living-example-cat-mobile@1x.png" srcset="images/living-example-cat-mobile@2x.png 2x" width="280" height="256" alt="Пример котов" type="image/png">
-          </picture>
+          <div class="living-example-slider">
+            <picture>
+              <source media="(min-width:768px)" srcset="images/living-example-cat-before-desktop@1x.png 1x, images/living-example-cat-before-desktop@2x.png 2x" width="560" height="512" type="image/png">
+              <img class="living-example-slider__image-before" src="images/living-example-cat-before-mobile@1x.png" srcset="images/living-example-cat-before-mobile@2x.png 2x" width="280" height="256" alt="Пример котов" type="image/png">
+            </picture>
+            <picture>
+              <source media="(min-width:768px)" srcset="images/living-example-cat-after-desktop@1x.png 1x, images/living-example-cat-after-desktop@2x.png 2x" width="560" height="512" type="image/png">
+              <img class="living-example-slider__image-after" src="images/living-example-cat-after-mobile@1x.png" srcset="images/living-example-cat-after-mobile@2x.png 2x" width="280" height="256" alt="Пример котов" type="image/png">
+            </picture>
+            <button class="living-example-slider__control" type="button"><span class="visually-hidden">Изменяет ползунок слайдера (rот до и после)</span></button>
+          </div>
         </div>
       </div>
     </section>
