@@ -1,1 +1,8 @@
 /* здесь подключите шрифты*/
+
+@font-face {
+  @include font-face-oswald;
+}
+@font-face {
+  @include font-face-lato;
+}
