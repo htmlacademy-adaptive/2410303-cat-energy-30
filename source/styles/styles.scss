@@ -1,22 +1,22 @@
 /* GLOBAL */
-@import "./global/common.scss";
-@import "./global/mixins.scss";
-@import "./global/fonts.scss";
-@import "./global/global.scss";
-@import "./global/variables.scss";
-@import "./global/visually-hidden.scss";
+@import "./global/visually-hidden";
+@import "./global/common";
+@import "./global/mixins";
+@import "./global/fonts";
+@import "./global/global";
+@import "./global/variables";
 
 /* BLOCKS */
-@import "./blocks/logo.scss";
-@import "./blocks/page-header.scss";
-@import "./blocks/main-footer.scss";
-@import "./blocks/main-location.scss";
-@import "./blocks/main-banner.scss";
-@import "./blocks/main-services.scss";
-@import "./blocks/main-advantages.scss";
-@import "./blocks/living-example.scss";
-@import "./blocks/product-card.scss";
-@import "./blocks/additional-products.scss";
-@import "./blocks/program-filter.scss";
-@import "./blocks/program.scss";
-
+@import "./blocks/logo";
+@import "./blocks/header/page-header";
+@import "./blocks/header/nav";
+@import "./blocks/main-location";
+@import "./blocks/main-banner";
+@import "./blocks/main-services";
+@import "./blocks/main-advantages";
+@import "./blocks/living-example";
+@import "./blocks/product-card";
+@import "./blocks/additional-products";
+@import "./blocks/program-filter";
+@import "./blocks/program";
+@import "./blocks/main-footer";
