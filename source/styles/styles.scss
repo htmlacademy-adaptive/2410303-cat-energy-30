@@ -3,13 +3,15 @@
 @import "./global/common";
 @import "./global/mixins";
 @import "./global/fonts";
-@import "./global/global";
 @import "./global/variables";
+@import "./global/global";
 
 /* BLOCKS */
+@import "./blocks/buttons";
 @import "./blocks/logo";
 @import "./blocks/header/page-header";
 @import "./blocks/header/nav";
+@import "./blocks/header/suite-list";
 @import "./blocks/main-location";
 @import "./blocks/main-banner";
 @import "./blocks/main-services";
