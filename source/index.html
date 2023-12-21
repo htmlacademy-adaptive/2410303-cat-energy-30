@@ -21,13 +21,15 @@
         <a class="page-header__logo logo" href="index.html" aria-current="page">
           <h3 class="visually-hidden">Cat Energy</h3>
           <picture>
-            <source media="(min-width:1440px)" srcset="images/icons/logo-image-desktop.svg" width="202" height="59" type="image/svg+xml">
-            <source media="(min-width: 768px)" srcset="images/icons/logo-image-tablet.svg" width="174" height="50" type="image/svg+xml">
-            <img class="logo__image logo__image--icon" src="images/icons/logo-image-mobile.svg" width="33" height="38"
+            <source media="(min-width:1440px)" srcset="images/icons/logo-desctop.svg" width="202" height="59" type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/icons/logo-tablet.svg" width="174" height="50" type="image/svg+xml">
+            <img class="logo__image logo__image--icon" src="images/icons/logo-mobile.svg" width="33" height="38"
               alt="Логотип Шапки">
           </picture>
-          <img class="logo__image logo__image--text" src="images/icons/logo-text.svg" width="101" height="18"
-            alt="Текст логотипа шапки" style="display: none;">
+        </a>
+        <a class="page-header__logo-text-link" href="index.html" aria-current="page">
+          <img class="page-header__logo-text-image page-header__logo-text-image--text" src="images/icons/logo-mobile-text.svg" width="101" height="18"
+        alt="Текст логотипа шапки">
         </a>
         <ul class="page-header__list suite-list">
           <li class="page-header__item">
@@ -40,6 +42,9 @@
             <a class="page-header__link" href="form.html">подбор программы</a>
           </li>
         </ul>
+        <button class="page-header__toggle page-header__toggle--close">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </nav>
     </div>
   </header>

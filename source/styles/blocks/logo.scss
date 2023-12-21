@@ -1,17 +1,23 @@
 .page-header__logo {
-}
-.logo {
-    mask-image: url("../../../build/images/icons/stack.svg#logo-mobil");
-
-
-  &:hover {
-    background-color: #ffa500;
+  @media screen and (min-width:320px) {
+    width: 33px;
+    height: 38px;
   }
 }
 
-.logo__image {
+.logo {
+  display: flex;
+  align-items: center;
+
+  &:hover {}
 }
-.logo__image--icon {
-}
-.logo__image--text {
+
+.logo__image {}
+
+.logo__image--icon {}
+
+.page-header__logo-text-image--text {
+  @media screen and (min-width:320px) {
+    display: block;
+  }
 }
