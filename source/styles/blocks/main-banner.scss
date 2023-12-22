@@ -1,0 +1,26 @@
+.main-banner {
+
+  @media screen and (min-width:320px) and (min-resolution: 1dppx) {
+    position: relative;
+    background-image: url("../../images/main-banner-bg-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    min-width: 320px;
+    height: auto;
+  }
+
+  @media screen and (min-resolution: 2dppx) {
+    background-image: url("../../images/main-banner-bg-mobile@2x.jpg");
+  }
+
+}
+
+.main-banner__wrapper {
+}
+.main-banner__title {
+}
+.main-banner__text {
+}
+.main-banner__link {
+}

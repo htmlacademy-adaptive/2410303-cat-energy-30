@@ -1,0 +1,33 @@
+.main-footer {
+
+}
+
+.main-footer__wrapper {
+}
+.main-footer__logo-energy {
+}
+
+.main-footer__social {
+ @include list-reset;
+ display: flex;
+ align-items: center;
+}
+.main-footer__social-item {
+}
+.main-footer__social-item--vk {
+}
+.main-footer__social-link {
+ @media screen and (max-width:320px) {
+  width: 28px;
+  height: auto;
+ }
+
+}
+.main-footer__social-item--youtube {
+}
+.main-footer__social-item--telegram {
+}
+.main-footer__logo {
+}
+.main-footer__text-energy {
+}
