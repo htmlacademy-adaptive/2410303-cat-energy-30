@@ -1,1 +1,0 @@
-var e=document.querySelector(".page-header__toggle"),t=document.querySelector(".suite-list");e&&e.addEventListener("click",function(){e.classList.toggle("page-header__toggle--close"),e.classList.toggle("page-header__toggle--open"),t.classList.toggle("open")});
