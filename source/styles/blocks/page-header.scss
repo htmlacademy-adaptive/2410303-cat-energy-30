@@ -1,10 +1,6 @@
 .page-header {
   background-color: $bg-primary;
 
-  @media screen and (min-width:320px) {
-
-
-  }
 
 }
 
@@ -18,8 +14,9 @@
 .page-header__list {}
 
 .page-header__item {
-  background-color: #ffffff;
+  background-color: $bg-primary;
   border-top: 1px solid #e6e6e6;
+
   &:last-child {
     border-bottom: 1px solid #e6e6e6;
   }
@@ -28,18 +25,9 @@
 
 .page-header__link {
   @include link-reset;
-
-  @media screen and (min-width:320px) {
-
-    display: block;
-    padding: 18px 25px;
-    text-align: center;
-  }
+  display: block;
+  padding: 18px 25px;
+  text-align: center;
 }
-
-
-
-
-
 
 .page-header__item--current {}
