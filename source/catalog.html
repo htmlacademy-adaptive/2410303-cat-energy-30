@@ -18,16 +18,18 @@
   <header class="page-header">
     <div class="main-container">
       <nav class="page-header__nav">
-        <a class="page-header__logo logo" href="index.html">
+        <a class="page-header__logo logo" href="index.html" aria-current="page">
           <h3 class="visually-hidden">Cat Energy</h3>
           <picture>
-            <source media="(min-width:1440px)" srcset="images/icons/logo-image-desktop.svg" width="202" height="59" type="image/svg+xml">
-            <source media="(min-width: 768px)" srcset="images/icons/logo-image-tablet.svg" width="174" height="50" type="image/svg+xml">
-            <img class="logo__image logo__image--icon" src="images/icons/logo-image-mobile.svg" width="33" height="38"
+            <source media="(min-width:1440px)" srcset="images/icons/logo-desctop.svg" width="202" height="59" type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/icons/logo-tablet.svg" width="174" height="50" type="image/svg+xml">
+            <img class="logo__image logo__image--icon" src="images/icons/logo-mobile.svg" width="33" height="38"
               alt="Логотип Шапки">
           </picture>
-          <img class="logo__image logo__image--text" src="images/icons/logo-mobile-text.svg" width="101" height="18"
-            alt="Текст логотипа шапки">
+        </a>
+        <a class="page-header__logo-text-link" href="index.html" aria-current="page">
+          <img class="page-header__logo-text-image" src="images/icons/logo-mobile-text.svg" width="101" height="18"
+        alt="Текст логотипа шапки">
         </a>
         <ul class="page-header__list suite-list">
           <li class="page-header__item">
@@ -40,6 +42,9 @@
             <a class="page-header__link" href="form.html">подбор программы</a>
           </li>
         </ul>
+        <button class="page-header__toggle page-header__toggle--close">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </nav>
     </div>
   </header>
@@ -352,8 +357,6 @@
             </li>
           </ol>
           <div class="additional-products__present">
-            <img src="#" alt="Кот внимательно смотрит" width="245" height="288">
-            <span class="additional-products__present-gift"></span>
             <p class="additional-products__text">Закажите все
               и получите чехол для
               кота в подарок!</p>
@@ -380,23 +383,24 @@
   <footer class="main-footer">
     <div class="main-container">
       <div class="main-footer__wrapper">
-        <a class="main-footer__logo-energy logo" href="#">
-          <img class="logo__image logo__image--text" src="#" width="101" height="18" alt="Текст логотипа шапки">
+        <a class="main-footer__logo-text-link" href="index.html" aria-current="page">
+          <img class="main-footer__logo-text-image" src="images/icons/logo-mobile-text.svg" width="128" height="24"
+        alt="Текст логотипа подвала">
         </a>
         <ul class="main-footer__social">
-          <li class="main-footer__social-item main-footer__social-item--vk">
-            <svg width="200" height="200"></svg>
+          <li class="main-footer__social-item">
+            <a class="main-footer__social-link main-footer__social-link--vk" href="https://vk.com/htmlacademy"></a>
           </li>
-          <li class="main-footer__social-item main-footer__social-item--youtube">
-            <svg width="200" height="200"></svg>
+          <li class="main-footer__social-item">
+            <a class="main-footer__social-link main-footer__social-link--youtube" href="#"></a>
           </li>
-          <li class="main-footer__social-item main-footer__social-item--telegram">
-            <svg width="200" height="200"></svg>
+          <li class="main-footer__social-item">
+            <a class="main-footer__social-link main-footer__social-link--telegram" href="#"></a>
           </li>
         </ul>
-        <a class="main-footer__logo-energy" href="#">
+        <a class="main-footer__logo-academy" href="#">
           <span class="main-footer__text-energy">HTML Academy</span>
-          <svg width="200" height="200"></svg>
+          <svg class="main-footer__text-svg" width="27" height="34"></svg>
         </a>
       </div>
     </div>

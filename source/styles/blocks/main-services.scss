@@ -11,7 +11,7 @@
 }
 
 .main-services__inner--icon-weight {
-  @media screen and (min-width:320px) {
+  @media screen and (min-width:576px) {
     &::before {
       position: absolute;
       content: "";
@@ -37,7 +37,7 @@
 
 
 .main-services__inner--icon-gain {
-  @media screen and (min-width:320px) {
+  @media screen and (min-width:576px) {
     &::before {
       position: absolute;
       content: "";
