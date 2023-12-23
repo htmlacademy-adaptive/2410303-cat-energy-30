@@ -1,0 +1,132 @@
+.main-advantages {
+}
+.main-advantages__section-title {
+}
+.main-advantages__list {
+  @include list-reset
+}
+.main-advantages__item {
+  position: relative;
+  @media screen and (min-width:320px) {
+    padding-left: 80px;
+  }
+
+}
+
+.main-advantages__item--icon-sheet {
+  @media screen and (min-width:320px) {
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      display: block;
+      background-color: $bg-basic-green;
+      width: 60px;
+      height: 60px;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      left: 15px;
+      top: 14px;
+      right: 15px;
+      bottom: 14px;
+      display: block;
+      background-image: url("../../images/icons/stack.svg#advantages-1");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 30px;
+      height: 32px;
+    }
+  }
+}
+
+.main-advantages__item--icon-powder {
+  @media screen and (min-width:320px) {
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      display: block;
+      background-color: $bg-basic-green;
+      width: 60px;
+      height: 60px;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      left: 15px;
+      top: 14px;
+      right: 15px;
+      bottom: 14px;
+      display: block;
+      background-image: url("../../images/icons/stack.svg#advantages-2");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 30px;
+      height: 32px;
+    }
+  }
+}
+.main-advantages__item--icon-power {
+  @media screen and (min-width:320px) {
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      display: block;
+      background-color: $bg-basic-green;
+      width: 60px;
+      height: 60px;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      left: 15px;
+      top: 14px;
+      right: 15px;
+      bottom: 14px;
+      display: block;
+      background-image: url("../../images/icons/stack.svg#advantages-3");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 30px;
+      height: 32px;
+    }
+  }
+}
+.main-advantages__item--icon-clock {
+  @media screen and (min-width:320px) {
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      display: block;
+      background-color: $bg-basic-green;
+      width: 60px;
+      height: 60px;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      left: 15px;
+      top: 14px;
+      right: 15px;
+      bottom: 14px;
+      display: block;
+      background-image: url("../../images/icons/stack.svg#advantages-4");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 30px;
+      height: 32px;
+    }
+  }
+}
+
+.main-advantages__text {
+}
+

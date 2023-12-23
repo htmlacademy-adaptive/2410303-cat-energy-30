@@ -6,32 +6,30 @@
   <title>Кэт энерджи - Каталог продукции</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicons/icon.svg" sizes="any" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="favicons/apple.png"  sizes="180x180" type="image/png">
+  <link rel="apple-touch-icon" href="favicons/apple.png" sizes="180x180" type="image/png">
   <link rel="manifest" href="manifest.webmanifest">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="https://api-maps.yandex.ru/2.1/?apikey=61dd4420-8fb2-48eb-ac23-2658d95b75e2&lang=ru_RU" defer></script>
   <script src="scripts/index.js" defer></script>
-  <script>
-    document.createElement( "picture" );
-  </script>
-  <script src="vendor/picturefill.min.js" async></script>
 </head>
 
 <body>
   <header class="page-header">
     <div class="main-container">
       <nav class="page-header__nav">
-        <a class="page-header__logo logo">
+        <a class="page-header__logo logo" href="index.html" aria-current="page">
           <h3 class="visually-hidden">Cat Energy</h3>
           <picture>
-            <source media="(min-width:1440px)" srcset="images/icons/logo-image-desktop.svg" width="202" height="59">
-            <source media="(min-width: 768px)" srcset="images/icons/logo-image-tablet.svg" width="174" height="50">
-            <img class="logo__image logo__image--icon" src="images/icons/logo-image-mobile.svg" width="33"
-              height="38" alt="Логотип Шапки" type="image/svg+xml">
+            <source media="(min-width:1440px)" srcset="images/icons/logo-desctop.svg" width="202" height="59" type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/icons/logo-tablet.svg" width="174" height="50" type="image/svg+xml">
+            <img class="logo__image logo__image--icon" src="images/icons/logo-mobile.svg" width="33" height="38"
+              alt="Логотип Шапки">
           </picture>
-          <img class="logo__image logo__image--text" src="images/icons/logo-text.svg" width="101" height="18"
-            alt="Текст логотипа шапки" type="image/svg+xml" style="display: none;">
+        </a>
+        <a class="page-header__logo-text-link" href="index.html">
+          <img class="page-header__logo-text-image" src="images/icons/logo-mobile-text.svg" width="101" height="18"
+        alt="Текст логотипа шапки">
         </a>
         <ul class="page-header__list suite-list">
           <li class="page-header__item">
@@ -44,6 +42,9 @@
             <a class="page-header__link" href="form.html" aria-current="page">подбор программы</a>
           </li>
         </ul>
+        <button class="page-header__toggle page-header__toggle--close">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </nav>
     </div>
   </header>
@@ -124,8 +125,7 @@
           <fieldset class="program__comment-group">
             <legend class="program__comment-legend">Комментарий</legend>
             <label class="visually-hidden" for="info">Расскажите обо всех повадках кота</label>
-            <textarea form="program" name="program__comment-textarea" id="info" cols="30" rows="10"
-              style="resize: none;" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea form="program" name="program__comment-textarea" id="info" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="program__additionally-group">
             <legend class="program__additionally-legend">Дополнительно</legend>
@@ -172,23 +172,24 @@
   <footer class="main-footer">
     <div class="main-container">
       <div class="main-footer__wrapper">
-        <a class="main-footer__logo-energy logo" href="#">
-          <img class="logo__image logo__image--text" src="#" width="101" height="18" alt="Текст логотипа шапки">
+        <a class="main-footer__logo-text-link" href="index.html" aria-current="page">
+          <img class="main-footer__logo-text-image" src="images/icons/logo-mobile-text.svg" width="128" height="24"
+        alt="Текст логотипа подвала">
         </a>
         <ul class="main-footer__social">
-          <li class="main-footer__social-item main-footer__social-item--vk">
-            <svg width="200" height="200"></svg>
+          <li class="main-footer__social-item">
+            <a class="main-footer__social-link main-footer__social-link--vk" href="https://vk.com/htmlacademy"></a>
           </li>
-          <li class="main-footer__social-item main-footer__social-item--youtube">
-            <svg width="200" height="200"></svg>
+          <li class="main-footer__social-item">
+            <a class="main-footer__social-link main-footer__social-link--youtube" href="#"></a>
           </li>
-          <li class="main-footer__social-item main-footer__social-item--telegram">
-            <svg width="200" height="200"></svg>
+          <li class="main-footer__social-item">
+            <a class="main-footer__social-link main-footer__social-link--telegram" href="#"></a>
           </li>
         </ul>
-        <a class="main-footer__logo-energy" href="#">
+        <a class="main-footer__logo-academy" href="#">
           <span class="main-footer__text-energy">HTML Academy</span>
-          <svg width="200" height="200"></svg>
+          <svg class="main-footer__text-svg" width="27" height="34"></svg>
         </a>
       </div>
     </div>
