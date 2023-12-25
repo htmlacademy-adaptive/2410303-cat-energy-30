@@ -26,7 +26,9 @@
 
 .product-card__table-value {}
 
-.product-card__button {}
+.product-card__button {
+  background-color: $bg-basic-green;
+}
 
 .product-card__button--primary {}
 

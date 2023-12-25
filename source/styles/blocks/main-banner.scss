@@ -32,7 +32,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  font-family: $font-oswald;
   color: $secondary-text;
   z-index: 4;
 }
@@ -43,14 +42,12 @@
   color: $secondary-text;
   font-size: $fz-36;
   font-weight: $fw-regular;
-  font-family: $font-oswald;
   line-height: $lh-36;
 }
 
 .main-banner__text {
   margin-bottom: 29px;
   color: $secondary-text;
-  font-family: $font-oswald;
   font-size: $fz-14;
   font-weight: $fw-regular;
   line-height: $lh-14;
@@ -79,7 +76,6 @@
   max-width: 100%;
   color: $secondary-text;
   text-align: center;
-  font-family: $font-oswald;
   font-size: $fz-16;
   font-weight: $fw-regular;
   line-height: $lh-20;
