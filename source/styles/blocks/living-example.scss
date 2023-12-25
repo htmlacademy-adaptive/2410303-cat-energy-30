@@ -1,4 +1,5 @@
 .living-example {
+
   background-color: $bg-secondary-dark;
 }
 
@@ -38,16 +39,6 @@
   border: 1px solid #cdcdcd;
   border-radius: 4px;
   padding: 20px;
-
-  // &::before {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   right: 0;
-  //   content: "";
-  //   width: 100%;
-
-  // }
 }
 
 .living-example__paste-text {
@@ -89,10 +80,45 @@
 
 .living-example__expenses-sum {}
 
-.living-example-slider {}
+.living-example-slider {
+  position: relative;
+  min-height: 300px;
 
-.living-example-slider__image-before {}
+  &::before {
+    position: absolute;
+    content: "";
+    left: 145px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    height: 90%;
+    background-color: #666666;
+    z-index: 3;
+  }
 
-.living-example-slider__image-after {}
+}
 
-.living-example-slider__control {}
+.living-example-slider__image-before {
+  position: absolute;
+  left: -45px;
+  z-index: 1;
+}
+
+.living-example-slider__image-after {
+  position: absolute;
+  right: -64px;
+  z-index: 2;
+}
+
+.living-example-slider__control {
+  position: absolute;
+  left: 127px;
+  top: 110px;
+  border: none;
+  background-image: url("../../images/icons/stack.svg#arrows");
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease-in-out;
+  z-index: 3;
+}

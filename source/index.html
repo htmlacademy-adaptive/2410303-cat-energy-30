@@ -145,20 +145,25 @@
             </div>
           </div>
           <div class="living-example-slider">
-            <picture>
-              <source media="(min-width:768px)"
-                srcset="images/living-example-cat-before-desktop@1x.png 1x, images/living-example-cat-before-desktop@2x.png 2x"
-                width="560" height="512" type="image/png">
-              <img class="living-example-slider__image-before" src="images/living-example-cat-before-mobile@1x.png"
-                srcset="images/living-example-cat-before-mobile@2x.png 2x" width="280" height="256" alt="Пример котов">
-            </picture>
-            <picture>
-              <source media="(min-width:768px)"
-                srcset="images/living-example-cat-after-desktop@1x.png 1x, images/living-example-cat-after-desktop@2x.png 2x"
-                width="560" height="512" type="image/png">
-              <img class="living-example-slider__image-after" src="images/living-example-cat-after-mobile@1x.png"
-                srcset="images/living-example-cat-after-mobile@2x.png 2x" width="280" height="256" alt="Пример котов">
-            </picture>
+            <div class="living-example-slider__before">
+              <picture>
+                <source media="(min-width:768px)"
+                  srcset="images/living-example-cat-before-desktop@1x.png 1x, images/living-example-cat-before-desktop@2x.png 2x"
+                  width="560" height="512" type="image/png">
+                <img class="living-example-slider__image-before" src="images/living-example-cat-before-mobile@1x.png"
+                  srcset="images/living-example-cat-before-mobile@2x.png 2x" width="280" height="256"
+                  alt="Пример котов">
+              </picture>
+            </div>
+            <div class="living-example-slider__after">
+              <picture>
+                <source media="(min-width:768px)"
+                  srcset="images/living-example-cat-after-desktop@1x.png 1x, images/living-example-cat-after-desktop@2x.png 2x"
+                  width="560" height="512" type="image/png">
+                <img class="living-example-slider__image-after" src="images/living-example-cat-after-mobile@1x.png"
+                  srcset="images/living-example-cat-after-mobile@2x.png 2x" width="280" height="256" alt="Пример котов">
+              </picture>
+            </div>
             <button class="living-example-slider__control" type="button"><span class="visually-hidden">Изменяет ползунок
                 слайдера (кот до и после)</span></button>
           </div>
