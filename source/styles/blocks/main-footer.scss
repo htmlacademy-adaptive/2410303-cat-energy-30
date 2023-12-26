@@ -1,4 +1,7 @@
-.main-footer {}
+.main-footer {
+  padding: 40px 0;
+  background: $bg-secondary-light;
+}
 
 .main-footer__wrapper {
   display: flex;
@@ -11,13 +14,23 @@
 
 }
 
+.main-footer__logo-text-link {
+  display: block;
+  padding-bottom: 20px;
+}
+
 .main-footer__logo-energy {}
 
 .main-footer__social {
   @include list-reset;
+  min-width: 100%;
+  padding: 20px 0;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 40px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 
 }
 
@@ -74,6 +87,7 @@
 
 
 .main-footer__logo-academy {
+  padding-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -102,7 +116,3 @@
   font-weight: 400;
   line-height: 20px;
 }
-
-
-
-

@@ -2,19 +2,19 @@
 
 // Burger Menu
 
-const BurgerHeader = document.querySelector(".page-header__toggle")
-const HeaderMenu = document.querySelector(".suite-list");
+const BurgerHeader = document.querySelector('.page-header__toggle');
+const HeaderMenu = document.querySelector('.suite-list');
 
 if (BurgerHeader) {
-  BurgerHeader.addEventListener("click", function () {
-    BurgerHeader.classList.toggle("page-header__toggle--close");
-    BurgerHeader.classList.toggle("page-header__toggle--open");
-    HeaderMenu.classList.toggle("open");
-  })
+  BurgerHeader.addEventListener('click', () => {
+    BurgerHeader.classList.toggle('page-header__toggle--close');
+    BurgerHeader.classList.toggle('page-header__toggle--open');
+    HeaderMenu.classList.toggle('open');
+  });
 }
 
 //  API Карта
-
+const YandexMap = window.ymaps;
 const shopData = {
   shop1: [{
     lat: 55.75222,
@@ -28,7 +28,7 @@ const shopData = {
 };
 
 const init = () => {
-  const map = new ymaps.Map('map', {
+  const map = new YandexMap.Map('map', {
     center: [55.753215, 37.622504],
     zoom: 14
   });
@@ -39,7 +39,7 @@ const init = () => {
     map.geoObjects.removeAll();
 
     shopData[shop].forEach((item) => {
-      const placemark = new ymaps.Placemark([item.lat, item.lon], {
+      const placemark = new YandexMap.Placemark([item.lat, item.lon], {
         hintContent: item.name,
         balloonContent: item.name,
       }, {
@@ -60,7 +60,4 @@ const init = () => {
   showShop(activeShop);
 };
 
-ymaps.ready(init);
-
-
-
+YandexMap.ready(init);
