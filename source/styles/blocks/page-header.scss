@@ -21,6 +21,13 @@
     border-bottom: 1px solid #e6e6e6;
   }
 
+  @media (min-width:768px) and (max-width:1200px) {
+    border: none;
+    &:last-child {
+      border: none
+    }
+  }
+
 }
 
 .page-header__link {
@@ -30,7 +37,24 @@
   text-align: center;
 }
 
-.page-header__item--current {}
+.page-header__link--current {
+  @media (min-width:768px) and (max-width:1200px) {
+    position: relative;
+    transition: 0.3s ease-in;
+    &::before {
+      position: absolute;
+      content: "";
+      width: calc(100% - 50px);
+      height: 2px;
+      top: 60px;
+      right: 0;
+      left: 25px;
+      background-color: $bg-basic-green;
+    }
+   }
+}
+
+
 
 .page-header__toggle.page-header__toggle--close {
   display: block;
@@ -62,6 +86,10 @@
     height: 2px;
     background-color: #000000;
     box-shadow: 0 8px 0 0#000000, 0 16px 0 0#000000;
+  }
+
+  @media (min-width:768px) and (max-width:1200px) {
+    display: none;
   }
 }
 
