@@ -3,10 +3,13 @@
 .main-location__wrapper {
   padding: 26px 0;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  column-gap: 5px;
 }
 
 .main-location__title {
+  max-width: 118px;
   color: $secondary-light-text;
   font-size: $fz-16;
   font-weight: $fw-regular;
@@ -14,7 +17,9 @@
   text-transform: uppercase;
 }
 
-.main-location__inner {}
+.main-location__inner {
+  max-width: 165px;
+}
 
 .main-location__text {
   margin: 0;
@@ -23,6 +28,9 @@
   font-size: $fz-14;
   font-weight: $fw-regular;
   line-height: $lh-20;
+  @media (min-width:768px) and (max-width:1200px) {
+    margin-bottom: 35px;
+  }
 
 }
 

@@ -7,23 +7,28 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
 
-  @media screen and (max-width:576px) {
-    flex-direction: column;
+  @media (min-width:768px) and (max-width:1200px) {
+    flex-direction: row;
   }
-
 }
 
 .main-footer__logo-text-link {
   display: block;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width:768px) and (max-width:1200px) {
+    margin-bottom: 0;
+  }
+
 }
 
 .main-footer__logo-energy {}
 
 .main-footer__social {
   @include list-reset;
-  min-width: 100%;
+  width: 100%;
   padding: 20px 0;
   display: flex;
   align-items: center;
@@ -32,19 +37,17 @@
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 
+  @media (min-width:768px) and (max-width:1200px) {
+    border: none;
+  }
 }
 
 .main-footer__social-item {}
 
 .main-footer__social-link {
   display: block;
-
-  @media screen and (max-width:320px) {
-    width: 28px;
-    height: auto;
-
-  }
-
+  width: 28px;
+  height: auto;
 }
 
 .main-footer__social-link--vk {
@@ -87,7 +90,7 @@
 
 
 .main-footer__logo-academy {
-  padding-top: 20px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,6 +99,13 @@
 
   &:hover svg {
     background-color: #68b738;
+  }
+
+  @media (min-width:768px) and (max-width:1200px) {
+    display: flex;
+    align-items: center;
+    width: 220px;
+    margin-top: 0;
   }
 }
 
