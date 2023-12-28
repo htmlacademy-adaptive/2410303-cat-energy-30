@@ -3,12 +3,14 @@
 .main-services__list {
   @include list-reset;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   row-gap: 20px;
   column-gap: 80px;
+  @media screen and (min-width:1200px) {
+    flex-direction: row;
+  }
 }
 
 .main-services__item {
@@ -18,13 +20,6 @@
   max-width: 708px;
   height: auto;
   background: $bg-secondary-light;
-
-  // @media (min-width:768px) and (max-width:1200px) {
-  //   padding: 14px 26px;
-  //   margin: 0 0 20px 0;
-  //   min-width: 244px;
-  //   max-width: 244px;
-  // }
 }
 
 .main-services__inner {
@@ -39,7 +34,7 @@
   line-height: $lh-37;
   text-transform: uppercase;
 
-  @media (min-width:768px) and (max-width:1200px) {
+  @media screen and (min-width:768px)  {
     padding-left: 0;
     font-size: $fz-36;
     line-height: $lh-36;
@@ -55,7 +50,7 @@
   font-weight: $fw-regular;
   line-height: $lh-18;
 
-  @media (min-width:768px) and (max-width:1200px) {
+  @media screen and (min-width:768px)  {
     padding-left: 0;
     font-size: $fz-16;
     line-height: $lh-24;
@@ -67,7 +62,7 @@
   min-height: 50px;
   border-top: 1px solid #d9d9d9;
 
-  @media (min-width:768px) and (max-width:1200px) {
+  @media screen and (min-width:768px)  {
     border: none;
   }
 
@@ -96,7 +91,7 @@
     right: 0;
     top: 0;
 
-    @media (min-width:768px) and (max-width:1200px) {
+    @media screen and (min-width:768px) {
       display: none;
     }
   }
@@ -114,7 +109,7 @@
     height: 10px;
   }
 
-  @media (min-width:768px) and (max-width:1200px) {
+  @media screen and (min-width:768px)  {
     font-size: $fz-20;
   }
 }
@@ -133,7 +128,7 @@
     width: 50px;
     height: 53px;
 
-    @media (min-width:768px) and (max-width:1200px) {
+    @media screen and (min-width:768px)  {
       top: -10px;
       left: 395px;
       background-size: 200px 211px;
@@ -157,7 +152,7 @@
     width: 67px;
     height: 50px;
 
-    @media (min-width:768px) and (max-width:1200px) {
+    @media screen and (min-width:768px)  {
       left: 350px;
       top: -20px;
       background-size: 268px 200px;

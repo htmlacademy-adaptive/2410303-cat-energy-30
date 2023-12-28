@@ -1,6 +1,11 @@
 .main-banner {
   position: relative;
   min-height: 400px;
+
+  @media screen and (min-width:1200px) {
+    min-height: 776px;
+  }
+
 }
 
 .main-banner--bg {
@@ -13,10 +18,9 @@
   &::before {
     position: absolute;
     content: "";
-    left: 0;
     right: 0;
     background-color: rgba(104, 183, 56, 0.85);
-    background-size: 100% 302px;
+    background-size: 320px 302px;
     z-index: 3;
     width: 100%;
     height: 302px;
@@ -33,6 +37,21 @@
       display: none;
     }
   }
+
+  @media screen and (min-width:1200px) {
+    background-image: url("../../images/main-banner-bg-desktop@1x.png");
+    background-size: 720px 694px;
+    background-position: top right;
+
+    &::before {
+      display: block;
+      background-size: 720px 694px;
+      width: 720px;
+      height: 694px;
+
+    }
+  }
+
 }
 
 .main-banner__wrapper {
@@ -42,29 +61,37 @@
   flex-direction: column;
   color: $secondary-text;
   z-index: 4;
+
   @media (min-width:768px) and (max-width:1200px) {
     min-height: 800px;
   }
 }
 
 .main-banner__title {
-  margin-bottom: 8px;
+  margin: 0;
+  padding-top: 25px;
   text-align: center;
   color: $secondary-text;
   font-size: $fz-36;
   font-weight: $fw-regular;
   line-height: $lh-36;
 
-  @media (min-width:768px) and (max-width:1200px) {
+  @media screen and (min-width:768px) {
+    padding-top: 65px;
     max-width: 420px;
     color: $secondary-dark-text;
     font-size: $fz-60;
     line-height: $lh-60;
     text-align: left;
   }
+
+  @media screen and (min-width:1200px) {
+    padding-top: 224px;
+  }
 }
 
 .main-banner__text {
+  margin-top: 0;
   margin-bottom: 29px;
   color: $secondary-text;
   font-size: $fz-14;
@@ -72,7 +99,8 @@
   line-height: $lh-14;
   text-align: center;
   text-transform: uppercase;
-  @media (min-width:768px) and (max-width:1200px) {
+
+  @media screen and (min-width:768px) {
     max-width: 420px;
     color: $secondary-dark-text;
     font-size: $fz-20;
@@ -91,6 +119,7 @@
   right: 0;
   margin: 0 auto;
   z-index: -1;
+
   @media (min-width:768px) and (max-width:1200px) {
     top: 140px;
     left: -256px;
@@ -114,7 +143,8 @@
   text-align: center;
   text-transform: uppercase;
   background-color: $bg-basic-green;
-  @media (min-width:768px) and (max-width:1200px) {
+
+  @media screen and (min-width:768px) {
     padding: 14px 26px;
     margin: 0 0 20px 0;
     min-width: 244px;

@@ -14,8 +14,12 @@ img {
 }
 
 body {
+  position: relative;
   font-family: "Oswald", sans-serif;
   color: $primary-color-text;
   margin: 0;
   background-color: $bg-primary;
+  @media screen and (min-width:1200px) {
+    position: relative;
+  }
 }

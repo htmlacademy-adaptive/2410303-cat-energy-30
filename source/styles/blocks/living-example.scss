@@ -1,9 +1,12 @@
 .living-example {
+  padding-top: 25px;
+  padding-bottom: 40px;
   background-color: $bg-secondary-dark;
   overflow: hidden;
   border-top: 1px solid #e6e6e6;
 
   @media (min-width:768px) and (max-width:1200px) {
+    padding-top: 45px;
     background-color: #ffffff;
   }
 }
@@ -21,19 +24,27 @@
 }
 
 .living-example__title {
+  margin-top: 0;
+  margin-bottom: 40px;
   color: $secondary-dark-text;
   font-size: $fz-36;
   font-weight: $fw-regular;
   line-height: $lh-40;
+  @media (min-width:768px) and (max-width:1200px) {
+   margin-bottom: 60px;
+  }
 }
 
 .living-example__text {
+  margin-top: 0;
+  margin-bottom: 20px;
   color: $primary-color-text;
   font-family: $font-lato;
   font-size: $fz-14;
   font-weight: $fw-regular;
   line-height: $lh-18;
   @media (min-width:768px) and (max-width:1200px) {
+    margin-bottom: 55px;
     max-width: 708px;
     font-size: $fz-16;
     line-height: $lh-24 ;
@@ -112,13 +123,16 @@
 
 .living-example-slider {
   position: relative;
+  margin-top: 20px;
   min-height: 320px;
+  min-width: 280px;
+  min-height: 256px;
 
   &::before {
     position: absolute;
     content: "";
     left: 145px;
-    top: 0;
+    top: 20px;
     bottom: 0;
     width: 3px;
     height: 90%;

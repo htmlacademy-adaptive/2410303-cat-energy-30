@@ -1,9 +1,13 @@
 .main-advantages {
   padding-top: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
+  @media (min-width:768px) and (max-width:1200px) {
+    padding-top: 45px;
+  }
 }
 
 .main-advantages__section-title {
+  margin-top: 0;
   color: $secondary-dark-text;
   font-size: $fz-36;
   font-weight: $fw-regular;
@@ -27,16 +31,19 @@
 
 .main-advantages__item {
   position: relative;
-  padding-left: 80px;
-  min-height: 60px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 20px;
 
   @media (min-width:768px) and (max-width:1200px) {
-    display: flex;
     flex-direction: column-reverse;
-    justify-content: flex-end;
+    align-items: start;
     row-gap: 31px;
     padding-left: 0;
-    max-width: 250px;
+    max-width: 230px;
+    min-height: 280px;
     height: auto;
     counter-increment: advantages;
 
@@ -60,7 +67,7 @@
 .main-advantages__item--icon-power,
 .main-advantages__item--icon-clock {
   &::after {
-    position: absolute;
+    position: static;
     content: "";
     left: 0;
     top: 0;
@@ -71,11 +78,7 @@
     background-color: $bg-basic-green;
     width: 60px;
     height: 60px;
-
-    @media (min-width:768px) and (max-width:1200px) {
-      position: static;
-    }
-
+    flex-shrink: 0;
   }
 }
 
@@ -104,6 +107,7 @@
 }
 
 .main-advantages__text {
+  max-width: 200px;
   color: $primary-color-text;
   font-family: $font-lato;
   font-size: $fz-14;
