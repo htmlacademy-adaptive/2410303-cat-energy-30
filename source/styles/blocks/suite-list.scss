@@ -31,9 +31,15 @@
 
 }
 
-.suite-list--bg {
-  color: $secondary-text;
+.suite-list--color {
+  @media screen and (min-width:768px) {
+    color:  $secondary-dark-text;
+  }
+  @media screen and (min-width:1200px) {
+    color:  $secondary-text;
+  }
 }
+
 
 .suite-list.open {
   transition: transform 0.8s ease-in-out;

@@ -4,17 +4,18 @@
   z-index: 10;
 
   @media screen and (min-width:768px) {
-    padding: 25px 0 0  0;
+    padding: 25px 0 0 0;
     background-color: transparent;
   }
+
   @media screen and (min-width:1200px) {
-    padding: 55px 0 0  0;
+    padding: 55px 0 0 0;
     background-color: transparent;
   }
 }
 
 .page-header--absolute {
-   @media screen and (min-width:1200px) {
+  @media screen and (min-width:1200px) {
     position: absolute;
     left: 0;
     right: 0;
@@ -29,11 +30,10 @@
   z-index: 5;
 }
 
-.page-header__list {}
-
 .page-header__item {
   background-color: $bg-primary;
   border-top: 1px solid #e6e6e6;
+  color: inherit;
 
   &:last-child {
     border-bottom: 1px solid #e6e6e6;
@@ -50,12 +50,13 @@
 
 }
 
+
 .page-header__link {
   @include link-reset;
   display: block;
   padding: 18px 16px;
   text-align: center;
-  color: #000;
+  color: inherit;
 
   @media screen and (min-width:1200px) {
     font-size: $fz-18;
@@ -65,11 +66,9 @@
 
 }
 
-
-.page-header__link--current {
+.page-header__link--current.page-header__link--current-index {
   @media screen and (min-width:768px) {
     position: relative;
-    transition: 0.3s ease-in;
 
     &::before {
       position: absolute;
@@ -88,7 +87,21 @@
   }
 }
 
-
+.page-header__link--current {
+  position: relative;
+  @media screen and (min-width:768px) {
+    &::before {
+      position: absolute;
+      content: "";
+      width: calc(100% - 34px);
+      height: 2px;
+      top: 48px;
+      right: 0;
+      left: 17px;
+      background-color: $bg-basic-green;
+    }
+  }
+}
 
 .page-header__toggle.page-header__toggle--close {
   display: block;

@@ -1,7 +1,8 @@
 .main-advantages {
   padding-top: 20px;
   padding-bottom: 25px;
-  @media (min-width:768px) and (max-width:1200px) {
+
+  @media screen and (min-width:768px) {
     padding-top: 45px;
   }
 }
@@ -17,17 +18,20 @@
 .main-advantages__list {
   @include list-reset;
 
-  @media (min-width:768px) and (max-width:1200px) {
+  @media screen and (min-width:768px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 150px;
     row-gap: 140px;
     counter-reset: advantages 0;
   }
+
+  @media screen and (min-width:1200px) {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 40px;
+    column-gap: 0px;
+  }
 }
-
-
-
 
 .main-advantages__item {
   position: relative;
@@ -37,7 +41,7 @@
   justify-content: flex-end;
   column-gap: 20px;
 
-  @media (min-width:768px) and (max-width:1200px) {
+  @media screen and (min-width:768px) {
     flex-direction: column-reverse;
     align-items: start;
     row-gap: 31px;
@@ -114,7 +118,7 @@
   font-weight: $fw-regular;
   line-height: $lh-18;
 
-  @media (min-width:768px) and (max-width:1200px) {
+  @media screen and (min-width:768px) {
     font-size: $fz-16;
     line-height: $lh-24;
   }
