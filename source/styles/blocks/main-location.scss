@@ -12,17 +12,23 @@
 }
 
 .main-location__title {
+  margin-top: 0;
   max-width: 118px;
   color: $secondary-light-text;
   font-size: $fz-16;
   font-weight: $fw-regular;
   line-height: $lh-20;
   text-transform: uppercase;
+  @media screen and (min-width:768px) {
+    max-width: 163px;
+    font-size: $fz-20;
+    line-height: $lh-26;
+  }
 }
 
 .main-location__inner {
   max-width: 165px;
-  @media (min-width:768px) and (max-width:1200px) {
+  @media screen and (min-width:768px) {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
