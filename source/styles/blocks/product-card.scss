@@ -284,56 +284,5 @@
   width: 100%;
 }
 
-.additional-products {}
-
-.additional-products__section-title {}
-
-.additional-products__wrapper {}
-
-.additional-products__description-list {}
-
-.additional-products__description-element {}
-
-.additional-products__description-title {}
-
-.additional-products__description-item {}
-
-.additional-products__description-weight {}
-
-.additional-products__description-price {}
-
-.additional-products__link {}
-
-.additional-products__present {
-  @media screen and (min-width:320px) and (min-resolution: 1dppx) {
-    background-image: url("../../images/bg-additional-products@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #d3d3d3;
-    width: 100%;
-    min-height: 290px;
-
-    @media screen and (min-resolution: 2dppx) {
-      background-image: url("../../images/bg-additional-products@2x.jpg");
-
-    }
-
-  }
 
 
-}
-
-.additional-products__text {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    left: 0;
-    background-image: url("../../images/icons/stack.svg#product-plus");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #d3d3d3;
-    width: 50px;
-    height: 53px;
-  }
-}
