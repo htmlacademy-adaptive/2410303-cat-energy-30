@@ -33,6 +33,7 @@
     flex-wrap: wrap;
     gap: 60px;
   }
+
   @media screen and (min-width:1200px) {
     column-gap: 80px;
   }
@@ -54,6 +55,7 @@
       background-image: linear-gradient(to bottom, #fff 70px, #f2f2f2 70px, #f2f2f2);
     }
   }
+
   @media screen and (min-width:1200px) {
     min-width: 245px;
   }
@@ -136,7 +138,12 @@
 
   @media screen and (min-width:768px) {
     border-collapse: collapse;
+    max-width: 250px;
     min-height: 93px;
+  }
+
+  @media screen and (min-width:1200px) {
+    max-width: 170px;
   }
 }
 
@@ -192,9 +199,11 @@
 
 .product-card__button {
   @include link-reset;
-  margin-top: 17px;
-  padding: 10px;
   display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 17px auto 0 auto;
+  padding: 10px;
   background-color: $bg-basic-green;
   color: $secondary-text;
   text-align: center;
@@ -204,7 +213,12 @@
   text-transform: uppercase;
 
   @media screen and (min-width:768px) {
+    max-width: 250px;
     margin-top: 32px;
+  }
+
+  @media screen and (min-width:1200px) {
+    max-width: 170px;
   }
 }
 
@@ -223,7 +237,7 @@
     width: 30px;
     height: 30px;
     left: 50%;
-    top: 36px;
+    top: 140px;
     transform: translate(-50%, -50%);
     mask-image: url("../../images/icons/stack.svg#product-plus");
     mask-repeat: no-repeat;
@@ -251,7 +265,6 @@
   @media screen and (min-width:768px) {
     max-width: 170px;
     margin: 0 auto;
-    justify-content: flex-end;
   }
 }
 
