@@ -1,5 +1,8 @@
 .main-location {
   position: relative;
+  @media screen and (min-width:1200px) {
+    padding-top: 44px;
+  }
 }
 
 .main-location__wrapper {

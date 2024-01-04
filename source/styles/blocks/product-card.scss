@@ -1,4 +1,10 @@
-.product-card {}
+.product-card {
+  @media screen and (min-width:1200px) {
+    padding-top: 46px;
+    padding-bottom: 38px;
+  }
+
+}
 
 .product-card>.main-container {
   padding: 0;
@@ -17,7 +23,7 @@
   line-height: $lh-36;
 
   @media screen and (min-width:768px) {
-    margin: 48px 0 94px;
+    margin: 48px 0 74px;
     font-size: $fz-60;
     line-height: $lh-60;
   }
