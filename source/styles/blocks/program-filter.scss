@@ -1,0 +1,158 @@
+.program-filter {}
+
+.program-filter__header {}
+
+.program-filter__title {
+  color: $secondary-dark-text;
+  font-size: $fz-36;
+  font-weight: $fw-regular;
+  line-height: $lh-36;
+
+  @media screen and (min-width:768px) {
+    font-size: $fz-60;
+    line-height: $lh-60;
+  }
+}
+
+.program-filter__text {
+  margin-bottom: 39px;
+  color: $secondary-dark-text;
+  font-size: $fz-14;
+  font-weight: $fw-regular;
+  line-height: $lh-18;
+  text-transform: uppercase;
+
+  @media screen and (min-width:768px) {
+    margin-bottom: 66px;
+    font-size: $fz-20;
+    line-height: $lh-30;
+  }
+}
+
+.program {}
+
+.program__cat-wrapper {}
+
+.program__group {
+  @include fieldset-reset;
+}
+
+.program__legend {}
+
+.program__list {
+  @include list-reset;
+}
+
+.program__list-characteristics {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.program__item {
+  display: flex;
+  align-items: center;
+  column-gap: 13px;
+}
+
+.program__item-characteristics {}
+
+.program__label {}
+
+.program__label-characteristics {
+  max-width: 50%;
+  color: $primary-color-text;
+  font-family: $font-oswald;
+  font-size: $fz-16;
+  font-weight: $fw-regular;
+  line-height: $lh-18;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  @media screen and (min-width:768px) {
+    font-size: $fz-20;
+    line-height: $lh-24;
+  }
+}
+
+.program__input {}
+
+.program__input-characteristics {
+  padding: 15px 0 12px 15px;
+  width: 100%;
+  height: 45px;
+  border: 1px solid #e7e7e7;
+
+  &::placeholder {
+    color: $primary-color-text;
+    font-family: $font-oswald;
+    font-size: $fz-16;
+    font-weight: $fw-regular;
+    line-height: $lh-18;
+    text-transform: uppercase;
+  }
+  @media screen and (min-width:768px) {
+    padding: 11px 0 11px 20px;
+    height: 52px;
+    &::placeholder {
+      font-size: $fz-20;
+      line-height: $lh-24;
+    }
+
+  }
+}
+
+.program__list-radio {}
+
+.program__item-radio {}
+
+.program__label-radio {}
+
+.program__input-radio {}
+
+.program-text {}
+
+.program-radio {}
+
+.program__owner-group {
+  @include fieldset-reset;
+}
+
+.program__owner-legend {}
+
+.program__owner-list {}
+
+.program__owner-item {}
+
+.program__owner-label {}
+
+.program__owner-input {}
+
+.program__comment-group {
+  @include fieldset-reset;
+}
+
+.program__comment-legend {}
+
+.program__additionally-group {
+  @include fieldset-reset;
+}
+
+.program__additionally-legend {}
+
+.program__additionally-list {}
+
+.program__additionally-item {}
+
+.program__additionally-label {}
+
+.program__additionally-input {}
+
+.program-checkbox {}
+
+.program__button-wrapper {}
+
+.program__button {}
+
+.program__button--submit {}
+
+.program__text {}
