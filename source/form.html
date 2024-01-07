@@ -21,15 +21,17 @@
         <a class="page-header__logo logo" href="index.html" aria-current="page">
           <h3 class="visually-hidden">Cat Energy</h3>
           <picture>
-            <source media="(min-width:1440px)" srcset="images/icons/logo-desctop.svg" width="202" height="59" type="image/svg+xml">
-            <source media="(min-width: 768px)" srcset="images/icons/logo-tablet.svg" width="174" height="50" type="image/svg+xml">
+            <source media="(min-width:1440px)" srcset="images/icons/logo-desctop.svg" width="202" height="59"
+              type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/icons/logo-tablet.svg" width="174" height="50"
+              type="image/svg+xml">
             <img class="logo__image logo__image--icon" src="images/icons/logo-mobile.svg" width="33" height="38"
               alt="Логотип Шапки">
           </picture>
         </a>
         <a class="page-header__logo-text-link" href="index.html">
           <img class="page-header__logo-text-image" src="images/icons/logo-mobile-text.svg" width="101" height="18"
-        alt="Текст логотипа шапки">
+            alt="Текст логотипа шапки">
         </a>
         <ul class="page-header__list suite-list">
           <li class="page-header__item">
@@ -39,7 +41,8 @@
             <a class="page-header__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="page-header__item">
-            <a class="page-header__link page-header__link--current" href="form.html" aria-current="page">подбор программы</a>
+            <a class="page-header__link page-header__link--current" href="form.html" aria-current="page">подбор
+              программы</a>
           </li>
         </ul>
         <button class="page-header__toggle page-header__toggle--close" type="button">
@@ -58,99 +61,109 @@
         </div>
       </header>
       <form class="program" id="program" action="https://echo.htmlacademy.ru/" method="post">
-          <h2 class="visually-hidden">Общая игформация</h2>
-          <div class="program__cat-wrapper">
-            <fieldset class="program__group">
-              <legend class="program__legend visually-hidden">Информация о домашнем животном</legend>
-              <ul class="program__list program__list-characteristics">
-                <li class="program__item program__item-characteristics">
-                  <label for="animal-name" class="program__label program__label-characteristics">ИМЯ:*</label>
-                  <input class="program__input program__input-characteristics" id="animal-name" name="name" type="text" placeholder="БАРСИК">
-                </li>
-                <li class="program__item program__item-characteristics">
-                  <label for="animal-weight" class="program__label program__label-characteristics">Вес (кг):*</label>
-                  <input class="program__input program__input-characteristics" id="animal-weight" name="weight" type="number" placeholder="7">
-                </li>
-                <li class="program__item program__item-characteristics">
-                  <label for="animal-age" class="program__label program__label-characteristics">Возраст (лет):</label>
-                  <input class="program__input program__input-characteristics" id="animal-age" name="age" type="number" placeholder="7">
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="program__group">
-              <legend class="program__legend visually-hidden">Тип услуги</legend>
-              <ul class="program__list program__list-radio">
-                <li class="program__item program__item-radio">
-                  <label class="program__label program__label-radio">
-                    <input class="program__input program__input-radio" name="program-radio" type="radio" value="loss">
-                    <span class="program-text program-radio">похудение</span>
-                  </label>
-                </li>
-                <li class="program__item program__item-radio">
-                  <label class="program__label program__label-radio">
-                    <input class="program__input program__input-radio" name="program-radio" type="radio" value="mass gain">
-                    <span class="program-radio program-text">Набор массы</span>
-                  </label>
-                </li>
-                <li class="program__item program__item-radio">
-                  <label class="program__label program__label-radio">
-                    <input class="program__input program__input-radio" name="program-radio" type="radio" value="Don't know" disabled checked>
-                    <span class="program-radio program-text">Не знаю (Нужен ваш совет)</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-          <fieldset class="program__owner-group">
-            <legend class="program__owner-legend">Контактные данные (владельца кота)</legend>
-            <ul class="program__list program__owner-list">
-              <li class="program__item program__owner-item">
-                <label class="program__label program__owner-label">
-                  E-mail:*
-                  <input class="program__input program__owner-input" name="email" type="email">
+        <h2 class="visually-hidden">Общая игформация</h2>
+        <div class="program__cat-wrapper">
+          <fieldset class="program__group">
+            <legend class="program__legend visually-hidden">Информация о домашнем животном</legend>
+            <ul class="program__list program__list-characteristics">
+              <li class="program__item program__item-characteristics">
+                <label for="animal-name" class="program__label program__label-characteristics">ИМЯ:*</label>
+                <input class="program__input program__input-characteristics" id="animal-name" name="name" type="text"
+                  placeholder="БАРСИК">
+              </li>
+              <li class="program__item program__item-characteristics">
+                <label for="animal-weight" class="program__label program__label-characteristics">Вес (кг):*</label>
+                <input class="program__input program__input-characteristics" id="animal-weight" name="weight"
+                  type="number" placeholder="7">
+              </li>
+              <li class="program__item program__item-characteristics">
+                <label for="animal-age" class="program__label program__label-characteristics">Возраст (лет):</label>
+                <input class="program__input program__input-characteristics" id="animal-age" name="age" type="number"
+                  placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="program__group">
+            <legend class="program__legend visually-hidden">Тип услуги</legend>
+            <ul class="program__list program__list-radio">
+              <li class="program__item program__item-radio">
+                <label class="program__label program__label-radio">
+                  <input class="program__input program__input-radio" name="program-radio" type="radio" value="loss">
+                  <span class="program-text program-radio">похудение</span>
                 </label>
               </li>
-              <li class="program__item program__owner-item">
-                <label class="program__label program__owner-label">
-                  Телефон:*
-                  <input class="program__input program__owner-input" name="tel" type="tel">
+              <li class="program__item program__item-radio">
+                <label class="program__label program__label-radio">
+                  <input class="program__input program__input-radio" name="program-radio" type="radio"
+                    value="mass gain">
+                  <span class="program-radio program-text">Набор массы</span>
+                </label>
+              </li>
+              <li class="program__item program__item-radio">
+                <label class="program__label program__label-radio">
+                  <input class="program__input program__input-radio" name="program-radio" type="radio"
+                    value="Don't know" disabled checked>
+                  <span class="program-radio program-text">Не знаю (Нужен ваш совет)</span>
                 </label>
               </li>
             </ul>
           </fieldset>
+        </div>
+        <div class="main-container">
+          <fieldset class="program__owner-group">
+            <legend class="program__owner-legend secondary-title">Контактные данные (владельца кота)</legend>
+            <ul class="program__owner-list">
+              <li class="program__owner-item">
+                <label for="email" class="program__label program__owner-label">E-mail:*</label>
+                <input class="program__owner-input" id="email" name="email" type="email"
+                  placeholder="kuklachev@gmail.com">
+                  <svg class="program__owner-icon program__owner-icon--email" width="20" height="20">
+                    <use xlink:href="images/icons/stack.svg#email"></use>
+                  </svg>
+              </li>
+              <li class="program__owner-item">
+                <label for="phone" class="program__label program__owner-label">Телефон:*</label>
+                <input class="program__owner-input" id="phone" name="tel" type="tel" placeholder="8 (960) 900-60-90">
+                <svg class="program__owner-icon program__owner-icon--email" width="20" height="20">
+                  <use xlink:href="images/icons/stack.svg#form-phone"></use>
+                </svg>
+              </li>
+            </ul>
+          </fieldset>
           <fieldset class="program__comment-group">
-            <legend class="program__comment-legend">Комментарий</legend>
+            <legend class="program__comment-legend secondary-title">Комментарий</legend>
             <label class="visually-hidden" for="info">Расскажите обо всех повадках кота</label>
-            <textarea form="program" name="program__comment-textarea" id="info" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="program__comment-textarea" form="program" name="program__comment-textarea" id="info" cols="30" rows="10"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="program__additionally-group">
-            <legend class="program__additionally-legend">Дополнительно</legend>
+            <legend class="program__additionally-legend secondary-title">Дополнительно</legend>
             <ul class="program__list program__additionally-list">
               <li class="program__item program__additionally-item">
                 <label class="program__label program__additionally-label">
-                  <input class="program__input program__additionally-input" name="program__input-checkbox" type="checkbox"
-                    value="sweetener">
+                  <input class="program__input program__additionally-input" name="program__input-checkbox"
+                    type="checkbox" value="sweetener">
                   <span class="program-checkbox program-text">сахарозаменитель</span>
                 </label>
               </li>
               <li class="program__item program__additionally-item">
                 <label class="program__label program__additionally-label">
-                  <input class="program__input program__additionally-input" name="program__input-checkbox" type="checkbox"
-                    value="drinking water">
+                  <input class="program__input program__additionally-input" name="program__input-checkbox"
+                    type="checkbox" value="drinking water">
                   <span class="program-checkbox program-text">питьевая вода</span>
                 </label>
               </li>
               <li class="program__item program__additionally-item">
                 <label class="program__label program__additionally-label">
-                  <input class="program__input program__additionally-input" name="program__input-checkbox" type="checkbox"
-                    value="milk">
+                  <input class="program__input program__additionally-input" name="program__input-checkbox"
+                    type="checkbox" value="milk">
                   <span class="program-checkbox program-text">молоко</span>
                 </label>
               </li>
               <li class="program__item program__additionally-item">
                 <label class="program__additionally-label">
-                  <input class="program__input program__additionally-input" name="program__input-checkbox" type="checkbox"
-                    value="vitamins">
+                  <input class="program__input program__additionally-input" name="program__input-checkbox"
+                    type="checkbox" value="vitamins">
                   <span class="program-checkbox program-text">витамины</span>
                 </label>
               </li>
@@ -161,6 +174,7 @@
             <p class="program__text">* — Обязательные поля</p>
           </div>
       </form>
+      </div>
       <div class="map" id="map" style="width: 100%; height: 354px"></div>
     </section>
   </main>
@@ -168,7 +182,8 @@
     <div class="main-container">
       <div class="main-footer__wrapper">
         <a class="main-footer__logo-text-link" href="https://htmlacademy.ru/intensive/adaptive" aria-current="page">
-          <img class="main-footer__logo-text-image" src="images/icons/logo-mobile-text.svg" width="128" height="24" alt="Текст логотипа подвала">
+          <img class="main-footer__logo-text-image" src="images/icons/logo-mobile-text.svg" width="128" height="24"
+            alt="Текст логотипа подвала">
         </a>
         <ul class="main-footer__social">
           <li class="main-footer__social-item">

@@ -122,26 +122,27 @@
 
 .program__list-radio {
   padding-top: 22px;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
   display: flex;
   flex-direction: column;
   row-gap: 13px;
   border-top: 1px solid #d9d9d9d9;
+  border-bottom: 1px solid #d9d9d9d9;
 }
 
 .program__item-radio {}
 
 .program__label-radio {}
 
-.program__input-radio:checked + .program-radio::after {
+.program__input-radio:checked+.program-radio::after {
   opacity: 1;
 }
 
-.program__input-radio:focus + .program-radio::before {
+.program__input-radio:focus+.program-radio::before {
   outline: 3px solid gold;
 }
 
-.program__input-radio:disabled + .program-radio {
+.program__input-radio:disabled+.program-radio {
   cursor: no-drop;
   opacity: 0.3;
 }
@@ -189,38 +190,163 @@
   }
 }
 
-.catalog__filter-input:checked + .catalog__filter-radio::after {
+.catalog__filter-input:checked+.catalog__filter-radio::after {
   opacity: 1;
 }
 
 .program__owner-group {
   @include fieldset-reset;
-
 }
 
 .program__owner-legend {
+  position: relative;
   padding-top: 26px;
+  margin-bottom: 35px;
+
+  &::before {
+    position: absolute;
+    width: 90px;
+    height: 2px;
+    content: "";
+    right: -20px;
+    top: 55%;
+    transform: translateY(-50%);
+    background-color: #68b738;
+  }
 }
 
-.program__owner-list {}
 
-.program__owner-item {}
 
-.program__owner-label {}
+.program__owner-list {
+  @include list-reset;
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
 
-.program__owner-input {}
+.program__owner-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 13px;
+}
+
+.program__owner-label {
+  max-width: 50%;
+  color: $primary-color-text;
+  font-family: $font-oswald;
+  font-size: $fz-16;
+  font-weight: $fw-regular;
+  line-height: $lh-18;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.program__owner-input {
+  padding: 15px 50px 12px 15px;
+  width: 100%;
+  height: 45px;
+  border: 1px solid #e7e7e7;
+
+  &::placeholder {
+    color: $primary-color-text;
+    font-family: $font-oswald;
+    font-size: $fz-14;
+    font-weight: $fw-regular;
+    line-height: $fz-18;
+    text-transform: uppercase;
+  }
+}
+
+.program__owner-icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translate(-50%, -50%);
+}
 
 .program__comment-group {
   @include fieldset-reset;
 }
 
-.program__comment-legend {}
+.program__comment-legend {
+  position: relative;
+  margin-bottom: 38px;
+
+  &::before {
+    position: absolute;
+    width: 160px;
+    height: 2px;
+    content: "";
+    right: -180px;
+    top: 55%;
+    transform: translateY(-50%);
+    background-color: #68b738;
+  }
+}
+
+.program__comment-textarea {
+  display: block;
+  margin-bottom: 23px;
+  padding: 14px 14px 0 15px;
+  width: 100%;
+  min-height: 150px;
+  color: $primary-color-text;
+  font-family: $font-oswald;
+  font-size: $fz-16;
+  font-weight: $fw-regular;
+  line-height: $lh-18;
+  text-transform: uppercase;
+  border: 1px solid #e7e7e7;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  &::placeholder {
+    color: $primary-color-text;
+    font-family: $font-oswald;
+    font-size: $fz-16;
+    font-weight: $fw-regular;
+    line-height: $lh-18;
+    text-transform: uppercase;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $bg-basic-green;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $bg-primary;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: $bg-secondary-light;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: $bg-basic-green;
+    background-image: -webkit-linear-gradient(45deg,
+        rgba(255, 255, 255, .2) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, .2) 50%,
+        rgba(255, 255, 255, .2) 75%,
+        transparent 75%,
+        transparent);
+  }
+
+}
 
 .program__additionally-group {
   @include fieldset-reset;
 }
 
-.program__additionally-legend {}
+.program__additionally-legend {
+  margin-bottom: 36px;
+}
 
 .program__additionally-list {}
 
