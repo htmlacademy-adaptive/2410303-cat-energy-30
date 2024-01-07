@@ -6,6 +6,10 @@
   padding: 26px 20px;
   background-color: $bg-primary;
 
+  &--bg {
+    background-color: $bg-secondary-light;
+  }
+
   @media screen and (min-width:768px) {
     padding: 60px 80px;
   }
@@ -61,6 +65,7 @@
   font-size: $fz-14;
   font-weight: $fw-regular;
   line-height: $lh-20;
+
   @media screen and (min-width:768px) {
     font-size: $fz-16;
   }

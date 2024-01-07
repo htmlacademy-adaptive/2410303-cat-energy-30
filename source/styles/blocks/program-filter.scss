@@ -97,6 +97,10 @@
   padding: 15px 0 12px 15px;
   width: 100%;
   height: 45px;
+  color: $primary-color-text;
+  font-family: $font-oswald;
+  font-size: $fz-16;
+  font-weight: $fw-regular;
   border: 1px solid #e7e7e7;
 
   &::placeholder {
@@ -139,7 +143,7 @@
 }
 
 .program__input-radio:focus+.program-radio::before {
-  outline: 3px solid gold;
+  outline: 3px solid $bg-basic-green;
 }
 
 .program__input-radio:disabled+.program-radio {
@@ -247,6 +251,10 @@
   padding: 15px 50px 12px 15px;
   width: 100%;
   height: 45px;
+  color: $primary-color-text;
+  font-family: $font-oswald;
+  font-size: $fz-16;
+  font-weight: $fw-regular;
   border: 1px solid #e7e7e7;
 
   &::placeholder {
@@ -337,7 +345,6 @@
         transparent 75%,
         transparent);
   }
-
 }
 
 .program__additionally-group {
@@ -345,10 +352,26 @@
 }
 
 .program__additionally-legend {
+  position: relative;
   margin-bottom: 36px;
+
+  &::before {
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    content: "";
+    right: -215px;
+    top: 55%;
+    transform: translateY(-50%);
+    background-color: #68b738;
+  }
 }
 
-.program__additionally-list {}
+.program__additionally-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+}
 
 .program__additionally-item {}
 
@@ -356,12 +379,84 @@
 
 .program__additionally-input {}
 
-.program-checkbox {}
+.program-checkbox {
+  position: relative;
+  padding-left: 36px;
+  display: inline-block;
+
+  /* -- CТИЛИЗАЦИЯ ФОНА CHECKBOX СНАРУЖИ -- */
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    background-color: transparent;
+    top: -5px;
+    left: -15px;
+  }
+
+  /* -- ВНУТРЕННЯЯ CТИЛИЗАЦИЯ CHECKBOX -- */
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+    color: #3f5e72;
+  }
+}
+
+/* -- КЛИК НА CHECKBOX -- */
+
+.program__additionally-input:checked+.program-checkbox::after {
+  opacity: 1;
+  background-image: url("../../images/icons/stack.svg#check-mark");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: translate(-50%, 25%);
+  width: 18px;
+  height: 14px;
+}
+
+.program__additionally-input:focus+.program-checkbox::before {
+  outline: 3px solid $bg-basic-green;
+}
 
 .program__button-wrapper {}
 
-.program__button {}
+.program__button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 78px;
+  margin: 34px auto 31px auto;
+  width: 100%;
+  color: $secondary-text;
+  font-size: $fz-16;
+  font-weight: $fw-regular;
+  font-family: $font-oswald;
+  line-height: $lh-20;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $bg-basic-green;
+  border: none;
+}
 
 .program__button--submit {}
 
-.program__text {}
+.program__text {
+  margin-bottom: 32px;
+  color: $secondary-dark-text;
+  text-align: center;
+  font-family: $font-lato;
+  font-size: $fz-14;
+  font-weight: $fw-regular;
+  line-height: $lh-16;
+}
