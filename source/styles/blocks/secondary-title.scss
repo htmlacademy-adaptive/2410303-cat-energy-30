@@ -1,7 +1,32 @@
 .secondary-title {
+  position: relative;
+  padding-right: 20px;
   color: $secondary-dark-text;
   font-family: $font-oswald;
   font-size: $fz-24;
   font-weight: $fw-regular;
   line-height: $lh-26;
+  background-color: $secondary-text;
+
+  &::before {
+    margin-top: calc(20px / 2 + 5px);
+    position: absolute;
+    content: "";
+    width: 1000vw;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background-color: #68b738;
+    z-index: -1;
+  }
+
+   @media screen and (min-width:768px) {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: $fz-36;
+    line-height: $lh-36;
+    &::before {
+      left: -2000px;
+    }
+  }
 }
