@@ -80,7 +80,7 @@
                 <li class="program__item program__item-characteristics">
                   <label for="animal-age" class="program__label program__label-characteristics">Возраст (лет):</label>
                   <input class="program__input program__input-characteristics" id="animal-age" name="age" type="number"
-                    placeholder="7">
+                    placeholder="7" min="0" max="150">
                 </li>
               </ul>
             </fieldset>
@@ -156,7 +156,7 @@
               <li class="program__item program__additionally-item">
                 <label class="program__label program__additionally-label">
                   <input class="program__input program__additionally-input" name="program__input-checkbox"
-                    type="checkbox" value="milk">
+                    type="checkbox" value="milk" disabled>
                   <span class="program-checkbox program-text">молоко</span>
                 </label>
               </li>
@@ -170,7 +170,7 @@
             </ul>
           </fieldset>
           <div class="program__button-wrapper">
-            <button class="program__button program__button--submit" type="submit">отправить заявку</button>
+            <button class="program__button button" type="submit">отправить заявку</button>
             <p class="program__text">* — Обязательные поля</p>
           </div>
         </div>

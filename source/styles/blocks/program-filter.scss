@@ -17,6 +17,7 @@
   line-height: $lh-36;
 
   @media screen and (min-width:768px) {
+    margin-bottom: 55px;
     font-size: $fz-60;
     line-height: $lh-60;
   }
@@ -31,6 +32,7 @@
   text-transform: uppercase;
 
   @media screen and (min-width:768px) {
+    margin-top: 0;
     margin-bottom: 66px;
     font-size: $fz-20;
     line-height: $lh-30;
@@ -45,7 +47,6 @@
   @media screen and (min-width:1440px) {
     display: flex;
     column-gap: 80px;
-    height: 196px;
     height: auto;
   }
 }
@@ -75,6 +76,7 @@
   @media screen and (min-width:1200px) {
     min-width: 570px;
     margin-bottom: 0;
+    row-gap: 20px;
   }
 }
 
@@ -142,6 +144,20 @@
     font-weight: $fw-regular;
     line-height: $lh-18;
     text-transform: uppercase;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border: 2px solid $primary-color-text;
+  }
+
+  &:invalid {
+    outline: none;
+    border: 2px solid #ff8282;
   }
 
   @media screen and (min-width:768px) {
@@ -214,11 +230,11 @@
   outline: 3px solid $bg-basic-green;
 }
 
-.program__input-radio:disabled+.program-radio {
+.program__input-radio:disabled+.program-radio,
+.program__additionally-input:disabled+.program-checkbox {
   cursor: no-drop;
   opacity: 0.3;
 }
-
 .program-text {
   color: $primary-color-text;
   font-family: $font-oswald;
@@ -306,6 +322,7 @@
   max-width: 207px;
 
   @media screen and (min-width:768px) {
+    margin-bottom: 76px;
     max-width: 600px;
   }
 }
@@ -325,6 +342,7 @@
   @media screen and (min-width:1440px) {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 70px;
   }
 }
 
@@ -371,6 +389,16 @@
     text-transform: uppercase;
   }
 
+  &:focus-visible {
+    outline: none;
+    border: 2px solid $primary-color-text;
+  }
+
+  &:invalid {
+    outline: none;
+    border: 2px solid #ff8282;
+  }
+
   @media screen and (min-width:768px) {
     padding-top: 11px;
     font-size: $fz-20;
@@ -387,11 +415,21 @@
   }
 }
 
+.program__owner-input {
+  &:focus-visible + svg  {
+    stroke: #68B738;
+  }
+  &:invalid + svg  {
+    stroke: #ff8282;
+  }
+}
+
 .program__owner-icon {
   position: absolute;
   top: 50%;
   right: 12px;
   transform: translate(-50%, -50%);
+  stroke: #000000
 }
 
 .program__comment-group {
@@ -404,6 +442,7 @@
   max-width: 141px;
 
   @media screen and (min-width:768px) {
+    margin-bottom: 87px;
     max-width: 262px;
   }
 }
@@ -461,8 +500,9 @@
   }
 
   @media screen and (min-width:768px) {
-    width: calc(100% - 40px);
     margin-left: 40px;
+    margin-bottom: 70px;
+    width: calc(100% - 40px);
   }
 
 
@@ -474,6 +514,11 @@
 
 .program__additionally-legend {
   margin-bottom: 36px;
+
+  @media screen and (min-width:768px) {
+    margin-bottom: 57px;
+    max-width: 295px;
+  }
 
 }
 
@@ -599,8 +644,6 @@
     max-width: 570px;
   }
 }
-
-.program__button--submit {}
 
 .program__text {
   margin: 0;

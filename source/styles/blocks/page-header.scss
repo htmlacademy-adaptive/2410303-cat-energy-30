@@ -59,6 +59,14 @@
   padding: 18px 16px;
   text-align: center;
   color: inherit;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 
   @media screen and (min-width:1200px) {
     font-size: $fz-18;

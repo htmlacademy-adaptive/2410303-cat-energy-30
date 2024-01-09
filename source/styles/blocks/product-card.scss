@@ -227,8 +227,6 @@
   }
 }
 
-.product-card__button--primary {}
-
 .product-card__item--plus {
   position: relative;
   display: flex;
@@ -288,7 +286,14 @@
   color: $primary-color-text;
   background-color: $bg-secondary-light;
   width: 100%;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {}
+
+
+
 }
-
-
-

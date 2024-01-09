@@ -1,12 +1,16 @@
 .page-header__logo {
-
+ transition: all 0.3s ease-in-out;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .logo {
   display: flex;
   align-items: center;
-
-  &:hover {}
 }
 
 .logo__image {
