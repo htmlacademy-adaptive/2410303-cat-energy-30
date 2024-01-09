@@ -15,8 +15,17 @@
 }
 
 .main-footer__logo-text-link {
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width:768px) {
     margin-bottom: 0;
@@ -60,6 +69,10 @@
   &:hover {
     background-color: #68b738;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-footer__social-link--youtube {
@@ -71,6 +84,10 @@
 
   &:hover {
     background-color: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -84,6 +101,10 @@
   &:hover {
     background-color: #68b738;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 
@@ -96,9 +117,14 @@
   align-items: center;
   text-decoration: none;
   width: 100%;
+  transition: all 0.3s ease-in-out;
 
   &:hover svg {
     background-color: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width:768px) {
