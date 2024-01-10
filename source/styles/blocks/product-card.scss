@@ -3,7 +3,6 @@
     padding-top: 46px;
     padding-bottom: 38px;
   }
-
 }
 
 .product-card>.main-container {
@@ -12,7 +11,6 @@
   @media screen and (min-width:768px) {
     padding: 0 20px;
   }
-
 }
 
 .product-card__section-title {
@@ -87,7 +85,6 @@
     width: 100%;
     min-height: 208px;
   }
-
 }
 
 .product-card__image-link {
@@ -165,7 +162,6 @@
     font-size: $fz-16;
     line-height: $lh-20;
     border-bottom: 1px solid #cdcdcd;
-
   }
 }
 
@@ -288,12 +284,9 @@
   width: 100%;
   transition: all 0.3s ease-in-out;
 
-  &:hover {
+  &:hover,
+  &:active {
     background-color: #ebebeb;
   }
-
-  &:active {}
-
-
-
 }
+

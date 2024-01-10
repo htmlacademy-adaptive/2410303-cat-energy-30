@@ -55,8 +55,6 @@
   @include fieldset-reset;
 }
 
-.program__legend {}
-
 .program__list {
   @include list-reset;
 
@@ -86,8 +84,6 @@
   column-gap: 13px;
 }
 
-.program__item-characteristics {}
-
 .program__label {
   display: flex;
   align-items: center;
@@ -96,7 +92,6 @@
   @media screen and (min-width:768px) {
     min-height: 40px;
   }
-
 }
 
 .program__label-characteristics {
@@ -200,7 +195,6 @@
     background-color: #d9d9d9d9;
   }
 
-
   @media screen and (min-width:768px) {
     padding: 23px 27px 27px 27px;
     margin-left: 40px;
@@ -217,10 +211,6 @@
     margin-left: 0;
   }
 }
-
-.program__item-radio {}
-
-.program__label-radio {}
 
 .program__input-radio:checked+.program-radio::after {
   opacity: 1;
@@ -298,7 +288,6 @@
       height: 18px;
     }
   }
-
 }
 
 .catalog__filter-input:checked+.catalog__filter-radio::after {
@@ -325,8 +314,6 @@
   }
 }
 
-
-
 .program__owner-list {
   @include list-reset;
   display: flex;
@@ -349,7 +336,6 @@
   display: flex;
   align-items: center;
   column-gap: 13px;
-
 }
 
 .program__owner-label {
@@ -392,9 +378,17 @@
     border: 2px solid $primary-color-text;
   }
 
+  &:focus-visible + svg  {
+    stroke: #68B738;
+  }
+
   &:invalid {
     outline: none;
     border: 2px solid #ff8282;
+  }
+
+  &:invalid + svg  {
+    stroke: #ff8282;
   }
 
   @media screen and (min-width:768px) {
@@ -410,15 +404,6 @@
 
   @media screen and (min-width:1440px) {
     min-width: 494px;
-  }
-}
-
-.program__owner-input {
-  &:focus-visible + svg  {
-    stroke: #68B738;
-  }
-  &:invalid + svg  {
-    stroke: #ff8282;
   }
 }
 
@@ -502,8 +487,6 @@
     margin-bottom: 70px;
     width: calc(100% - 40px);
   }
-
-
 }
 
 .program__additionally-group {
@@ -517,7 +500,6 @@
     margin-bottom: 57px;
     max-width: 295px;
   }
-
 }
 
 .program__additionally-list {
@@ -537,14 +519,7 @@
     grid-template-columns: repeat(4, 1fr);
     margin-right: 0;
   }
-
 }
-
-.program__additionally-item {}
-
-.program__additionally-label {}
-
-.program__additionally-input {}
 
 .program-checkbox {
   position: relative;
@@ -658,3 +633,4 @@
     margin: 0;
   }
 }
+

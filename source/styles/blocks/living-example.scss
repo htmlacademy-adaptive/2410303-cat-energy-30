@@ -9,6 +9,7 @@
     padding-top: 45px;
     background-color: #ffffff;
   }
+
   @media screen and (min-width:1200px) {
     border-top: none;
   }
@@ -19,6 +20,7 @@
     position: relative;
     display: flex;
     column-gap: 224px;
+
     &::after {
       width: 1000%;
       height: 500px;
@@ -30,7 +32,6 @@
       z-index: 1;
     }
   }
-
 }
 
 .living-example__inner {
@@ -39,7 +40,6 @@
   z-index: 2;
 }
 
-
 .living-example__content {
   @media screen and (min-width:768px) {
     display: flex;
@@ -47,6 +47,7 @@
     justify-content: space-between;
     padding-bottom: 270px;
   }
+
   @media screen and (min-width:1200px) {
     max-width: 366px;
     align-items: start;
@@ -63,8 +64,9 @@
   font-size: $fz-36;
   font-weight: $fw-regular;
   line-height: $lh-40;
+
   @media screen and (min-width:768px) {
-   margin-bottom: 60px;
+    margin-bottom: 60px;
   }
 }
 
@@ -76,16 +78,18 @@
   font-size: $fz-14;
   font-weight: $fw-regular;
   line-height: $lh-18;
+
   @media screen and (min-width:768px) {
     margin-bottom: 55px;
     max-width: 708px;
     font-size: $fz-16;
     line-height: $lh-24 ;
   }
+
   @media screen and (min-width:1200px) {
     max-width: 433px;
     margin-top: 70px;
-   }
+  }
 }
 
 .living-example__list {
@@ -94,6 +98,7 @@
   align-items: center;
   justify-content: center;
   column-gap: 32px;
+
   @media screen and (min-width:1200px) {
     justify-content: flex-start;
     column-gap: 42px;
@@ -109,6 +114,7 @@
   min-width: 124px;
   border: 1px solid #cdcdcd;
   border-radius: 4px;
+
   @media screen and (min-width:768px) {
     min-width: 162px;
     padding: 15px 30px 25px 30px;
@@ -144,6 +150,7 @@
     background-color: #ffffff;
     width: 125px;
   }
+
   @media screen and (min-width:1200px) {
     background-color: #eaeaea;
   }
@@ -167,24 +174,17 @@
     flex-direction: column;
     align-items: flex-end;
   }
+
   @media screen and (min-width:1200px) {
     flex-direction: row;
   }
 }
-
-.living-example__expenses-text {}
-
-.living-example__expenses-sum {}
 
 .living-example-slider {
   position: relative;
   margin-top: 20px;
   width: 280px;
   height: 320px;
-  @media screen and (min-width:768px) {
-    min-width: 560px;
-    min-height: 512px;
-    }
 
   &::before {
     position: absolute;
@@ -199,7 +199,13 @@
   }
 
   @media screen and (min-width:768px) {
+    min-width: 560px;
+    min-height: 512px;
+  }
+
+  @media screen and (min-width:768px) {
     min-height: 345px;
+
     &::after {
       position: absolute;
       content: "";
@@ -217,12 +223,13 @@
       height: 485px;
     }
   }
+
   @media screen and (min-width:1200px) {
     background-color: transparent;
+
     &::after {
       background-color: transparent;
     }
-
   }
 }
 

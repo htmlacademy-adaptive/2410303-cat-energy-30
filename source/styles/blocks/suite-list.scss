@@ -28,20 +28,19 @@
   @media screen and (min-width:1200px) {
     margin-right: 80px;
   }
-
 }
 
 .suite-list--color {
   @media screen and (min-width:768px) {
-    color:  $secondary-dark-text;
+    color: $secondary-dark-text;
   }
+
   @media screen and (min-width:1200px) {
-    color:  $secondary-text;
+    color: $secondary-text;
   }
 }
-
 
 .suite-list.open {
   transform: translateY(0);
-
 }
+

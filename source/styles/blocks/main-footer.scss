@@ -33,8 +33,6 @@
 
 }
 
-.main-footer__logo-energy {}
-
 .main-footer__social {
   @include list-reset;
   width: 100%;
@@ -50,8 +48,6 @@
     border: none;
   }
 }
-
-.main-footer__social-item {}
 
 .main-footer__social-link {
   display: block;
@@ -106,9 +102,6 @@
     opacity: 0.3;
   }
 }
-
-
-
 
 .main-footer__logo-academy {
   margin-top: 20px;

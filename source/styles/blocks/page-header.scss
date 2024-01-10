@@ -49,9 +49,7 @@
       border: none
     }
   }
-
 }
-
 
 .page-header__link {
   @include link-reset;
@@ -64,16 +62,14 @@
   &:hover {
     opacity: 0.6;
   }
+
   &:active {
     opacity: 0.3;
   }
 
   @media screen and (min-width:1200px) {
     font-size: $fz-18;
-
   }
-
-
 }
 
 .page-header__link--current.page-header__link--current-index {
@@ -99,6 +95,7 @@
 
 .page-header__link--current {
   position: relative;
+
   @media screen and (min-width:768px) {
     &::before {
       position: absolute;
@@ -183,3 +180,4 @@
     background-color: #000000;
   }
 }
+
