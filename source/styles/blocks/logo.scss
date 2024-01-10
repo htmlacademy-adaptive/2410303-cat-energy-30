@@ -1,12 +1,14 @@
 .page-header__logo {
   transition: all 0.3s ease-in-out;
-   &:hover {
-     opacity: 0.8;
-   }
-   &:active {
-     opacity: 0.6;
-   }
- }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
 
 .logo {
   display: flex;
@@ -14,7 +16,7 @@
 }
 
 .page-header__logo-text-link {
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: none;
-    }
+  }
 }

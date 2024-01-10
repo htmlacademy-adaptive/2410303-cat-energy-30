@@ -68,19 +68,19 @@
               <legend class="program__legend visually-hidden">Информация о домашнем животном</legend>
               <ul class="program__list program__list-characteristics">
                 <li class="program__item program__item-characteristics">
-                  <label for="animal-name" class="program__label program__label-characteristics">ИМЯ:*</label>
+                  <label class="program__label program__label-characteristics" for="animal-name">ИМЯ:*</label>
                   <input class="program__input program__input-characteristics" id="animal-name" name="name" type="text"
                     placeholder="БАРСИК">
                 </li>
                 <li class="program__item program__item-characteristics">
-                  <label for="animal-weight" class="program__label program__label-characteristics">Вес (кг):*</label>
+                  <label class="program__label program__label-characteristics" for="animal-weight">Вес (кг):*</label>
                   <input class="program__input program__input-characteristics" id="animal-weight" name="weight"
                     type="number" placeholder="7">
                 </li>
                 <li class="program__item program__item-characteristics">
-                  <label for="animal-age" class="program__label program__label-characteristics">Возраст (лет):</label>
+                  <label class="program__label program__label-characteristics" for="animal-age">Возраст (лет):</label>
                   <input class="program__input program__input-characteristics" id="animal-age" name="age" type="number"
-                    placeholder="7" min="0" max="150">
+                    placeholder="7">
                 </li>
               </ul>
             </fieldset>
@@ -114,18 +114,18 @@
             <legend class="program__owner-legend secondary-title">Контактные данные (владельца кота)</legend>
             <ul class="program__owner-list">
               <li class="program__owner-item">
-                <label for="email" class="program__label program__owner-label">E-mail:*</label>
+                <label class="program__label program__owner-label" for="email">E-mail:*</label>
                 <input class="program__owner-input" id="email" name="email" type="email"
                   placeholder="kuklachev@gmail.com">
                 <svg class="program__owner-icon program__owner-icon--email" width="20" height="20">
-                  <use xlink:href="images/icons/stack.svg#email"></use>
+                  <use href="images/icons/stack.svg#email"></use>
                 </svg>
               </li>
               <li class="program__owner-item">
-                <label for="phone" class="program__label program__owner-label">Телефон:*</label>
+                <label class="program__label program__owner-label" for="phone">Телефон:*</label>
                 <input class="program__owner-input" id="phone" name="tel" type="tel" placeholder="8 (960) 900-60-90">
                 <svg class="program__owner-icon program__owner-icon--email" width="20" height="20">
-                  <use xlink:href="images/icons/stack.svg#form-phone"></use>
+                  <use href="images/icons/stack.svg#form-phone"></use>
                 </svg>
               </li>
             </ul>
@@ -134,7 +134,7 @@
             <legend class="program__comment-legend secondary-title">Комментарий</legend>
             <label class="visually-hidden" for="info">Расскажите обо всех повадках кота</label>
             <textarea class="program__comment-textarea" form="program" name="program__comment-textarea" id="info"
-              cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+              placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="program__additionally-group">
             <legend class="program__additionally-legend secondary-title">Дополнительно</legend>
@@ -201,13 +201,20 @@
         </a>
         <ul class="main-footer__social">
           <li class="main-footer__social-item">
-            <a class="main-footer__social-link main-footer__social-link--vk" href="https://vk.com/htmlacademy"></a>
+            <a class="main-footer__social-link main-footer__social-link--vk" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">HTML Академия Вконтакте</span>
+            </a>
           </li>
           <li class="main-footer__social-item">
-            <a class="main-footer__social-link main-footer__social-link--youtube" href="#"></a>
+            <a class="main-footer__social-link main-footer__social-link--youtube"
+              href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">HTML Академия на Ютуб</span>
+            </a>
           </li>
           <li class="main-footer__social-item">
-            <a class="main-footer__social-link main-footer__social-link--telegram" href="#"></a>
+            <a class="main-footer__social-link main-footer__social-link--telegram" href="https://t.me/htmlacademy ">
+              <span class="visually-hidden">HTML Академия в Телеграм</span>
+            </a>
           </li>
         </ul>
         <a class="main-footer__logo-academy" href="https://htmlacademy.ru/intensive/adaptive">

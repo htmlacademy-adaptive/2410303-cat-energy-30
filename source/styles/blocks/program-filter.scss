@@ -1,11 +1,11 @@
 .program-filter {
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding-bottom: 60px;
   }
 }
 
 .program-filter__header {
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-left: 40px;
   }
 }
@@ -16,7 +16,7 @@
   font-weight: $fw-regular;
   line-height: $lh-36;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 55px;
     font-size: $fz-60;
     line-height: $lh-60;
@@ -31,7 +31,7 @@
   line-height: $lh-18;
   text-transform: uppercase;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-top: 0;
     margin-bottom: 66px;
     font-size: $fz-20;
@@ -44,7 +44,7 @@
 }
 
 .program__cat-wrapper {
-  @media screen and (min-width:1440px) {
+  @media screen and (min-width: 1440px) {
     display: flex;
     column-gap: 80px;
     height: auto;
@@ -57,7 +57,6 @@
 
 .program__list {
   @include list-reset;
-
 }
 
 .program__list-characteristics {
@@ -66,12 +65,12 @@
   flex-direction: column;
   row-gap: 14px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-left: 40px;
     margin-bottom: 72px;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     min-width: 570px;
     margin-bottom: 0;
     row-gap: 20px;
@@ -89,7 +88,7 @@
   align-items: center;
   min-height: 30px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     min-height: 40px;
   }
 }
@@ -104,7 +103,7 @@
   text-transform: uppercase;
   flex-shrink: 0;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     font-size: $fz-20;
     line-height: $lh-24;
   }
@@ -155,7 +154,7 @@
     border: 2px solid #ff8282;
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding: 11px 12px 11px 20px;
     height: 52px;
 
@@ -163,7 +162,6 @@
       font-size: $fz-20;
       line-height: $lh-24;
     }
-
   }
 }
 
@@ -182,7 +180,7 @@
     height: 1px;
     top: 0;
     left: -20px;
-    background-color: #d9d9d9d9;
+    background-color: rgba(217, 217, 217, 0.85);
   }
 
   &::before {
@@ -192,13 +190,13 @@
     height: 1px;
     bottom: 0;
     left: -20px;
-    background-color: #d9d9d9d9;
+    background-color: rgba(217, 217, 217, 0.85);
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding: 23px 27px 27px 27px;
     margin-left: 40px;
-    border: 1px solid #d9d9d9d9;
+    border: 1px solid rgba(217, 217, 217, 0.85);
 
     &::before,
     &::after {
@@ -206,25 +204,26 @@
     }
   }
 
-  @media screen and (min-width:1440px) {
+  @media screen and (min-width: 1440px) {
     width: 570px;
     margin-left: 0;
   }
 }
 
-.program__input-radio:checked+.program-radio::after {
+.program__input-radio:checked + .program-radio::after {
   opacity: 1;
 }
 
-.program__input-radio:focus+.program-radio::before {
+.program__input-radio:focus + .program-radio::before {
   outline: 3px solid $bg-basic-green;
 }
 
-.program__input-radio:disabled+.program-radio,
-.program__additionally-input:disabled+.program-checkbox {
+.program__input-radio:disabled + .program-radio,
+.program__additionally-input:disabled + .program-checkbox {
   cursor: no-drop;
   opacity: 0.3;
 }
+
 .program-text {
   color: $primary-color-text;
   font-family: $font-oswald;
@@ -233,7 +232,7 @@
   line-height: $lh-18;
   text-transform: uppercase;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     font-size: 20px;
     line-height: 22px;
   }
@@ -272,7 +271,7 @@
     transition: all 0.3s ease-in-out;
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding-left: 60px;
 
     &::before {
@@ -290,7 +289,7 @@
   }
 }
 
-.catalog__filter-input:checked+.catalog__filter-radio::after {
+.catalog__filter-input:checked + .catalog__filter-radio::after {
   opacity: 1;
 }
 
@@ -298,7 +297,7 @@
   @include fieldset-reset;
   margin-top: 26px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-top: 65px;
   }
 }
@@ -308,7 +307,7 @@
   margin-bottom: 35px;
   max-width: 207px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 76px;
     max-width: 600px;
   }
@@ -320,11 +319,11 @@
   flex-direction: column;
   row-gap: 14px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-left: 40px;
   }
 
-  @media screen and (min-width:1440px) {
+  @media screen and (min-width: 1440px) {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 70px;
@@ -348,7 +347,7 @@
   text-transform: uppercase;
   flex-shrink: 0;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     font-size: $fz-20;
     line-height: normal;
   }
@@ -378,8 +377,8 @@
     border: 2px solid $primary-color-text;
   }
 
-  &:focus-visible + svg  {
-    stroke: #68B738;
+  &:focus-visible + svg {
+    stroke: #68b738;
   }
 
   &:invalid {
@@ -387,11 +386,11 @@
     border: 2px solid #ff8282;
   }
 
-  &:invalid + svg  {
+  &:invalid + svg {
     stroke: #ff8282;
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding-top: 11px;
     font-size: $fz-20;
     line-height: normal;
@@ -402,7 +401,7 @@
     }
   }
 
-  @media screen and (min-width:1440px) {
+  @media screen and (min-width: 1440px) {
     min-width: 494px;
   }
 }
@@ -412,7 +411,7 @@
   top: 50%;
   right: 12px;
   transform: translate(-50%, -50%);
-  stroke: #000000
+  stroke: #000000;
 }
 
 .program__comment-group {
@@ -424,7 +423,7 @@
   margin-bottom: 38px;
   max-width: 141px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 87px;
     max-width: 262px;
   }
@@ -472,17 +471,18 @@
   &::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: $bg-basic-green;
-    background-image: -webkit-linear-gradient(45deg,
-        rgba(255, 255, 255, .2) 25%,
+    background-image:
+      linear-gradient(45deg,
+        rgba(255, 255, 255, 0.2) 25%,
         transparent 25%,
         transparent 50%,
-        rgba(255, 255, 255, .2) 50%,
-        rgba(255, 255, 255, .2) 75%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.2) 75%,
         transparent 75%,
         transparent);
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-left: 40px;
     margin-bottom: 70px;
     width: calc(100% - 40px);
@@ -496,7 +496,7 @@
 .program__additionally-legend {
   margin-bottom: 36px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 57px;
     max-width: 295px;
   }
@@ -508,13 +508,13 @@
   row-gap: 13px;
   margin: 0 15px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin: 0 50px;
     display: grid;
     grid-template-columns: 55% 45%;
   }
 
-  @media screen and (min-width:1440px) {
+  @media screen and (min-width: 1440px) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-right: 0;
@@ -557,7 +557,7 @@
 
 /* -- КЛИК НА CHECKBOX -- */
 
-.program__additionally-input:checked+.program-checkbox::after {
+.program__additionally-input:checked + .program-checkbox::after {
   position: absolute;
   top: 3px;
   left: -10px;
@@ -570,12 +570,12 @@
   height: 14px;
 }
 
-.program__additionally-input:focus+.program-checkbox::before {
+.program__additionally-input:focus + .program-checkbox::before {
   outline: 3px solid $bg-basic-green;
 }
 
 .program__button-wrapper {
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
     margin-top: 52px;
@@ -583,7 +583,7 @@
     column-gap: 60px;
   }
 
-  @media screen and (min-width:1440px) {
+  @media screen and (min-width: 1440px) {
     margin-top: 60px;
   }
 }
@@ -604,7 +604,7 @@
   background-color: $bg-basic-green;
   border: none;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin: 0;
     padding: 12px 65px;
     max-width: 284px;
@@ -612,7 +612,7 @@
     font-size: $fz-20;
   }
 
-  @media screen and (min-width:1440px) {
+  @media screen and (min-width: 1440px) {
     padding: 12px 208px;
     max-width: 570px;
   }
@@ -629,8 +629,7 @@
   font-weight: $fw-regular;
   line-height: $lh-16;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin: 0;
   }
 }
-

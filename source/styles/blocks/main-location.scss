@@ -5,15 +5,16 @@
 .main-location__wrapper {
   padding: 26px 20px;
   background-color: $bg-primary;
+
   &--bg {
     background-color: $bg-secondary-light;
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding: 60px 80px;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     position: absolute;
     top: 95px;
     left: 110px;
@@ -28,7 +29,6 @@
   display: flex;
   justify-content: space-between;
   column-gap: 5px;
-
 }
 
 .main-location__title {
@@ -41,7 +41,7 @@
   line-height: $lh-20;
   text-transform: uppercase;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     max-width: 163px;
     font-size: $fz-20;
     line-height: $lh-26;
@@ -51,7 +51,7 @@
 .main-location__wrapper-content {
   max-width: 165px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
@@ -66,8 +66,7 @@
   font-weight: $fw-regular;
   line-height: $lh-20;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     font-size: $fz-16;
   }
 }
-

@@ -1,6 +1,7 @@
 .additional-products {
   overflow-x: hidden;
-  @media screen and (min-width:1200px) {
+
+  @media screen and (min-width: 1200px) {
     padding-top: 38px;
     padding-bottom: 44px;
   }
@@ -24,7 +25,7 @@
     background-color: $bg-basic-green;
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     max-width: 410px;
     padding-left: 40px;
     margin-bottom: 80px;
@@ -48,13 +49,13 @@
 }
 
 .additional-products__wrapper {
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
     row-gap: 70px;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -63,7 +64,7 @@
 .additional-products__description-list {
   @include list-reset;
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     max-width: 895px;
     display: flex;
     flex-wrap: wrap;
@@ -80,13 +81,13 @@
     border-bottom: 1px solid #cdcdcd;
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding: 26px 38px 28px 38px;
     border-left: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     padding: 15px 0;
     min-width: 100%;
     display: flex;
@@ -98,12 +99,12 @@
 }
 
 .additional-products__description-inner {
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    min-height: 20px
+    min-height: 20px;
   }
 }
 
@@ -115,7 +116,7 @@
   line-height: $lh-16;
   text-transform: uppercase;
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     width: 161px;
     margin-bottom: 0;
     margin-right: auto;
@@ -126,13 +127,13 @@
   display: flex;
   align-items: center;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-top: 0;
     margin-bottom: 0;
     column-gap: 55px;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     min-width: 284px;
     column-gap: 0;
   }
@@ -172,7 +173,7 @@
   line-height: $lh-20;
   text-transform: uppercase;
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     max-width: 244px;
     margin: 0 0 0 40px;
     padding: 10px 91px;
@@ -183,7 +184,7 @@
   min-height: 290px;
   height: auto;
 
-  @media(min-resolution: 1dppx) {
+  @media (min-resolution: 1dppx) {
     background-image: linear-gradient($bg-opacity-green, $bg-opacity-green), url("../../images/bg-additional-products-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -192,24 +193,23 @@
     min-height: 290px;
   }
 
-  @media (min-resolution: 2dppx)  {
+  @media (min-resolution: 2dppx) {
     background-image: linear-gradient($bg-opacity-green, $bg-opacity-green), url("../../images/bg-additional-products-mobile@2x.jpg");
   }
 
-  @media screen and (min-width:768px) and (min-resolution: 1dppx) {
+  @media screen and (min-width: 768px) and (min-resolution: 1dppx) {
     background-size: cover;
     background-image: linear-gradient($bg-opacity-green, $bg-opacity-green), url("../../images/bg-additional-products-tablet@1x.png");
     min-height: 200px;
-
   }
 
-  @media screen and (min-width:768px) and (min-resolution: 2dppx) {
+  @media screen and (min-width: 768px) and (min-resolution: 2dppx) {
     background-size: cover;
     background-image: linear-gradient($bg-opacity-green, $bg-opacity-green), url("../../images/bg-additional-products-tablet@2x.png");
     min-height: 200px;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     max-width: 245px;
     min-height: 288px;
     background-image: linear-gradient($bg-opacity-green, $bg-opacity-green), url("../../images/bg-additional-products-mobile@1x.jpg");
@@ -222,14 +222,14 @@
   justify-content: center;
   min-height: 290px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     min-width: 100%;
     min-height: 200px;
     justify-content: space-between;
     padding: 60px 125px 60px 77px;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     flex-direction: column;
     row-gap: 46px;
     padding: 59px 42px 43px 42px;
@@ -250,7 +250,7 @@
   font-weight: $fw-regular;
   line-height: $lh-20;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     max-width: 161px;
     padding-top: 0;
     padding-bottom: 0;
@@ -258,13 +258,14 @@
     text-align: left;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     text-align: center;
   }
 }
 
 .additional-products__present-wrapper--gift {
   position: relative;
+
   &::before {
     position: absolute;
     content: "";
@@ -280,7 +281,7 @@
     height: 80px;
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     &::before {
       position: static;
       display: block;
@@ -288,4 +289,3 @@
     }
   }
 }
-

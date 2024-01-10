@@ -9,7 +9,7 @@
   justify-content: space-between;
   flex-direction: column;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     flex-direction: row;
   }
 }
@@ -27,10 +27,9 @@
     opacity: 0.3;
   }
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     margin-bottom: 0;
   }
-
 }
 
 .main-footer__social {
@@ -44,7 +43,7 @@
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     border: none;
   }
 }
@@ -120,7 +119,7 @@
     opacity: 0.3;
   }
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     display: flex;
     align-items: center;
     width: 220px;

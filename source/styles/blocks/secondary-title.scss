@@ -20,14 +20,14 @@
     z-index: -1;
   }
 
-   @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding-left: 40px;
     padding-right: 40px;
     font-size: $fz-36;
     line-height: $lh-36;
+
     &::before {
       left: -2000px;
     }
   }
 }
-

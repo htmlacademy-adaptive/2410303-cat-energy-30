@@ -7,7 +7,7 @@
   row-gap: 20px;
   column-gap: 80px;
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     flex-direction: row;
     justify-content: flex-start;
   }
@@ -21,11 +21,11 @@
   height: auto;
   background: $bg-secondary-light;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding: 77px 53px 57px 63px;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     min-width: 570px;
     max-width: 570px;
   }
@@ -34,67 +34,67 @@
 .main-services__inner {
   position: relative;
 
-  &--icon-weight {
-    &::before {
-      position: absolute;
-      content: "";
-      left: 0;
-      top: -10px;
-      display: block;
-      background-image: url("../../images/icons/stack.svg#services-1");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 50px 53px;
-      width: 50px;
-      height: 53px;
+  &--icon-weight::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: -10px;
+    display: block;
+    background-image: url("../../images/icons/stack.svg#services-1");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px 53px;
+    width: 50px;
+    height: 53px;
+  }
 
-      @media screen and (min-width:768px) {
-        top: 4px;
-        left: 395px;
-        background-size: 200px 211px;
-        width: 200px;
-        height: 211px;
-      }
+  &--icon-gain::before {
+    display: block;
+    position: absolute;
+    content: "";
+    left: -10px;
+    top: -5px;
+    background-image: url("../../images/icons/stack.svg#services-2");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 67px 50px;
+    width: 67px;
+    height: 50px;
+  }
 
-      @media screen and (min-width:1200px) {
-        top: -40px;
-        left: 5px;
-        background-size: 100px 106px;
-        width: 100px;
-        height: 106px;
-      }
+  @media screen and (min-width: 768px) {
+    &--icon-weight::before {
+      top: 4px;
+      left: 395px;
+      background-size: 200px 211px;
+      width: 200px;
+      height: 211px;
+    }
+
+    &--icon-gain::before {
+      left: 350px;
+      top: 0;
+      background-size: 268px 200px;
+      width: 268px;
+      height: 200px;
     }
   }
 
-  &--icon-gain {
-    &::before {
-      display: block;
-      position: absolute;
-      content: "";
-      left: -10px;
-      top: -5px;
-      background-image: url("../../images/icons/stack.svg#services-2");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 67px 50px;
-      width: 67px;
-      height: 50px;
+  @media screen and (min-width: 1200px) {
+    &--icon-weight::before {
+      top: -40px;
+      left: 5px;
+      background-size: 100px 106px;
+      width: 100px;
+      height: 106px;
+    }
 
-      @media screen and (min-width:768px) {
-        left: 350px;
-        top: 0;
-        background-size: 268px 200px;
-        width: 268px;
-        height: 200px;
-      }
-
-      @media screen and (min-width:1200px) {
-        left: 5px;
-        top: -40px;
-        background-size: 134px 100px;
-        width: 134px;
-        height: 100px;
-      }
+    &--icon-gain::before {
+      left: 5px;
+      top: -40px;
+      background-size: 134px 100px;
+      width: 134px;
+      height: 100px;
     }
   }
 }
@@ -109,13 +109,13 @@
   line-height: $lh-37;
   text-transform: uppercase;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding-left: 0;
     font-size: $fz-36;
     line-height: $lh-36;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     padding-left: 162px;
     margin-bottom: 73px;
   }
@@ -131,7 +131,7 @@
   font-weight: $fw-regular;
   line-height: $lh-18;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 52px;
     min-width: 227px;
     max-width: 335px;
@@ -140,7 +140,7 @@
     line-height: $lh-24;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     min-width: 100%;
   }
 }
@@ -150,7 +150,7 @@
   min-height: 50px;
   border-top: 1px solid #d9d9d9;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     border: none;
   }
 }
@@ -178,7 +178,7 @@
     right: 0;
     top: 0;
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
       display: none;
     }
   }
@@ -196,8 +196,7 @@
     height: 10px;
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     font-size: $fz-20;
   }
 }
-

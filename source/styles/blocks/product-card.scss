@@ -1,14 +1,14 @@
 .product-card {
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 46px;
     padding-bottom: 38px;
   }
 }
 
-.product-card>.main-container {
+.product-card > .main-container {
   padding: 0;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding: 0 20px;
   }
 }
@@ -20,7 +20,7 @@
   font-weight: $fw-regular;
   line-height: $lh-36;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin: 48px 0 74px;
     font-size: $fz-60;
     line-height: $lh-60;
@@ -31,14 +31,14 @@
   @include list-reset;
   width: 100%;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 60px;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     column-gap: 80px;
   }
 }
@@ -48,7 +48,7 @@
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     min-width: 324px;
     min-height: 511px;
     padding: 0 27px 48px 46px;
@@ -56,11 +56,11 @@
     border-bottom: none;
 
     &:not(:last-child) {
-      background-image: linear-gradient(to bottom, #fff 70px, #f2f2f2 70px, #f2f2f2);
+      background-image: linear-gradient(to bottom, #ffffff 70px, #f2f2f2 70px, #f2f2f2);
     }
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     min-width: 245px;
   }
 }
@@ -69,7 +69,7 @@
   display: flex;
   align-items: center;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     flex-direction: column;
   }
 }
@@ -81,7 +81,7 @@
   width: 50%;
   min-height: 107px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     width: 100%;
     min-height: 208px;
   }
@@ -102,7 +102,7 @@
   width: 50%;
   flex-grow: 1;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     width: 100%;
   }
 }
@@ -113,7 +113,7 @@
   max-width: 76px;
   height: auto;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin: 0 auto;
     max-width: 135px;
   }
@@ -127,7 +127,7 @@
   line-height: $lh-20;
   text-transform: uppercase;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin: 22px 0 20px;
     font-size: $fz-20;
     line-height: $lh-24;
@@ -138,13 +138,13 @@
 .product-card__table {
   width: 100%;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     border-collapse: collapse;
     max-width: 250px;
     min-height: 93px;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     max-width: 170px;
   }
 }
@@ -158,7 +158,7 @@
   font-weight: $fw-regular;
   line-height: $lh-16;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     font-size: $fz-16;
     line-height: $lh-20;
     border-bottom: 1px solid #cdcdcd;
@@ -169,7 +169,7 @@
   margin-right: auto;
   text-align: left;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding: 0 10px 0 0;
   }
 }
@@ -177,7 +177,7 @@
 .product-card__table-value {
   text-align: right;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding: 0 0 4px 10px;
   }
 }
@@ -190,7 +190,7 @@
   font-weight: $fw-regular;
   line-height: $lh-16;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding-top: 2px;
     padding-bottom: 5px;
     font-size: $fz-16;
@@ -213,12 +213,12 @@
   line-height: $lh-20;
   text-transform: uppercase;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     max-width: 250px;
     margin-top: 32px;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     max-width: 170px;
   }
 }
@@ -244,7 +244,7 @@
     mask-size: 30px 30px;
     background-color: #d3d3d3;
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
       top: 153px;
       left: 53%;
       width: 60px;
@@ -261,13 +261,13 @@
   align-items: center;
   width: 100%;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     max-width: 170px;
     margin: 0 auto;
   }
 }
 
-.product-card__info--plus>.product-card__title-link {
+.product-card__info--plus > .product-card__title-link {
   padding-top: 192px;
   min-width: 100%;
   max-width: 100%;
@@ -289,4 +289,3 @@
     background-color: #ebebeb;
   }
 }
-
