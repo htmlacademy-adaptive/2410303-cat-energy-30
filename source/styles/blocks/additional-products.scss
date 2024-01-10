@@ -1,7 +1,9 @@
 .additional-products {
+  padding-top: 36;
+  padding-bottom: 36px;
   overflow-x: hidden;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     padding-top: 38px;
     padding-bottom: 44px;
   }
@@ -55,7 +57,7 @@
     row-gap: 70px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -64,7 +66,7 @@
 .additional-products__description-list {
   @include list-reset;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     max-width: 895px;
     display: flex;
     flex-wrap: wrap;
@@ -87,7 +89,7 @@
     border-right: 1px solid #cdcdcd;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     padding: 15px 0;
     min-width: 100%;
     display: flex;
@@ -116,7 +118,7 @@
   line-height: $lh-16;
   text-transform: uppercase;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     width: 161px;
     margin-bottom: 0;
     margin-right: auto;
@@ -133,7 +135,7 @@
     column-gap: 55px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     min-width: 284px;
     column-gap: 0;
   }
@@ -173,7 +175,7 @@
   line-height: $lh-20;
   text-transform: uppercase;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     max-width: 244px;
     margin: 0 0 0 40px;
     padding: 10px 91px;
@@ -209,7 +211,7 @@
     min-height: 200px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     max-width: 245px;
     min-height: 288px;
     background-image: linear-gradient($bg-opacity-green, $bg-opacity-green), url("../../images/bg-additional-products-mobile@1x.jpg");
@@ -229,7 +231,7 @@
     padding: 60px 125px 60px 77px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     flex-direction: column;
     row-gap: 46px;
     padding: 59px 42px 43px 42px;
@@ -258,7 +260,7 @@
     text-align: left;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     text-align: center;
   }
 }

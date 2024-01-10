@@ -26,7 +26,7 @@
     counter-reset: advantages 0;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     grid-template-columns: repeat(4, 1fr);
     row-gap: 40px;
     column-gap: 0;

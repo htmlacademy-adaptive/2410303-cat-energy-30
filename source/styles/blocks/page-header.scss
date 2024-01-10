@@ -10,14 +10,14 @@
     border-bottom: none;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     padding: 55px 0 0 0;
     background-color: transparent;
   }
 }
 
 .page-header--absolute {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     position: absolute;
     left: 0;
     right: 0;
@@ -67,7 +67,7 @@
     opacity: 0.3;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     font-size: $fz-18;
   }
 }
@@ -88,7 +88,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     &::before {
       background-color: $bg-secondary-light;
     }

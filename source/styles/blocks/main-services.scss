@@ -7,7 +7,7 @@
   row-gap: 20px;
   column-gap: 80px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     flex-direction: row;
     justify-content: flex-start;
   }
@@ -25,7 +25,7 @@
     padding: 77px 53px 57px 63px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     min-width: 570px;
     max-width: 570px;
   }
@@ -80,7 +80,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     &--icon-weight::before {
       top: -40px;
       left: 5px;
@@ -115,7 +115,7 @@
     line-height: $lh-36;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     padding-left: 162px;
     margin-bottom: 73px;
   }
@@ -140,7 +140,7 @@
     line-height: $lh-24;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     min-width: 100%;
   }
 }

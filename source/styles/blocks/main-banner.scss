@@ -20,7 +20,7 @@
       background-image: none;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1440px) {
       background-image:
         linear-gradient($bg-opacity-green, $bg-opacity-green),
         url("../../images/main-banner-bg-desktop@1x.png");
@@ -49,7 +49,7 @@
     padding-top: 65px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     padding-left: 55px;
     padding-top: 224px;
     min-height: 800px;
