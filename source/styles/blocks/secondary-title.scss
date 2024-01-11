@@ -1,33 +1,37 @@
 .secondary-title {
   position: relative;
-  padding-right: 20px;
+  display: flex;
+  gap: 30px;
   color: $secondary-dark-text;
   font-family: $font-oswald;
   font-size: $fz-24;
   font-weight: $fw-regular;
   line-height: $lh-26;
+  width: fit-content;
   background-color: $secondary-text;
 
   &::before {
-    margin-top: calc(20px / 2 + 5px);
+    right: calc(100% + 30px);
+  }
+
+  &::after {
+    left: calc(100% + 30px);
+  }
+
+  &::before,
+  &::after {
+    display: block;
     position: absolute;
     content: "";
-    width: 1000vw;
+    width: 100vw;
     height: 2px;
-    top: 0;
-    left: 0;
+    top: 20px;
     background-color: #68b738;
     z-index: -1;
   }
 
   @media screen and (min-width: 768px) {
-    padding-left: 40px;
-    padding-right: 40px;
     font-size: $fz-36;
     line-height: $lh-36;
-
-    &::before {
-      left: -2000px;
-    }
   }
 }

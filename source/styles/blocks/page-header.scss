@@ -9,19 +9,42 @@
     background-color: transparent;
     border-bottom: none;
   }
-
-  @media screen and (min-width: 1440px) {
-    padding: 55px 0 0 0;
-    background-color: transparent;
-  }
 }
 
-.page-header--absolute {
+.page-header--main {
   @media screen and (min-width: 1440px) {
+    top: 0;
     position: absolute;
     left: 0;
     right: 0;
-    top: 0;
+    max-width: 100%;
+    min-height: 694px;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: calc(100% / 2 - 50px);
+      background-color: $bg-opacity-green;
+      background-image:
+        linear-gradient($bg-opacity-green, $bg-opacity-green),
+        url("../../images/main-banner-bg-desktop@1x.png");
+      background-size: 720px auto;
+      background-repeat: no-repeat;
+      background-position: right bottom;
+    }
+  }
+
+  @media screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+    &::before {
+      background-image:
+        linear-gradient($bg-opacity-green, $bg-opacity-green),
+        url("../../images/main-banner-bg-desktop@2x.png");
+    }
   }
 }
 

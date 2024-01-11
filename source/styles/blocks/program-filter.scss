@@ -303,13 +303,10 @@
 }
 
 .program__owner-legend {
-  position: relative;
   margin-bottom: 35px;
-  max-width: 207px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 76px;
-    max-width: 600px;
   }
 }
 
@@ -421,11 +418,9 @@
 
 .program__comment-legend {
   margin-bottom: 38px;
-  max-width: 141px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 87px;
-    max-width: 262px;
   }
 }
 

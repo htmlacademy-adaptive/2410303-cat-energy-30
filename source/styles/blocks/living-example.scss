@@ -1,36 +1,26 @@
 .living-example {
   padding-top: 25px;
   padding-bottom: 40px;
+  background-image: linear-gradient(to bottom, $bg-secondary-dark 70px, $bg-secondary-dark 70px, $bg-secondary-dark);
   background-color: $bg-secondary-dark;
   overflow: hidden;
   border-top: 1px solid #e6e6e6;
 
   @media screen and (min-width: 768px) {
     padding-top: 45px;
-    background-color: #ffffff;
+    background-image: linear-gradient(to bottom, #ffffff 623px, #f2f2f2 70px, #f2f2f2);
   }
 
   @media screen and (min-width: 1440px) {
-    border-top: none;
+    border: none;
+    background-image: linear-gradient(to bottom, #ffffff 150px, #f2f2f2 70px, #f2f2f2);
   }
 }
 
 .living-example__wrapper {
   @media screen and (min-width: 1440px) {
-    position: relative;
     display: flex;
     column-gap: 224px;
-
-    &::after {
-      width: 1000%;
-      height: 500px;
-      position: absolute;
-      content: "";
-      left: -10000px;
-      right: 0;
-      background-color: #eaeaea;
-      z-index: 1;
-    }
   }
 }
 
@@ -45,7 +35,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 270px;
   }
 
   @media screen and (min-width: 1440px) {
@@ -182,82 +171,69 @@
 
 .living-example-slider {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
   width: 280px;
-  height: 320px;
+  height: 256px;
 
   &::before {
     position: absolute;
     content: "";
-    left: 145px;
-    top: 20px;
-    bottom: 0;
+    left: 138px;
+    top: 0;
     width: 3px;
-    height: 90%;
+    height: 100%;
     background-color: #666666;
-    z-index: 7;
+    border-radius: 2px;
+    z-index: 1;
   }
 
   @media screen and (min-width: 768px) {
-    min-width: 560px;
-    min-height: 512px;
-  }
-
-  @media screen and (min-width: 768px) {
-    min-height: 345px;
-
-    &::after {
-      position: absolute;
-      content: "";
-      left: -100px;
-      right: 0;
-      width: 1000%;
-      height: 485px;
-      background-color: #eaeaea;
-      z-index: 1;
-    }
+    width: 560px;
+    height: 512px;
+    margin: 100px auto 0 auto;
 
     &::before {
-      top: -163px;
-      left: 415px;
-      height: 485px;
-    }
-  }
-
-  @media screen and (min-width: 1440px) {
-    background-color: transparent;
-
-    &::after {
-      background-color: transparent;
+      left: 278px;
     }
   }
 }
 
-.living-example-slider__image-before {
-  position: absolute;
-  left: -45px;
-  z-index: 5;
+.living-example-slider__before {
+  display: flex;
+  justify-content: flex-start;
+  width: 140px;
+  overflow: hidden;
 
   @media screen and (min-width: 768px) {
-    top: -185px;
-    left: -5px;
+    width: 280px;
   }
 }
 
+.living-example-slider__after {
+  display: flex;
+  justify-content: flex-end;
+  width: 140px;
+  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    width: 280px;
+  }
+}
+
+.living-example-slider__image-before,
 .living-example-slider__image-after {
-  position: absolute;
-  right: -64px;
-  z-index: 6;
-
-  @media screen and (min-width: 768px) {
-    top: -160px;
-    left: 290px;
-  }
+  max-width: none;
+  object-fit: none;
+  height: 100%;
 }
+
 
 .living-example-slider__control {
   position: absolute;
-  left: 127px;
+  left: 120px;
   top: 110px;
   border: none;
   background-image: url("../../images/icons/stack.svg#arrows");
@@ -266,9 +242,10 @@
   width: 40px;
   height: 40px;
   transition: all 0.3s ease-in-out;
-  z-index: 7;
+  z-index: 1;
 
   @media screen and (min-width: 768px) {
-    left: 395px;
+    top: 240px;
+    left: 260px;
   }
 }

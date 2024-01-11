@@ -19,14 +19,6 @@
     @media (min-width: 768px) {
       background-image: none;
     }
-
-    @media screen and (min-width: 1440px) {
-      background-image:
-        linear-gradient($bg-opacity-green, $bg-opacity-green),
-        url("../../images/main-banner-bg-desktop@1x.png");
-      background-size: 720px 694px;
-      background-position: top right;
-    }
   }
 
   @media screen and (min-width: 768px) {
@@ -52,7 +44,9 @@
   @media screen and (min-width: 1440px) {
     padding-left: 55px;
     padding-top: 224px;
+    max-width: 475px;
     min-height: 800px;
+    z-index: 10;
   }
 }
 
@@ -111,10 +105,10 @@
   }
 
   @media (min-width: 1200px) {
-    top: 63px;
-    left: 251px;
-    width: 609px;
-    height: 709px;
+    top: 110px;
+    left: 560px;
+    width: 552px;
+    height: 499px;
   }
 }
 
