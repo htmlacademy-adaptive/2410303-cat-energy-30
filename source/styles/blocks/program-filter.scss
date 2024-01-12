@@ -4,12 +4,6 @@
   }
 }
 
-.program-filter__header {
-  @media screen and (min-width: 768px) {
-    margin-left: 40px;
-  }
-}
-
 .program-filter__title {
   color: $secondary-dark-text;
   font-size: $fz-36;
@@ -60,13 +54,13 @@
 }
 
 .program__list-characteristics {
+  margin-top: 1px;
   margin-bottom: 24px;
   display: flex;
   flex-direction: column;
   row-gap: 14px;
 
   @media screen and (min-width: 768px) {
-    margin-left: 40px;
     margin-bottom: 72px;
   }
 
@@ -130,6 +124,7 @@
   font-size: $fz-16;
   font-weight: $fw-regular;
   border: 1px solid #e7e7e7;
+  outline: 1px solid transparent;
 
   &::placeholder {
     color: $primary-color-text;
@@ -145,13 +140,13 @@
   }
 
   &:focus-visible {
-    outline: none;
-    border: 2px solid $primary-color-text;
+    outline: 1px solid $primary-color-text;
+    border: 1px solid $primary-color-text;
   }
 
   &:invalid {
-    outline: none;
-    border: 2px solid #ff8282;
+    outline: 1px solid #ff8282;
+    border: 1px solid #ff8282;
   }
 
   @media screen and (min-width: 768px) {
@@ -195,7 +190,6 @@
 
   @media screen and (min-width: 768px) {
     padding: 23px 27px 27px 27px;
-    margin-left: 40px;
     border: 1px solid rgba(217, 217, 217, 0.85);
 
     &::before,
@@ -210,16 +204,16 @@
   }
 }
 
-.program__input-radio:checked + .program-radio::after {
+.program__input-radio:checked+.program-radio::after {
   opacity: 1;
 }
 
-.program__input-radio:focus + .program-radio::before {
+.program__input-radio:focus+.program-radio::before {
   outline: 3px solid $bg-basic-green;
 }
 
-.program__input-radio:disabled + .program-radio,
-.program__additionally-input:disabled + .program-checkbox {
+.program__input-radio:disabled+.program-radio,
+.program__additionally-input:disabled+.program-checkbox {
   cursor: no-drop;
   opacity: 0.3;
 }
@@ -289,7 +283,7 @@
   }
 }
 
-.catalog__filter-input:checked + .catalog__filter-radio::after {
+.catalog__filter-input:checked+.catalog__filter-radio::after {
   opacity: 1;
 }
 
@@ -315,10 +309,6 @@
   display: flex;
   flex-direction: column;
   row-gap: 14px;
-
-  @media screen and (min-width: 768px) {
-    margin-left: 40px;
-  }
 
   @media screen and (min-width: 1440px) {
     flex-direction: row;
@@ -370,12 +360,12 @@
   }
 
   &:focus-visible {
-    outline: none;
-    border: 2px solid $primary-color-text;
+    outline: 1px solid $primary-color-text;
+    border: 1px solid $primary-color-text;
   }
 
-  &:focus-visible + svg {
-    stroke: #68b738;
+  &:focus-visible+.program__owner-icon {
+    background-color: #68b738;
   }
 
   &:invalid {
@@ -383,14 +373,15 @@
     border: 2px solid #ff8282;
   }
 
-  &:invalid + svg {
-    stroke: #ff8282;
+  &:invalid+.program__owner-icon {
+    background-color: #ff8282;
   }
 
   @media screen and (min-width: 768px) {
     padding-top: 11px;
     font-size: $fz-20;
     line-height: normal;
+    height: 52px;
 
     &::placeholder {
       font-size: $fz-20;
@@ -404,11 +395,38 @@
 }
 
 .program__owner-icon {
-  position: absolute;
-  top: 50%;
-  right: 12px;
-  transform: translate(-50%, -50%);
-  stroke: #000000;
+  &--phone {
+    position: absolute;
+    content: "";
+    right: 13px;
+    top: 13px;
+    mask-image: url("../../images/icons/stack.svg#form-phone");
+    background-color: #000000;
+    transition: all 0.3s ease-in-out;
+    width: 20px;
+    height: 20px;
+  }
+
+  &--email {
+    position: absolute;
+    content: "";
+    right: 13px;
+    top: 13px;
+    mask-image: url("../../images/icons/stack.svg#email");
+    background-color: #000000;
+    transition: all 0.3s ease-in-out;
+    width: 20px;
+    height: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+
+    &--email,
+    &--phone {
+      right: 16px;
+      top: 16px;
+    }
+  }
 }
 
 .program__comment-group {
@@ -478,9 +496,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    margin-left: 40px;
     margin-bottom: 70px;
-    width: calc(100% - 40px);
   }
 }
 
@@ -504,7 +520,6 @@
   margin: 0 15px;
 
   @media screen and (min-width: 768px) {
-    margin: 0 50px;
     display: grid;
     grid-template-columns: 55% 45%;
   }
@@ -552,7 +567,7 @@
 
 /* -- КЛИК НА CHECKBOX -- */
 
-.program__additionally-input:checked + .program-checkbox::after {
+.program__additionally-input:checked+.program-checkbox::after {
   position: absolute;
   top: 3px;
   left: -10px;
@@ -565,7 +580,7 @@
   height: 14px;
 }
 
-.program__additionally-input:focus + .program-checkbox::before {
+.program__additionally-input:focus+.program-checkbox::before {
   outline: 3px solid $bg-basic-green;
 }
 
