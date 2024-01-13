@@ -1,19 +1,19 @@
 .living-example {
   padding-top: 25px;
   padding-bottom: 40px;
-  background-image: linear-gradient(to bottom, $bg-secondary-dark 70px, $bg-secondary-dark 70px, $bg-secondary-dark);
+  background-image: linear-gradient(to bottom, $bg-secondary-light 70px, $bg-secondary-light 70px, $bg-secondary-light);
   background-color: $bg-secondary-dark;
   overflow: hidden;
   border-top: 1px solid #e6e6e6;
 
   @media screen and (min-width: 768px) {
     padding-top: 45px;
-    background-image: linear-gradient(to bottom, #ffffff 623px, #f2f2f2 70px, #f2f2f2);
+    background-image: linear-gradient(to bottom, #ffffff 623px, $bg-secondary-light 70px, $bg-secondary-light);
   }
 
   @media screen and (min-width: 1440px) {
     border: none;
-    background-image: linear-gradient(to bottom, #ffffff 150px, #f2f2f2 70px, #f2f2f2);
+    background-image: linear-gradient(to bottom, #ffffff 150px, $bg-secondary-light 70px, $bg-secondary-light);
   }
 }
 
@@ -124,7 +124,7 @@
   bottom: -15px;
   left: 20px;
   right: 0;
-  background-color: #eaeaea;
+  background-color: $bg-secondary-light;
   color: $primary-color-text;
   text-align: center;
   font-family: $font-lato;
@@ -135,13 +135,12 @@
   height: auto;
 
   @media screen and (min-width: 768px) {
+    background-color: $bg-primary;
     bottom: -6px;
-    background-color: #ffffff;
     width: 125px;
   }
-
   @media screen and (min-width: 1440px) {
-    background-color: #eaeaea;
+    background-color: $bg-secondary-light;
   }
 }
 
