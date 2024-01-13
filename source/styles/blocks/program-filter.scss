@@ -209,7 +209,7 @@
 }
 
 .program__input-radio:focus+.program-radio::before {
-  outline: 3px solid $bg-basic-green;
+  outline: 1px solid #bababa;
 }
 
 .program__input-radio:disabled+.program-radio,
@@ -246,7 +246,6 @@
     border: 1px solid #cdcdcd;
     border-radius: 50%;
     background-color: transparent;
-    transition: all 0.3s ease-in-out;
     top: -5px;
     left: 0;
   }
@@ -394,8 +393,14 @@
   }
 }
 
-.program__owner-icon {
-  &--phone {
+.program__owner-item {
+  position: relative;
+
+  &:focus-within::before {
+    background-color: #68b738;
+  }
+
+  &--phone::before {
     position: absolute;
     content: "";
     right: 13px;
@@ -407,7 +412,7 @@
     height: 20px;
   }
 
-  &--email {
+  &--email::before {
     position: absolute;
     content: "";
     right: 13px;
@@ -581,7 +586,7 @@
 }
 
 .program__additionally-input:focus+.program-checkbox::before {
-  outline: 3px solid $bg-basic-green;
+  outline: 1px solid #bababa;
 }
 
 .program__button-wrapper {

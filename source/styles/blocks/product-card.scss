@@ -5,14 +5,6 @@
   }
 }
 
-.product-card > .main-container {
-  padding: 0;
-
-  @media screen and (min-width: 768px) {
-    padding: 0 20px;
-  }
-}
-
 .product-card__section-title {
   margin: 27px 0 41px;
   color: $secondary-dark-text;
@@ -57,6 +49,12 @@
 
     &:not(:last-child) {
       background-image: linear-gradient(to bottom, #ffffff 70px, #f2f2f2 70px, #f2f2f2);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &:last-child {
+      border: 2px solid $bg-secondary-light;
     }
   }
 

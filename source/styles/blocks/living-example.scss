@@ -235,17 +235,21 @@
   position: absolute;
   left: 120px;
   top: 110px;
-  border: none;
+  border: transparent;
   background-image: url("../../images/icons/stack.svg#arrows");
   background-color: transparent;
-  background-size: 40px 40px;
   width: 40px;
   height: 40px;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
   z-index: 1;
 
   @media screen and (min-width: 768px) {
-    top: 240px;
+    top: 230px;
     left: 260px;
   }
+}
+
+.living-example-slider__control:hover  {
+  background-color: $bg-basic-green;
 }
