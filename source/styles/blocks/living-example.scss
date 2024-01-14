@@ -139,6 +139,7 @@
     bottom: -6px;
     width: 125px;
   }
+
   @media screen and (min-width: 1440px) {
     background-color: $bg-secondary-light;
   }
@@ -176,18 +177,6 @@
   margin-top: 20px;
   width: 280px;
   height: 256px;
-
-  &::before {
-    position: absolute;
-    content: "";
-    left: 138px;
-    top: 0;
-    width: 3px;
-    height: 100%;
-    background-color: #666666;
-    border-radius: 2px;
-    z-index: 1;
-  }
 
   @media screen and (min-width: 768px) {
     width: 560px;
@@ -232,23 +221,58 @@
 
 .living-example-slider__control {
   position: absolute;
+  top: 105px;
   left: 120px;
-  top: 110px;
-  border: transparent;
-  background-image: url("../../images/icons/stack.svg#arrows");
+  border: none;
   background-color: transparent;
   width: 40px;
   height: 40px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
   z-index: 1;
 
-  @media screen and (min-width: 768px) {
-    top: 230px;
-    left: 260px;
+  &::before {
+    position: absolute;
+    content: "";
+    left: 20px;
+    top: -107px;
+    width: 3px;
+    height: 256px;
+    background-color: #666666;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
   }
-}
 
-.living-example-slider__control:hover  {
-  background-color: $bg-basic-green;
+  &:hover .living-example-slider__path {
+    fill: $bg-basic-green;
+  }
+
+  &:hover .living-example-slider__rect {
+    stroke: $bg-basic-green;
+  }
+
+  &:hover::before {
+    background-color: $bg-basic-green;
+  }
+
+  &:active .living-example-slider__path,
+  .living-example-slider__rect,
+  &:active::before {
+    opacity: 0.6;
+  }
+
+  &:hover::before {
+    background-color: $bg-basic-green;
+  }
+
+  @media screen and (min-width: 768px) {
+    top: 225px;
+    left: 259px;
+
+    &::before {
+      top: -227px;
+      height: 512px;
+    }
+  }
 }

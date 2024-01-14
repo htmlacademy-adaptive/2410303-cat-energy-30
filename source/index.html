@@ -13,6 +13,7 @@
   <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU" defer></script>
   <script src="scripts/index.js" defer></script>
 </head>
+`
 
 <body>
   <header class="page-header page-header--main">
@@ -127,55 +128,62 @@
     </section>
     <section class="living-example">
       <div class="main-container">
-      <h2 class="living-example__title">Живой пример</h2>
-      <div class="living-example__wrapper">
-        <div class="living-example__inner">
-          <p class="living-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой
-            обычный корм на Cat Energy Slim. Отличный результат
-            без изнуряющих тренировок! При этом он не менял своих
-            привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="living-example__content">
-            <ul class="living-example__list">
-              <li class="living-example__item">
-                <span class="living-example__paste-text">5 КГ</span>
-                <span class="living-example__decline-text">снижение веса</span>
-              </li>
-              <li class="living-example__item">
-                <span class="living-example__paste-text">60 дней</span>
-                <span class="living-example__decline-text">затрачено времени</span>
-              </li>
-            </ul>
-            <div class="living-example__expenses-inner">
-              <span class="living-example__expenses-text">Затраты на питание:</span>
-              <span class="living-example__expenses-sum">15 000 РУБ.</span>
+        <h2 class="living-example__title">Живой пример</h2>
+        <div class="living-example__wrapper">
+          <div class="living-example__inner">
+            <p class="living-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой
+              обычный корм на Cat Energy Slim. Отличный результат
+              без изнуряющих тренировок! При этом он не менял своих
+              привычек и по-прежнему спит по 16 часов в день.</p>
+            <div class="living-example__content">
+              <ul class="living-example__list">
+                <li class="living-example__item">
+                  <span class="living-example__paste-text">5 КГ</span>
+                  <span class="living-example__decline-text">снижение веса</span>
+                </li>
+                <li class="living-example__item">
+                  <span class="living-example__paste-text">60 дней</span>
+                  <span class="living-example__decline-text">затрачено времени</span>
+                </li>
+              </ul>
+              <div class="living-example__expenses-inner">
+                <span class="living-example__expenses-text">Затраты на питание:</span>
+                <span class="living-example__expenses-sum">15 000 РУБ.</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="living-example-slider">
-          <div class="living-example-slider__before">
-            <picture>
-              <source media="(min-width:768px)"
-                srcset="images/living-example-cat-before-desktop@1x.png 1x, images/living-example-cat-before-desktop@2x.png 2x"
-                width="560" height="512" type="image/png">
-              <img class="living-example-slider__image-before" src="images/living-example-cat-before-mobile@1x.png"
-                srcset="images/living-example-cat-before-mobile@2x.png 2x" width="280" height="256" alt="Пример котов">
-            </picture>
+          <div class="living-example-slider">
+            <div class="living-example-slider__before">
+              <picture>
+                <source media="(min-width:768px)"
+                  srcset="images/living-example-cat-before-desktop@1x.png 1x, images/living-example-cat-before-desktop@2x.png 2x"
+                  width="560" height="512" type="image/png">
+                <img class="living-example-slider__image-before" src="images/living-example-cat-before-mobile@1x.png"
+                  srcset="images/living-example-cat-before-mobile@2x.png 2x" width="280" height="256"
+                  alt="Пример котов">
+              </picture>
+            </div>
+            <div class="living-example-slider__after">
+              <picture>
+                <source media="(min-width:768px)"
+                  srcset="images/living-example-cat-after-desktop@1x.png 1x, images/living-example-cat-after-desktop@2x.png 2x"
+                  width="560" height="512" type="image/png">
+                <img class="living-example-slider__image-after" src="images/living-example-cat-after-mobile@1x.png"
+                  srcset="images/living-example-cat-after-mobile@2x.png 2x" width="280" height="256" alt="Пример котов">
+              </picture>
+            </div>
+            <span class="visually-hidden">Изменяет ползунок слайдера (кот до и после)</span>
+            <button class="living-example-slider__control" type="button">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="38" height="38" rx="19" fill="#fff" />
+                <rect class="living-example-slider__rect" x="1" y="1" width="38" height="38" rx="19" stroke-width="2"
+                  stroke="#666" />
+                <path class="living-example-slider__path" d="m16 11-8 9 8 9v-18Zm16 9-8-9v18l8-9Z" fill="#666" />
+              </svg>
+            </button>
           </div>
-          <div class="living-example-slider__after">
-            <picture>
-              <source media="(min-width:768px)"
-                srcset="images/living-example-cat-after-desktop@1x.png 1x, images/living-example-cat-after-desktop@2x.png 2x"
-                width="560" height="512" type="image/png">
-              <img class="living-example-slider__image-after" src="images/living-example-cat-after-mobile@1x.png"
-                srcset="images/living-example-cat-after-mobile@2x.png 2x" width="280" height="256" alt="Пример котов">
-            </picture>
-          </div>
-          <button class="living-example-slider__control" type="button"><span class="visually-hidden">Изменяет
-              ползунок
-              слайдера (кот до и после)</span></button>
         </div>
       </div>
-    </div>
     </section>
     <section class="main-location">
       <div class="main-location__wrapper">
@@ -189,8 +197,8 @@
             <p class="main-location__text">Санкт-Петербург</p>
           </div>
         </div>
-    </div>
-    <div class="map" id="map" style="width: 100%; height: 354px"></div>
+      </div>
+      <div class="map" id="map" style="width: 100%; height: 354px"></div>
     </section>
   </main>
   <footer class="main-footer">
@@ -207,7 +215,8 @@
             </a>
           </li>
           <li class="main-footer__social-item">
-            <a class="main-footer__social-link main-footer__social-link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="main-footer__social-link main-footer__social-link--youtube"
+              href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">HTML Академия на Ютуб</span>
             </a>
           </li>
