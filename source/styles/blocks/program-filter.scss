@@ -204,16 +204,16 @@
   }
 }
 
-.program__input-radio:checked+.program-radio::after {
+.program__input-radio:checked + .program-radio::after {
   opacity: 1;
 }
 
-.program__input-radio:focus+.program-radio::before {
+.program__input-radio:focus + .program-radio::before {
   outline: 1px solid #bababa;
 }
 
-.program__input-radio:disabled+.program-radio,
-.program__additionally-input:disabled+.program-checkbox {
+.program__input-radio:disabled + .program-radio,
+.program__additionally-input:disabled + .program-checkbox {
   cursor: no-drop;
   opacity: 0.3;
 }
@@ -282,7 +282,7 @@
   }
 }
 
-.catalog__filter-input:checked+.catalog__filter-radio::after {
+.catalog__filter-input:checked + .catalog__filter-radio::after {
   opacity: 1;
 }
 
@@ -321,6 +321,46 @@
   display: flex;
   align-items: center;
   column-gap: 13px;
+
+  &:focus-within::before {
+    background-color: #68b738;
+  }
+
+  &--email:focus-within::before {
+    background-color: #ff8282;
+  }
+
+  &--phone::before {
+    position: absolute;
+    content: "";
+    right: 13px;
+    top: 13px;
+    mask-image: url("../../images/icons/stack.svg#form-phone");
+    background-color: #000000;
+    transition: all 0.3s ease-in-out;
+    width: 20px;
+    height: 20px;
+  }
+
+  &--email::before {
+    position: absolute;
+    content: "";
+    right: 13px;
+    top: 13px;
+    mask-image: url("../../images/icons/stack.svg#email");
+    background-color: #000000;
+    transition: all 0.3s ease-in-out;
+    width: 20px;
+    height: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &--email,
+    &--phone {
+      right: 16px;
+      top: 16px;
+    }
+  }
 }
 
 .program__owner-label {
@@ -363,7 +403,7 @@
     border: 1px solid $primary-color-text;
   }
 
-  &:focus-visible+.program__owner-icon {
+  &:focus-visible + .program__owner-icon {
     background-color: #68b738;
   }
 
@@ -372,7 +412,7 @@
     border: 2px solid #ff8282;
   }
 
-  &:invalid+.program__owner-icon {
+  &:invalid + .program__owner-icon {
     background-color: #ff8282;
   }
 
@@ -390,47 +430,6 @@
 
   @media screen and (min-width: 1440px) {
     min-width: 494px;
-  }
-}
-
-.program__owner-item {
-  position: relative;
-
-  &:focus-within::before {
-    background-color: #68b738;
-  }
-
-  &--phone::before {
-    position: absolute;
-    content: "";
-    right: 13px;
-    top: 13px;
-    mask-image: url("../../images/icons/stack.svg#form-phone");
-    background-color: #000000;
-    transition: all 0.3s ease-in-out;
-    width: 20px;
-    height: 20px;
-  }
-
-  &--email::before {
-    position: absolute;
-    content: "";
-    right: 13px;
-    top: 13px;
-    mask-image: url("../../images/icons/stack.svg#email");
-    background-color: #000000;
-    transition: all 0.3s ease-in-out;
-    width: 20px;
-    height: 20px;
-  }
-
-  @media screen and (min-width: 768px) {
-
-    &--email,
-    &--phone {
-      right: 16px;
-      top: 16px;
-    }
   }
 }
 
@@ -490,14 +489,16 @@
     border-radius: 10px;
     background-color: $bg-basic-green;
     background-image:
-      linear-gradient(45deg,
-        rgba(255, 255, 255, 0.2) 25%,
-        transparent 25%,
-        transparent 50%,
-        rgba(255, 255, 255, 0.2) 50%,
-        rgba(255, 255, 255, 0.2) 75%,
-        transparent 75%,
-        transparent);
+      linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.2) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0.2) 75%,
+      transparent 75%,
+      transparent
+    );
   }
 
   @media screen and (min-width: 768px) {
@@ -572,7 +573,7 @@
 
 /* -- КЛИК НА CHECKBOX -- */
 
-.program__additionally-input:checked+.program-checkbox::after {
+.program__additionally-input:checked + .program-checkbox::after {
   position: absolute;
   top: 3px;
   left: -10px;
@@ -585,7 +586,7 @@
   height: 14px;
 }
 
-.program__additionally-input:focus+.program-checkbox::before {
+.program__additionally-input:focus + .program-checkbox::before {
   outline: 1px solid #bababa;
 }
 

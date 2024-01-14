@@ -16,12 +16,12 @@ if (BurgerHeader) {
 //  API Карта
 const YandexMap = window.ymaps;
 const shopData = {
-  shop1: [{
+  CatEnergy: [{
     lat: 55.75222,
     lon: 37.61556,
     name: 'Кэт Энерджи',
     iconDefault: 'default#image',
-    iconHref: 'images/map@1x.png',
+    iconHref: 'images/map@2x.png',
     iconSize: [113, 106],
     iconOffset: [-5, -38]
   }],
@@ -33,7 +33,7 @@ const init = () => {
     zoom: 14
   });
 
-  let activeShop = 'shop1';
+  let activeShop = 'CatEnergy';
 
   const showShop = (shop) => {
     map.geoObjects.removeAll();

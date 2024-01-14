@@ -244,11 +244,11 @@
     z-index: -1;
   }
 
-  &:hover .living-example-slider__path {
+  &:hover svg path {
     fill: $bg-basic-green;
   }
 
-  &:hover .living-example-slider__rect {
+  &:hover svg rect {
     stroke: $bg-basic-green;
   }
 
@@ -262,10 +262,6 @@
     opacity: 0.6;
   }
 
-  &:hover::before {
-    background-color: $bg-basic-green;
-  }
-
   @media screen and (min-width: 768px) {
     top: 225px;
     left: 259px;
@@ -275,4 +271,9 @@
       height: 512px;
     }
   }
+}
+
+.living-example-slider__rect {
+  stroke: #666666;
+  stroke-width: 2;
 }
