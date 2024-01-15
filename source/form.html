@@ -111,7 +111,9 @@
             </fieldset>
           </div>
           <fieldset class="program__owner-group">
-            <legend class="program__owner-legend secondary-title">Контактные данные (владельца кота)</legend>
+            <legend class="program__owner-legend secondary-title">
+              <span class="secondary-title__text">Контактные данные (владельца кота)</span>
+            </legend>
             <ul class="program__owner-list">
               <li class="program__owner-item program__owner-item--email">
                 <label class="program__label program__owner-label" for="email">E-mail:*</label>
@@ -125,13 +127,17 @@
             </ul>
           </fieldset>
           <fieldset class="program__comment-group">
-            <legend class="program__comment-legend secondary-title">Комментарий</legend>
+            <legend class="program__comment-legend secondary-title">
+              <span class="secondary-title__text">Комментарий</span>
+            </legend>
             <label class="visually-hidden" for="info">Расскажите обо всех повадках кота</label>
             <textarea class="program__comment-textarea" form="program" name="program__comment-textarea" id="info"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="program__additionally-group">
-            <legend class="program__additionally-legend secondary-title">Дополнительно</legend>
+            <legend class="program__additionally-legend secondary-title">
+              <span class="secondary-title__text">Дополнительно</span>
+            </legend>
             <ul class="program__list program__additionally-list">
               <li class="program__item program__additionally-item">
                 <label class="program__label program__additionally-label">
@@ -171,19 +177,24 @@
       </form>
     </section>
     <section class="main-location">
-      <div class="main-location__wrapper main-location__wrapper--bg">
-        <div class="main-location__inner">
-          <h3 class="main-location__title">приглашаем
-            к сотрудничеству
-            дилеров!</h3>
-          <div class="main-location__wrapper-content">
-            <p class="main-location__text">ул. Большая
-              Конюшенная, д. 19/8</p>
-            <p class="main-location__text">Санкт-Петербург</p>
+      <div class="main-container">
+        <div class="main-location__element">
+        <div class="main-location__wrapper">
+          <div class="main-location__inner">
+            <h3 class="main-location__title">
+              приглашаем к сотрудничеству дилеров!
+            </h3>
+            <div class="main-location__wrapper-content">
+              <p class="main-location__text">
+                ул. Большая Конюшенная, д. 19/8
+              </p>
+              <p class="main-location__text">Санкт-Петербург</p>
+            </div>
           </div>
         </div>
+        <div class="map" id="map" style="width: 100%; height: 354px"></div>
       </div>
-      <div class="map" id="map" style="width: 100%; height: 354px"></div>
+    </div>
     </section>
   </main>
   <footer class="main-footer">

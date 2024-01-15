@@ -1,19 +1,34 @@
 .living-example {
   padding-top: 25px;
   padding-bottom: 40px;
-  background-image: linear-gradient(to bottom, $bg-secondary-light 70px, $bg-secondary-light 70px, $bg-secondary-light);
+  background-image: linear-gradient(
+    to bottom,
+    $bg-secondary-light 70px,
+    $bg-secondary-light 70px,
+    $bg-secondary-light
+  );
   background-color: $bg-secondary-dark;
   overflow: hidden;
   border-top: 1px solid #e6e6e6;
 
   @media screen and (min-width: 768px) {
     padding-top: 45px;
-    background-image: linear-gradient(to bottom, #ffffff 623px, $bg-secondary-light 70px, $bg-secondary-light);
+    background-image: linear-gradient(
+      to bottom,
+      #ffffff 623px,
+      $bg-secondary-light 70px,
+      $bg-secondary-light
+    );
   }
 
   @media screen and (min-width: 1440px) {
     border: none;
-    background-image: linear-gradient(to bottom, #ffffff 150px, $bg-secondary-light 70px, $bg-secondary-light);
+    background-image: linear-gradient(
+      to bottom,
+      #ffffff 150px,
+      $bg-secondary-light 70px,
+      $bg-secondary-light
+    );
   }
 }
 
@@ -218,7 +233,6 @@
   height: 100%;
 }
 
-
 .living-example-slider__control {
   position: absolute;
   top: 105px;
@@ -252,13 +266,16 @@
     stroke: $bg-basic-green;
   }
 
+  .living-example-slider__rect {
+    stroke: #666666;
+    stroke-width: 2;
+  }
+
   &:hover::before {
     background-color: $bg-basic-green;
   }
 
-  &:active .living-example-slider__path,
-  .living-example-slider__rect,
-  &:active::before {
+  &:active {
     opacity: 0.6;
   }
 
@@ -271,9 +288,4 @@
       height: 512px;
     }
   }
-}
-
-.living-example-slider__rect {
-  stroke: #666666;
-  stroke-width: 2;
 }

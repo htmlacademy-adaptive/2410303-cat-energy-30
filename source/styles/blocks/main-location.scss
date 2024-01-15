@@ -1,10 +1,13 @@
 .main-location {
-  position: relative;
   background-color: $bg-secondary-light;
 
   & > .main-container {
     padding: 0;
   }
+}
+
+.main-location__element {
+  position: relative;
 }
 
 .main-location__wrapper {

@@ -1,37 +1,54 @@
 .secondary-title {
-  position: relative;
   display: flex;
-  gap: 30px;
-  color: $secondary-dark-text;
-  font-family: $font-oswald;
-  font-size: $fz-24;
-  font-weight: $fw-regular;
-  line-height: $lh-26;
-  width: fit-content;
-  background-color: $secondary-text;
+  gap: 20px;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-bottom: 35px;
 
   &::before {
-    right: calc(100% + 30px);
-  }
-
-  &::after {
-    left: calc(100% + 30px);
-  }
-
-  &::before,
-  &::after {
-    display: block;
-    position: absolute;
     content: "";
-    width: 100vw;
-    height: 2px;
-    top: 20px;
-    background-color: #68b738;
-    z-index: -1;
+    height: 15px;
+    width: calc(50% - 160px);
+    border-bottom: 2px solid #68b738;
   }
 
-  @media screen and (min-width: 768px) {
-    font-size: $fz-36;
-    line-height: $lh-36;
+  &::after {
+    content: "";
+    height: 15px;
+    width: 100px;
+    border-bottom: 2px solid #68b738;
+    flex-grow: 1;
   }
+
+  @media (min-width: 768px) {
+    gap: 40px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 57px;
+
+    &::before {
+      height: 22px;
+      width: calc(50% - 354px);
+    }
+
+    &::after {
+      height: 22px;
+    }
+  }
+
+
+  @media screen and (min-width: 1440px) {
+    &::before {
+      width: calc(50% - 650px);
+    }
+  }
+}
+
+.secondary-title__text {
+  max-width: max-content;
+  color: $secondary-dark-text;
+  font-size: $fz-24;
+  font-weight: $fw-regular;
+  line-height: $lh-24;
 }

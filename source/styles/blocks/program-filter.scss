@@ -296,6 +296,7 @@
 }
 
 .program__owner-legend {
+  width: 100%;
   margin-bottom: 35px;
 
   @media screen and (min-width: 768px) {
@@ -352,14 +353,6 @@
     transition: all 0.3s ease-in-out;
     width: 20px;
     height: 20px;
-  }
-
-  @media screen and (min-width: 768px) {
-    &--email,
-    &--phone {
-      right: 16px;
-      top: 16px;
-    }
   }
 }
 
@@ -439,6 +432,7 @@
 }
 
 .program__comment-legend {
+  width: 100%;
   margin-bottom: 38px;
 
   @media screen and (min-width: 768px) {
@@ -511,11 +505,11 @@
 }
 
 .program__additionally-legend {
+  width: 100%;
   margin-bottom: 36px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 57px;
-    max-width: 295px;
   }
 }
 
