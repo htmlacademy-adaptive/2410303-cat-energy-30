@@ -1,3 +1,10 @@
+.main-services {
+  @media screen and (min-width: 1440px) {
+    padding-top: 41px;
+    padding-bottom: 35px;
+  }
+}
+
 .main-services__list {
   @include list-reset;
   display: flex;
@@ -22,10 +29,11 @@
   background: $bg-secondary-light;
 
   @media screen and (min-width: 768px) {
-    padding: 77px 53px 57px 63px;
+    padding: 77px 53px 57px 50px;
   }
 
   @media screen and (min-width: 1440px) {
+    padding: 77px 53px 46px 50px;
     min-width: 570px;
     max-width: 570px;
   }
@@ -82,16 +90,16 @@
 
   @media screen and (min-width: 1440px) {
     &--icon-weight::before {
-      top: -40px;
-      left: 5px;
+      top: -38px;
+      left: 2px;
       background-size: 100px 106px;
       width: 100px;
       height: 106px;
     }
 
     &--icon-gain::before {
-      left: 5px;
-      top: -40px;
+      left: -17px;
+      top: -31px;
       background-size: 134px 100px;
       width: 134px;
       height: 100px;
@@ -116,7 +124,7 @@
   }
 
   @media screen and (min-width: 1440px) {
-    padding-left: 162px;
+    padding-left: 163px;
     margin-bottom: 73px;
   }
 }
@@ -141,6 +149,7 @@
   }
 
   @media screen and (min-width: 1440px) {
+    margin-bottom: 19px;
     min-width: 100%;
   }
 }
@@ -187,20 +196,20 @@
   &::after {
     position: absolute;
     content: "";
-    top: 18px;
-    right: 0;
+    top: 17px;
+    right: -20px;
     display: block;
     background-image: url("../../images/icons/stack.svg#icon-arrow");
     background-repeat: no-repeat;
-    background-size: 24px 10px;
-    width: 24px;
+    background-size: 44px 10px;
+    width: 44px;
     height: 10px;
     transition: all 0.3s ease-in-out;
   }
 
   &:hover::after {
     background-size: 32px 10px;
-    right: -8px;
+    right: -20px;
     width: 32px;
     height: 10px;
   }

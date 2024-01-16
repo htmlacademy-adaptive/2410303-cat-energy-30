@@ -1,6 +1,10 @@
 .main-footer {
   padding: 40px 0;
   background: $bg-secondary-light;
+
+  @media (min-width: 1440px) {
+    padding: 68px 0;
+  }
 }
 
 .main-footer__wrapper {
@@ -15,9 +19,11 @@
 }
 
 .main-footer__logo-text-link {
-  display: inline-block;
+  display: block;
   margin-bottom: 20px;
   transition: all 0.3s ease-in-out;
+  min-width: 128px;
+  height: 24px;
 
   &:hover {
     opacity: 0.8;
@@ -34,17 +40,19 @@
 
 .main-footer__social {
   @include list-reset;
+  margin-left: 416px;
   width: 100%;
   padding: 20px 0;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 40px;
+  column-gap: 25px;
+  text-align: center;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: 768px) {
     border: none;
+    padding: 0;
   }
 }
 
@@ -122,7 +130,7 @@
   @media (min-width: 768px) {
     display: flex;
     align-items: center;
-    width: 220px;
+    width: 398px;
     margin-top: 0;
   }
 }

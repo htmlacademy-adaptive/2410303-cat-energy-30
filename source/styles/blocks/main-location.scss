@@ -1,10 +1,12 @@
 .main-location {
   background-color: $bg-secondary-light;
 
-  & > .main-container {
+  &>.main-container {
     padding: 0;
   }
 }
+
+
 
 .main-location__element {
   position: relative;
@@ -19,13 +21,13 @@
   }
 
   @media screen and (min-width: 768px) {
-    padding: 60px 80px;
+    padding: 63px 80px 58px 80px;
   }
 
   @media screen and (min-width: 1440px) {
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: 18px;
     width: 565px;
     height: auto;
     z-index: 5;
@@ -57,7 +59,7 @@
 }
 
 .main-location__wrapper-content {
-  max-width: 165px;
+  max-width: 157px;
 
   @media screen and (min-width: 768px) {
     display: flex;

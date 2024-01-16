@@ -5,6 +5,11 @@
   @media screen and (min-width: 768px) {
     padding-top: 45px;
   }
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
 }
 
 .main-advantages__section-title {
@@ -13,6 +18,12 @@
   font-size: $fz-36;
   font-weight: $fw-regular;
   line-height: $lh-40;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 73px;
+    font-size: $fz-60;
+    line-height: $lh-60;
+  }
 }
 
 .main-advantages__list {
@@ -27,9 +38,9 @@
   }
 
   @media screen and (min-width: 1440px) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 250px);
     row-gap: 40px;
-    column-gap: 0;
+    column-gap: 75px;
   }
 }
 
@@ -44,17 +55,15 @@
   @media screen and (min-width: 768px) {
     flex-direction: column-reverse;
     align-items: start;
-    row-gap: 31px;
+    row-gap: 32px;
     padding-left: 0;
-    max-width: 230px;
-    min-height: 280px;
     height: auto;
     counter-increment: advantages;
 
     &::before {
       position: absolute;
       content: counter(advantages);
-      top: 0;
+      top: -11px;
       right: 0;
       color: #f2f2f2;
       text-align: center;
@@ -62,6 +71,10 @@
       line-height: 220px;
       font-weight: $fw-regular;
       z-index: -1;
+    }
+
+    &:first-child::before {
+      right: 26px;
     }
   }
 }
@@ -78,11 +91,17 @@
     display: block;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 30px 32px;
+    background-size: 25px 30px;
     background-color: $bg-basic-green;
     width: 60px;
     height: 60px;
     flex-shrink: 0;
+
+    @media screen and (min-width: 768px) {
+      background-size: 30px 32px;
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 
@@ -111,6 +130,7 @@
 }
 
 .main-advantages__text {
+  margin-top: 0;
   max-width: 200px;
   color: $primary-color-text;
   font-family: $font-lato;
@@ -119,6 +139,7 @@
   line-height: $lh-18;
 
   @media screen and (min-width: 768px) {
+    max-width: 100%;
     font-size: $fz-16;
     line-height: $lh-24;
   }

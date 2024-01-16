@@ -19,10 +19,10 @@
     @media (min-width: 768px) {
       background-image: none;
     }
-  }
 
-  @media screen and (min-width: 768px) {
-    min-height: 776px;
+    @media (min-width: 1440px) {
+      padding-bottom: 41px;
+    }
   }
 }
 
@@ -42,10 +42,10 @@
   }
 
   @media screen and (min-width: 1440px) {
-    padding-left: 55px;
+    padding-left: 78px;
     padding-top: 224px;
-    max-width: 475px;
-    min-height: 800px;
+    max-width: 494px;
+    min-height: 695px;
     z-index: 10;
   }
 }
@@ -105,8 +105,10 @@
   }
 
   @media (min-width: 1440px) {
+    width: 552px;
+    height: 499px;
     top: 110px;
-    left: 560px;
+    left: 462px;
     width: 552px;
     height: 499px;
   }
@@ -128,9 +130,10 @@
   background-color: $bg-basic-green;
 
   @media screen and (min-width: 768px) {
-    margin: 50px 0 20px 0;
-    padding: 14px 26px;
+    margin: 51px 0 20px 0;
+    padding: 18px 26px;
     min-width: 244px;
     max-width: 244px;
+    font-size: $fz-20;
   }
 }
