@@ -4,6 +4,16 @@
   &>.main-container {
     padding: 0;
   }
+
+
+
+  @media screen and (min-width: 768px) {
+    background-color: $bg-secondary-light;
+
+    &--bg {
+      background-color: $bg-secondary-light;
+    }
+  }
 }
 
 
@@ -14,7 +24,6 @@
 
 .main-location__wrapper {
   padding: 26px 4px 25px 19px;
-  background-color: $bg-primary;
 
   &--bg {
     background-color: $bg-secondary-light;

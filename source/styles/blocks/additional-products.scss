@@ -1,11 +1,11 @@
 .additional-products {
-  padding-top: 36;
+  padding-top: 24px;
   padding-bottom: 36px;
   overflow-x: hidden;
 
   @media screen and (min-width: 768px) {
-    padding-top: 38px;
-    padding-bottom: 44px;
+    padding-top: 33px;
+    padding-bottom: 73px;
   }
 }
 
@@ -13,7 +13,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
-    row-gap: 70px;
+    row-gap: 66px;
   }
 
   @media screen and (min-width: 1440px) {
@@ -33,9 +33,8 @@
   }
 }
 
-
 .additional-products__description-element {
-  padding: 13px 0 13px 0;
+  padding: 13px 0 17px 0;
   border-top: 1px solid #cdcdcd;
 
   &:last-child {
@@ -43,7 +42,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    padding: 26px 38px 28px 38px;
+    padding: 24px 38px 28px 38px;
     border-left: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
   }
@@ -71,11 +70,17 @@
 
 .additional-products__description-title {
   margin-top: 0;
+  margin-bottom: 12px;
   color: $secondary-lighter-text;
   font-size: $fz-16;
   font-weight: $fw-regular;
   line-height: $lh-16;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: $fz-20;
+    line-height: $lh-20;
+  }
 
   @media screen and (min-width: 1440px) {
     width: 161px;
@@ -87,9 +92,9 @@
 .additional-products__description-item {
   display: flex;
   align-items: center;
+  margin-top: 0;
 
   @media screen and (min-width: 768px) {
-    margin-top: 0;
     margin-bottom: 0;
     column-gap: 55px;
   }
@@ -108,6 +113,11 @@
   font-size: $fz-14;
   font-weight: $fw-regular;
   line-height: $lh-14;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .additional-products__description-price {
@@ -124,7 +134,7 @@
   display: block;
   max-width: 100%;
   height: auto;
-  margin: 17px auto 0 auto;
+  margin: 15px auto 0 auto;
   padding: 10px;
   background-color: $bg-basic-green;
   color: $secondary-text;
@@ -178,12 +188,14 @@
 }
 
 .additional-products__present-wrapper {
+  margin-top: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 290px;
 
   @media screen and (min-width: 768px) {
+    margin-top: 0;
     min-width: 100%;
     min-height: 200px;
     justify-content: space-between;
@@ -247,6 +259,7 @@
       position: static;
       display: block;
       transform: translate(0, 0);
+      margin-top: -9px;
     }
   }
 }

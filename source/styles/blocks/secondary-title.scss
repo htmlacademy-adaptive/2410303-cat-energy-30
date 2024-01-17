@@ -1,6 +1,5 @@
 .secondary-title {
   display: flex;
-  gap: 20px;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
@@ -16,7 +15,7 @@
   &::after {
     content: "";
     height: 15px;
-    width: 100px;
+    width: 34px;
     border-bottom: 2px solid #68b738;
     flex-grow: 1;
   }
@@ -46,9 +45,16 @@
 }
 
 .secondary-title__text {
+  margin-right: 20px;
   max-width: max-content;
   color: $secondary-dark-text;
   font-size: $fz-24;
   font-weight: $fw-regular;
   line-height: $lh-24;
+
+  @media (min-width: 768px) {
+    margin-bottom: 23px;
+    font-size: $fz-36;
+    line-height: $lh-36;
+  }
 }
