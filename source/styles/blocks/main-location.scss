@@ -1,5 +1,5 @@
 .main-location {
-  background-color: $bg-secondary-light;
+  background-color: $bg-primary;
 
   &>.main-container {
     padding: 0;
@@ -13,7 +13,7 @@
 }
 
 .main-location__wrapper {
-  padding: 26px 20px;
+  padding: 26px 4px 25px 19px;
   background-color: $bg-primary;
 
   &--bg {
@@ -21,10 +21,11 @@
   }
 
   @media screen and (min-width: 768px) {
-    padding: 63px 80px 58px 80px;
+    padding: 62px 59px 58px 59px;
   }
 
   @media screen and (min-width: 1440px) {
+    padding: 63px 80px 58px 80px;
     position: absolute;
     top: 95px;
     left: 18px;
@@ -44,7 +45,7 @@
 .main-location__title {
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 118px;
+  max-width: 124px;
   color: $secondary-light-text;
   font-size: $fz-16;
   font-weight: $fw-regular;
@@ -77,6 +78,7 @@
   line-height: $lh-20;
 
   @media screen and (min-width: 768px) {
+    text-align: right;
     font-size: $fz-16;
   }
 }

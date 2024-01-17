@@ -1,4 +1,11 @@
 .main-services {
+  padding-top: 10px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+
   @media screen and (min-width: 1440px) {
     padding-top: 41px;
     padding-bottom: 35px;
@@ -11,17 +18,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 20px;
+  row-gap: 19px;
   column-gap: 80px;
+
+  @media screen and (min-width: 768px) {
+    row-gap: 35px;
+    justify-content: flex-start;
+  }
 
   @media screen and (min-width: 1440px) {
     flex-direction: row;
-    justify-content: flex-start;
   }
 }
 
 .main-services__item {
-  padding: 30px 20px 18px 33px;
+  padding: 30px 20px 7px 21px;
   width: 100%;
   min-width: 280px;
   max-width: 708px;
@@ -29,7 +40,7 @@
   background: $bg-secondary-light;
 
   @media screen and (min-width: 768px) {
-    padding: 77px 53px 57px 50px;
+    padding: 76px 53px 38px 50px
   }
 
   @media screen and (min-width: 1440px) {
@@ -45,7 +56,7 @@
   &--icon-weight::before {
     position: absolute;
     content: "";
-    left: 0;
+    left: 0px;
     top: -10px;
     display: block;
     background-image: url("../../images/icons/stack.svg#services-1");
@@ -80,8 +91,8 @@
     }
 
     &--icon-gain::before {
-      left: 350px;
-      top: 0;
+      left: 357px;
+      top: 18px;
       background-size: 268px 200px;
       width: 268px;
       height: 200px;
@@ -118,6 +129,7 @@
   text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
+    margin-bottom: 23px;
     padding-left: 0;
     font-size: $fz-36;
     line-height: $lh-36;
@@ -140,7 +152,7 @@
   line-height: $lh-18;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 52px;
+    margin-bottom: 48px;
     min-width: 227px;
     max-width: 335px;
     padding-left: 0;
@@ -169,7 +181,7 @@
   position: relative;
   display: inline-block;
   margin-top: auto;
-  padding-top: 15px;
+  padding-top: 17px;
   padding-right: 47px;
   padding-bottom: 15px;
   color: $secondary-dark-text;
@@ -196,8 +208,8 @@
   &::after {
     position: absolute;
     content: "";
-    top: 17px;
-    right: -20px;
+    top: 20px;
+    right: -5px;
     display: block;
     background-image: url("../../images/icons/stack.svg#icon-arrow");
     background-repeat: no-repeat;
@@ -215,7 +227,14 @@
   }
 
   @media screen and (min-width: 768px) {
+    padding-top: 13px;
     font-size: $fz-20;
+
+    &::after {
+      top: 16px;
+      right: -19px;
+
+    }
   }
 }
 

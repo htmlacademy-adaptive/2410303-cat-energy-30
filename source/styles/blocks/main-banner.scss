@@ -36,9 +36,9 @@
   z-index: 4;
 
   @media screen and (min-width: 768px) {
-    min-height: 900px;
-    padding-left: 50px;
-    padding-top: 65px;
+    min-height: 846px;
+    padding-left: 87px;
+    padding-top: 55px;
   }
 
   @media screen and (min-width: 1440px) {
@@ -91,7 +91,6 @@
 }
 
 .main-banner__images {
-  display: block;
   position: absolute;
   top: 160px;
   left: 0;
@@ -118,7 +117,7 @@
   @include link-reset;
   display: inline-block;
   padding: 10px 64px;
-  margin: auto auto 20px auto;
+  margin: auto auto 11px auto;
   min-width: 280px;
   max-width: 100%;
   color: $secondary-text;

@@ -13,9 +13,11 @@
   @media screen and (min-width: 768px) {
     padding-top: 45px;
     background-image: linear-gradient(to bottom,
-        #ffffff 623px,
+        #ffffff 618px,
         $bg-secondary-light 70px,
         $bg-secondary-light );
+    min-height: 1081px;
+    height: auto;
   }
 
   @media screen and (min-width: 1440px) {
@@ -25,9 +27,9 @@
         #ffffff 210px,
         $bg-secondary-light 70px,
         $bg-secondary-light );
+    min-height: 670px;
+    height: auto;
   }
-
-  min-height: 670px;
 }
 
 .living-example__wrapper {
@@ -54,7 +56,7 @@
     max-width: 366px;
     align-items: start;
     flex-direction: column;
-    row-gap: 66px;
+    row-gap: 58px;
   }
 }
 
@@ -107,8 +109,7 @@
   justify-content: center;
   column-gap: 32px;
 
-  @media screen and (min-width: 1440px) {
-    justify-content: flex-start;
+  @media screen and (min-width: 768px) {
     column-gap: 42px;
   }
 }
@@ -125,7 +126,7 @@
 
   @media screen and (min-width: 768px) {
     min-width: 162px;
-    padding: 15px 17px 25px 16px;
+    padding: 18px 17px 24px 16px;
   }
 }
 
@@ -139,6 +140,7 @@
 
   @media screen and (min-width: 768px) {
     font-size: $fz-30;
+    line-height: 30px;
   }
 }
 
@@ -153,13 +155,17 @@
   font-size: $fz-12;
   font-weight: $fw-regular;
   line-height: $lh-12;
-  width: 80px;
+  text-align: center;
+  width: 77px;
   height: auto;
 
   @media screen and (min-width: 768px) {
-    background-color: $bg-primary;
-    bottom: -6px;
     width: 125px;
+    font-size: $fz-14;
+    line-height: $lh-14;
+    background-color: $bg-primary;
+    left: 17px;
+    bottom: -5px;
   }
 
   @media screen and (min-width: 1440px) {
@@ -174,6 +180,24 @@
   justify-content: center;
   margin-top: 35px;
   column-gap: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: -12px;
+    max-height: 45px;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    column-gap: 63px;
+    row-gap: 11px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    flex-direction: row;
+  }
+}
+
+.living-example__expenses-text {
   color: $secondary-dark-text;
   text-align: center;
   font-size: 14px;
@@ -183,15 +207,21 @@
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
-    margin-top: 0;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
-    column-gap: 63px;
   }
+}
 
-  @media screen and (min-width: 1440px) {
-    flex-direction: row;
+
+
+.living-example__expenses-sum {
+  color: $secondary-dark-text;
+  text-align: center;
+  font-size: 14px;
+  font-weight: $fw-regular;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
   }
 }
 
@@ -203,25 +233,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 8px;
   width: 280px;
   height: 256px;
 
   @media screen and (min-width: 768px) {
-    position: relative;
+    position: absolute;
+    left: 71px;
+    top: 52px;
     width: 560px;
     height: 512px;
-    margin: 100px auto 0 auto;
-
-    &::before {
-      left: 278px;
-    }
+    margin: 0 auto 0 auto;
   }
 
   @media screen and (min-width: 1440px) {
-    position: absolute;
-    top: -216px;
-    right: -563px;
+    top: -117px;
+    left: 4px;
     width: 560px;
     height: 512px;
   }
@@ -258,8 +285,8 @@
 
 .living-example-slider__control {
   position: absolute;
-  top: 105px;
-  left: 120px;
+  top: 107px;
+  left: 115px;
   border: none;
   background-color: transparent;
   width: 40px;

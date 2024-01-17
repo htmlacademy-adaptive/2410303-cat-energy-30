@@ -1,9 +1,10 @@
 .main-advantages {
   padding-top: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 38px;
 
   @media screen and (min-width: 768px) {
-    padding-top: 45px;
+    padding-top: 24px;
+    padding-bottom: 87px;
   }
 
   @media screen and (min-width: 1440px) {
@@ -31,9 +32,9 @@
 
   @media screen and (min-width: 768px) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 150px;
-    row-gap: 140px;
+    grid-template-columns: repeat(2, 250px);
+    column-gap: 132px;
+    row-gap: 117px;
     counter-reset: advantages 0;
   }
 
@@ -50,7 +51,7 @@
   flex-direction: row-reverse;
   align-items: center;
   justify-content: flex-end;
-  column-gap: 20px;
+  padding-left: 80px;
 
   @media screen and (min-width: 768px) {
     flex-direction: column-reverse;
@@ -84,10 +85,10 @@
 .main-advantages__item--icon-power,
 .main-advantages__item--icon-clock {
   &::after {
-    position: static;
+    position: absolute;
     content: "";
     left: 0;
-    top: 0;
+    top: 9px;
     display: block;
     background-repeat: no-repeat;
     background-position: center;
@@ -98,6 +99,7 @@
     flex-shrink: 0;
 
     @media screen and (min-width: 768px) {
+      position: static;
       background-size: 30px 32px;
       width: 80px;
       height: 80px;
@@ -107,30 +109,35 @@
 
 .main-advantages__item--icon-sheet {
   &::after {
+    content: "";
     background-image: url("../../images/icons/stack.svg#advantages-1");
   }
+
 }
 
 .main-advantages__item--icon-powder {
   &::after {
+    content: "";
     background-image: url("../../images/icons/stack.svg#advantages-2");
   }
 }
 
 .main-advantages__item--icon-power {
   &::after {
+    content: "";
     background-image: url("../../images/icons/stack.svg#advantages-3");
   }
 }
 
 .main-advantages__item--icon-clock {
   &::after {
+    content: "";
     background-image: url("../../images/icons/stack.svg#advantages-4");
   }
 }
 
 .main-advantages__text {
-  margin-top: 0;
+  margin-top: 12px;
   max-width: 200px;
   color: $primary-color-text;
   font-family: $font-lato;
@@ -139,6 +146,7 @@
   line-height: $lh-18;
 
   @media screen and (min-width: 768px) {
+    margin-top: 0;
     max-width: 100%;
     font-size: $fz-16;
     line-height: $lh-24;

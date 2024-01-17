@@ -5,7 +5,7 @@
   z-index: 10;
 
   @media screen and (min-width: 768px) {
-    padding: 25px 0 0 0;
+    padding: 22px 0 0 0;
     background-color: transparent;
     border-bottom: none;
   }
@@ -95,6 +95,10 @@
     opacity: 0.3;
   }
 
+  @media screen and (min-width: 768px) {
+    padding: 18px 14px;
+  }
+
   @media screen and (min-width: 1440px) {
     font-size: $fz-18;
   }
@@ -109,7 +113,7 @@
       content: "";
       width: calc(100% - 34px);
       height: 2px;
-      top: 48px;
+      top: 51px;
       right: 0;
       left: 17px;
       background-color: $bg-basic-green;
@@ -144,7 +148,7 @@
   display: block;
   position: relative;
   z-index: 2;
-  width: 70px;
+  width: 42px;
   height: 50px;
   background-color: transparent;
   cursor: pointer;
@@ -181,7 +185,7 @@
   position: relative;
   z-index: 2;
   display: block;
-  width: 70px;
+  width: 42px;
   height: 50px;
   background-color: transparent;
   cursor: pointer;
