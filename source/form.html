@@ -110,10 +110,12 @@
               </ul>
             </fieldset>
           </div>
-          <fieldset class="program__owner-group">
-            <legend class="program__owner-legend secondary-title">
-              <span class="secondary-title__text">Контактные данные (владельца кота)</span>
-            </legend>
+        </div>
+        <fieldset class="program__owner-group">
+          <legend class="program__owner-legend secondary-title">
+            <span class="secondary-title__text">Контактные данные (владельца кота)</span>
+          </legend>
+          <div class="main-container">
             <ul class="program__owner-list">
               <li class="program__owner-item program__owner-item--email">
                 <label class="program__label program__owner-label" for="email">E-mail:*</label>
@@ -125,55 +127,61 @@
                 <input class="program__owner-input" id="phone" name="tel" type="tel" placeholder="8 (960) 900-60-90">
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="program__comment-group">
-            <legend class="program__comment-legend secondary-title">
-              <span class="secondary-title__text">Комментарий</span>
-            </legend>
+          </div>
+        </fieldset>
+        <fieldset class="program__comment-group">
+          <legend class="program__comment-legend secondary-title">
+            <span class="secondary-title__text">Комментарий</span>
+          </legend>
+          <div class="main-container">
             <label class="visually-hidden" for="info">Расскажите обо всех повадках кота</label>
             <textarea class="program__comment-textarea" form="program" name="program__comment-textarea" id="info"
               placeholder="Расскажите обо всех повадках кота"></textarea>
-          </fieldset>
-          <fieldset class="program__additionally-group">
-            <legend class="program__additionally-legend secondary-title">
-              <span class="secondary-title__text">Дополнительно</span>
-            </legend>
-            <ul class="program__list program__additionally-list">
-              <li class="program__item program__additionally-item">
-                <label class="program__label program__additionally-label">
-                  <input class="program__input program__additionally-input" name="program__input-checkbox"
-                    type="checkbox" value="sweetener">
-                  <span class="program-checkbox program-text">сахарозаменитель</span>
-                </label>
-              </li>
-              <li class="program__item program__additionally-item">
-                <label class="program__label program__additionally-label">
-                  <input class="program__input program__additionally-input" name="program__input-checkbox"
-                    type="checkbox" value="drinking water">
-                  <span class="program-checkbox program-text">питьевая вода</span>
-                </label>
-              </li>
-              <li class="program__item program__additionally-item">
-                <label class="program__label program__additionally-label">
-                  <input class="program__input program__additionally-input" name="program__input-checkbox"
-                    type="checkbox" value="milk" disabled>
-                  <span class="program-checkbox program-text">молоко</span>
-                </label>
-              </li>
-              <li class="program__item program__additionally-item">
-                <label class="program__label program__additionally-label">
-                  <input class="program__input program__additionally-input" name="program__input-checkbox"
-                    type="checkbox" value="vitamins">
-                  <span class="program-checkbox program-text">витамины</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <div class="program__button-wrapper">
-            <button class="program__button button" type="submit">отправить заявку</button>
-            <p class="program__text">* — Обязательные поля</p>
           </div>
+        </fieldset>
+        <fieldset class="program__additionally-group">
+          <legend class="program__additionally-legend secondary-title">
+            <span class="secondary-title__text">Дополнительно</span>
+          </legend>
+          <div class="main-container">
+          <ul class="program__list program__additionally-list">
+            <li class="program__item program__additionally-item">
+              <label class="program__label program__additionally-label">
+                <input class="program__input program__additionally-input" name="program__input-checkbox" type="checkbox"
+                  value="sweetener">
+                <span class="program-checkbox program-text">сахарозаменитель</span>
+              </label>
+            </li>
+            <li class="program__item program__additionally-item">
+              <label class="program__label program__additionally-label">
+                <input class="program__input program__additionally-input" name="program__input-checkbox" type="checkbox"
+                  value="drinking water">
+                <span class="program-checkbox program-text">питьевая вода</span>
+              </label>
+            </li>
+            <li class="program__item program__additionally-item">
+              <label class="program__label program__additionally-label">
+                <input class="program__input program__additionally-input" name="program__input-checkbox" type="checkbox"
+                  value="milk" disabled>
+                <span class="program-checkbox program-text">молоко</span>
+              </label>
+            </li>
+            <li class="program__item program__additionally-item">
+              <label class="program__label program__additionally-label">
+                <input class="program__input program__additionally-input" name="program__input-checkbox" type="checkbox"
+                  value="vitamins">
+                <span class="program-checkbox program-text">витамины</span>
+              </label>
+            </li>
+          </ul>
         </div>
+        </fieldset>
+        <div class="main-container">
+        <div class="program__button-wrapper">
+          <button class="program__button button" type="submit">отправить заявку</button>
+          <p class="program__text">* — Обязательные поля</p>
+        </div>
+      </div>
       </form>
     </section>
     <section class="main-location">
@@ -182,7 +190,7 @@
           <div class="main-location__wrapper">
             <div class="main-location__inner">
               <h3 class="main-location__title">
-                приглашаем к сотрудничеству дилеров!
+                приглашаем<br>к сотрудничеству дилеров!
               </h3>
               <div class="main-location__wrapper-content">
                 <p class="main-location__text">
@@ -192,9 +200,9 @@
               </div>
             </div>
           </div>
-          <div class="map" id="map"></div>
         </div>
       </div>
+      <div class="map" id="map"></div>
     </section>
   </main>
   <footer class="main-footer">
