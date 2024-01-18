@@ -8,6 +8,10 @@
 
   @media screen and (min-width: 768px) {
     width: 745px;
+
+    &--small {
+      width: 668px;
+    }
   }
 
   @media screen and (min-width: 1440px) {

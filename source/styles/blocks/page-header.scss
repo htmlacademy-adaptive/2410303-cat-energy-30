@@ -75,6 +75,11 @@
 
     &:last-child {
       border: none;
+
+      &:last-child>.page-header__link {
+        padding-right: 0;
+      }
+
     }
   }
 }
@@ -97,10 +102,11 @@
 
   @media screen and (min-width: 768px) {
     padding: 18px 14px;
+    font-size: $fz-18;
   }
 
   @media screen and (min-width: 1440px) {
-    font-size: $fz-18;
+    font-size: $fz-20;
   }
 }
 
@@ -134,12 +140,18 @@
     &::before {
       position: absolute;
       content: "";
-      width: calc(100% - 34px);
+      width: calc(100% - 18px);
       height: 2px;
       top: 48px;
       right: 0;
       left: 17px;
       background-color: $bg-basic-green;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    &::before {
+      top: 55px;
     }
   }
 }

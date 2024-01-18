@@ -9,7 +9,7 @@
   &::before {
     content: "";
     height: 15px;
-    width: calc(50% - 170px);
+    width: calc(50% - 171px);
     border-bottom: 2px solid #68b738;
   }
 
@@ -34,7 +34,7 @@
     }
 
     &::after {
-      width: 142px  ;
+      width: 142px;
       height: 22px;
     }
   }
