@@ -29,13 +29,12 @@
       right: 0;
       bottom: 0;
       width: calc(100% / 2);
-      background-color: $bg-opacity-green;
       background-image:
         linear-gradient($bg-opacity-green, $bg-opacity-green),
         url("../../images/main-banner-bg-desktop@1x.png");
-      background-size: 720px auto;
+      background-size: 100% 694px;
       background-repeat: no-repeat;
-      background-position: right bottom;
+      background-position: right top;
     }
   }
 

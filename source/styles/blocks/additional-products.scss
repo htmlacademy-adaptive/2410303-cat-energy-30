@@ -1,11 +1,15 @@
 .additional-products {
-  padding-top: 24px;
+  padding-top: 28px;
   padding-bottom: 36px;
   overflow-x: hidden;
 
   @media screen and (min-width: 768px) {
-    padding-top: 33px;
-    padding-bottom: 73px;
+    padding-top: 36px;
+    padding-bottom: 75px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-bottom: 90px;
   }
 }
 
@@ -13,7 +17,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
-    row-gap: 66px;
+    row-gap: 70px;
   }
 
   @media screen and (min-width: 1440px) {
@@ -34,7 +38,7 @@
 }
 
 .additional-products__description-element {
-  padding: 13px 0 17px 0;
+  padding: 13px 0 18px 0;
   border-top: 1px solid #cdcdcd;
 
   &:last-child {
@@ -42,7 +46,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    padding: 24px 38px 28px 38px;
+    padding: 24px 38px 27px 38px;
     border-left: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
   }
@@ -96,7 +100,7 @@
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
-    column-gap: 55px;
+    column-gap: 51px;
   }
 
   @media screen and (min-width: 1440px) {
@@ -115,8 +119,14 @@
   line-height: $lh-14;
 
   @media screen and (min-width: 768px) {
+    text-align: right;
+    min-width: 132px;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    text-align: left;
   }
 }
 
@@ -127,6 +137,13 @@
   font-size: $fz-14;
   font-weight: $fw-regular;
   line-height: $lh-14;
+  text-align: right;
+
+  @media screen and (min-width: 768px) {
+    min-width: 42px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .additional-products__link {
@@ -260,6 +277,12 @@
       display: block;
       transform: translate(0, 0);
       margin-top: -9px;
+    }
+
+    @media screen and (min-width: 768px) {
+      &::before {
+        margin-top: 2px;
+      }
     }
   }
 }
