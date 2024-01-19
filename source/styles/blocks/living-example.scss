@@ -57,12 +57,12 @@
   color: $secondary-dark-text;
   font-size: $fz-36;
   font-weight: $fw-regular;
-  line-height: $lh-40;
+  line-height: 40;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 60px;
     font-size: $fz-60;
-    line-height: $lh-60;
+    line-height: 60;
   }
 
   @media screen and (min-width: 1440px) {
@@ -74,16 +74,16 @@
   margin-top: 0;
   margin-bottom: 20px;
   color: $primary-color-text;
-  font-family: $font-lato;
+  font-family: $font-secondary;
   font-size: $fz-14;
   font-weight: $fw-regular;
-  line-height: $lh-18;
+  line-height: 18;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 55px;
     max-width: 708px;
     font-size: $fz-16;
-    line-height: $lh-24;
+    line-height: 24;
   }
 
   @media screen and (min-width: 1440px) {
@@ -126,7 +126,7 @@
   text-align: center;
   font-size: $fz-24;
   font-weight: $fw-regular;
-  line-height: $lh-24;
+  line-height: 24;
   text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
@@ -142,10 +142,10 @@
   right: 0;
   background-color: $bg-secondary-light;
   color: $primary-color-text;
-  font-family: $font-lato;
+  font-family: $font-secondary;
   font-size: $fz-12;
   font-weight: $fw-regular;
-  line-height: $lh-12;
+  line-height: 12;
   text-align: center;
   width: 77px;
   height: auto;
@@ -153,7 +153,7 @@
   @media screen and (min-width: 768px) {
     width: 125px;
     font-size: $fz-14;
-    line-height: $lh-14;
+    line-height: 14;
     background-color: $bg-primary;
     left: 17px;
     bottom: -5px;

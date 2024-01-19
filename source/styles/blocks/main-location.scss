@@ -56,13 +56,13 @@
   color: $secondary-light-text;
   font-size: $fz-16;
   font-weight: $fw-regular;
-  line-height: $lh-20;
+  line-height: 20;
   text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
     max-width: 163px;
     font-size: $fz-20;
-    line-height: $lh-26;
+    line-height: 26;
   }
 }
 
@@ -79,10 +79,10 @@
 .main-location__text {
   margin: 0;
   color: $primary-color-text;
-  font-family: $font-lato;
+  font-family: $font-secondary;
   font-size: $fz-14;
   font-weight: $fw-regular;
-  line-height: $lh-20;
+  line-height: 20;
   text-align: left;
 
   @media screen and (min-width: 768px) {

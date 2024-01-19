@@ -23,14 +23,14 @@
   color: $secondary-dark-text;
   font-size: $fz-36;
   font-weight: $fw-regular;
-  line-height: $lh-36;
+  line-height: 36;
 
   @media screen and (min-width: 768px) {
     margin-top: 0;
     margin-bottom: 90px;
     margin-left: 0;
     font-size: $fz-60;
-    line-height: $lh-60;
+    line-height: 60;
   }
 }
 
@@ -168,7 +168,7 @@
   color: $secondary-lighter-text;
   font-size: $fz-16;
   font-weight: $fw-regular;
-  line-height: $lh-20;
+  line-height: 20;
   text-transform: uppercase;
 
   &--plus {
@@ -178,7 +178,7 @@
 
   @media screen and (min-width: 768px) {
     font-size: $fz-20;
-    line-height: $lh-24;
+    line-height: 24;
     text-align: center;
   }
 }
@@ -202,15 +202,15 @@
   display: flex;
   align-items: center;
   color: $primary-color-text;
-  font-family: $font-lato;
+  font-family: $font-secondary;
   font-size: $fz-12;
   font-weight: $fw-regular;
-  line-height: $lh-16;
+  line-height: 16;
   margin-bottom: -2px;
 
   @media screen and (min-width: 768px) {
     font-size: $fz-16;
-    line-height: $lh-20;
+    line-height: 20;
     border-bottom: 1px solid #cdcdcd;
   }
 }
@@ -227,17 +227,17 @@
 .product-card__table-title,
 .product-card__table-value {
   color: $primary-color-text;
-  font-family: $font-lato;
+  font-family: $font-secondary;
   font-size: $fz-12;
   font-weight: $fw-regular;
-  line-height: $lh-16;
+  line-height: 16;
 
   @media screen and (min-width: 768px) {
     padding-left: 14px;
     padding-top: 6px;
     padding-bottom: 6px;
     font-size: $fz-16;
-    line-height: $lh-20;
+    line-height: 20;
   }
 
   @media screen and (min-width: 768px) {
@@ -257,7 +257,7 @@
   text-align: center;
   font-size: $fz-16;
   font-weight: $fw-regular;
-  line-height: $lh-20;
+  line-height: 20;
   text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
@@ -345,7 +345,7 @@
   margin-top: 7px;
   margin-bottom: 22px;
   text-align: center;
-  font-family: $font-lato;
+  font-family: $font-secondary;
   font-size: 12px;
   font-weight: $fw-regular;
   line-height: 16px;

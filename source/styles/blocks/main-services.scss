@@ -125,14 +125,14 @@
   color: $secondary-dark-text;
   font-size: $fz-24;
   font-weight: $fw-regular;
-  line-height: $lh-37;
+  line-height: 37;
   text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 23px;
     padding-left: 0;
     font-size: $fz-36;
-    line-height: $lh-36;
+    line-height: 36;
   }
 
   @media screen and (min-width: 1440px) {
@@ -146,10 +146,10 @@
   margin-bottom: 23px;
   width: 100%;
   color: $primary-color-text;
-  font-family: $font-lato;
+  font-family: $font-secondary;
   font-size: $fz-14;
   font-weight: $fw-regular;
-  line-height: $lh-18;
+  line-height: 18;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 48px;
@@ -157,7 +157,7 @@
     max-width: 335px;
     padding-left: 0;
     font-size: $fz-16;
-    line-height: $lh-24;
+    line-height: 24;
   }
 
   @media screen and (min-width: 1440px) {
@@ -188,7 +188,7 @@
   text-align: left;
   font-size: $fz-16;
   font-weight: $fw-regular;
-  line-height: $lh-16;
+  line-height: 16;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
 
