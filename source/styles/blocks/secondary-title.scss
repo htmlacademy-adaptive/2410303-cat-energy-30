@@ -51,11 +51,11 @@
   color: $secondary-dark-text;
   font-size: $fz-24;
   font-weight: $fw-regular;
-  line-height: 24;
+  line-height: $lh-24;
 
   @media (min-width: 768px) {
     margin-bottom: 23px;
     font-size: $fz-36;
-    line-height: 36;
+    line-height: $lh-36;
   }
 }

@@ -13,13 +13,13 @@
   color: $secondary-dark-text;
   font-size: $fz-36;
   font-weight: $fw-regular;
-  line-height: 36;
+  line-height: $lh-36;
 
   @media screen and (min-width: 768px) {
     margin-top: 55px;
     margin-bottom: 55px;
     font-size: $fz-60;
-    line-height: 60;
+    line-height: $lh-60;
   }
 
   @media screen and (min-width: 1440px) {
@@ -32,14 +32,14 @@
   color: $secondary-dark-text;
   font-size: $fz-14;
   font-weight: $fw-regular;
-  line-height: 18;
+  line-height: $lh-18;
   text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
     margin-top: 0;
     margin-bottom: 66px;
     font-size: $fz-20;
-    line-height: 30;
+    line-height: $lh-30;
   }
 }
 
@@ -101,16 +101,16 @@
 .program__label-characteristics {
   max-width: 50%;
   color: $primary-color-text;
-  font-family: $font-main;
+  font-family: $font-oswald;
   font-size: $fz-16;
   font-weight: $fw-regular;
-  line-height: 18;
+  line-height: $lh-18;
   text-transform: uppercase;
   flex-shrink: 0;
 
   @media screen and (min-width: 768px) {
     font-size: $fz-20;
-    line-height: 24;
+    line-height: $lh-24;
   }
 }
 
@@ -131,7 +131,7 @@
   width: 100%;
   height: 45px;
   color: $primary-color-text;
-  font-family: $font-main;
+  font-family: $font-oswald;
   font-size: $fz-16;
   font-weight: $fw-regular;
   border: 1px solid #e7e7e7;
@@ -139,10 +139,10 @@
 
   &::placeholder {
     color: $primary-color-text;
-    font-family: $font-main;
+    font-family: $font-oswald;
     font-size: $fz-16;
     font-weight: $fw-regular;
-    line-height: 18;
+    line-height: $lh-18;
     text-transform: uppercase;
   }
 
@@ -166,7 +166,7 @@
 
     &::placeholder {
       font-size: $fz-20;
-      line-height: 24;
+      line-height: $lh-24;
     }
   }
 }
@@ -231,10 +231,10 @@
 
 .program-text {
   color: $primary-color-text;
-  font-family: $font-main;
+  font-family: $font-oswald;
   font-size: $fz-16;
   font-weight: $fw-regular;
-  line-height: 18;
+  line-height: $lh-18;
   text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
@@ -389,10 +389,10 @@
 .program__owner-label {
   max-width: 50%;
   color: $primary-color-text;
-  font-family: $font-main;
+  font-family: $font-oswald;
   font-size: $fz-16;
   font-weight: $fw-regular;
-  line-height: 18;
+  line-height: $lh-18;
   text-transform: uppercase;
   flex-shrink: 0;
 
@@ -407,17 +407,17 @@
   width: 100%;
   height: 45px;
   color: $primary-color-text;
-  font-family: $font-main;
+  font-family: $font-oswald;
   font-size: $fz-16;
   font-weight: $fw-regular;
   border: 1px solid #e7e7e7;
 
   &::placeholder {
     color: $primary-color-text;
-    font-family: $font-main;
+    font-family: $font-oswald;
     font-size: $fz-16;
     font-weight: $fw-regular;
-    line-height: 18;
+    line-height: $lh-18;
     text-transform: uppercase;
   }
 
@@ -486,10 +486,10 @@
   width: 100%;
   min-height: 150px;
   color: $primary-color-text;
-  font-family: $font-main;
+  font-family: $font-oswald;
   font-size: $fz-16;
   font-weight: $fw-regular;
-  line-height: 18;
+  line-height: $lh-18;
   text-transform: uppercase;
   border: 1px solid #e7e7e7;
   overflow-x: hidden;
@@ -497,10 +497,10 @@
 
   &::placeholder {
     color: $primary-color-text;
-    font-family: $font-main;
+    font-family: $font-oswald;
     font-size: $fz-16;
     font-weight: $fw-regular;
-    line-height: 18;
+    line-height: $lh-18;
     text-transform: uppercase;
   }
 
@@ -670,7 +670,7 @@
   color: $secondary-text;
   font-size: $fz-16;
   font-weight: $fw-regular;
-  font-family: $font-main;
+  font-family: $font-oswald;
   text-align: center;
   text-transform: uppercase;
   background-color: $bg-basic-green;
@@ -696,10 +696,10 @@
   margin-bottom: 32px;
   color: $secondary-dark-text;
   text-align: center;
-  font-family: $font-secondary;
+  font-family: $font-lato;
   font-size: $fz-14;
   font-weight: $fw-regular;
-  line-height: 16;
+  line-height: $lh-16;
 
   @media screen and (min-width: 768px) {
     font-size: $fz-16;
