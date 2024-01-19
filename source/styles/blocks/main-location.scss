@@ -1,10 +1,9 @@
 .main-location {
   background-color: $bg-primary;
 
-  &>.main-container {
+  & > .main-container {
     padding: 0;
   }
-
 
 
   @media screen and (min-width: 768px) {
@@ -15,7 +14,6 @@
     }
   }
 }
-
 
 
 .main-location__element {

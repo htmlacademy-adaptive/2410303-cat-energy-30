@@ -1,10 +1,10 @@
 .product-card {
-  &>.main-container {
+  & > .main-container {
     padding: 0;
   }
 
   @media screen and (min-width: 768px) {
-    &>.main-container {
+    & > .main-container {
       padding: 0 20px;
     }
 
@@ -68,10 +68,7 @@
     border-bottom: none;
 
     &:not(:last-child) {
-      background-image: linear-gradient(to bottom,
-          #ffffff 75px,
-          #f2f2f2 70px,
-          #f2f2f2);
+      background-image: linear-gradient(to bottom, #ffffff 75px, #f2f2f2 70px, #f2f2f2);
     }
 
     &:nth-child(2n) .product-card__title {
@@ -329,7 +326,7 @@
   }
 }
 
-.product-card__info--plus>.product-card__title-link {
+.product-card__info--plus > .product-card__title-link {
   padding-top: 53px;
   min-width: 100%;
   max-width: 100%;

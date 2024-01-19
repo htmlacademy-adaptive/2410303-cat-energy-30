@@ -44,9 +44,8 @@
 
 .main-footer__social {
   @include list-reset;
-  margin-left: 416px;
   width: 100%;
-  margin: 0;
+  margin-left: 0;
   padding: 20px 0;
   display: flex;
   justify-content: center;

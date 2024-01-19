@@ -3,17 +3,13 @@
   min-height: 400px;
 
   &--bg {
-    background-image:
-      linear-gradient($bg-opacity-green, $bg-opacity-green),
-      url("../../images/main-banner-bg-mobile@1x.png");
+    background-image: linear-gradient($bg-opacity-green, $bg-opacity-green), url("../../images/main-banner-bg-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100% 302px;
 
     @media screen and (min-resolution: 2dppx) {
-      background-image:
-        linear-gradient($bg-opacity-green, $bg-opacity-green),
-        url("../../images/main-banner-bg-mobile@2x.png");
+      background-image: linear-gradient($bg-opacity-green, $bg-opacity-green), url("../../images/main-banner-bg-mobile@2x.png");
     }
 
     @media (min-width: 768px) {
@@ -104,8 +100,6 @@
   }
 
   @media (min-width: 1440px) {
-    width: 552px;
-    height: 499px;
     top: 110px;
     left: 462px;
     width: 552px;

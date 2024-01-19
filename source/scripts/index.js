@@ -21,7 +21,7 @@ const shopData = {
     lon: 37.61556,
     name: 'Кэт Энерджи',
     iconDefault: 'default#image',
-    iconHref: 'images/map@2x.png',
+    iconHref: 'images/map@1x.png',
     iconSize: [113, 106],
     iconOffset: [-5, -38]
   }],

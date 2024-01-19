@@ -2,20 +2,14 @@
   position: relative;
   padding-top: 25px;
   padding-bottom: 40px;
-  background-image: linear-gradient(to bottom,
-      $bg-secondary-light 70px,
-      $bg-secondary-light 70px,
-      $bg-secondary-light );
+  background-image: linear-gradient(to bottom, $bg-secondary-light 70px, $bg-secondary-light 70px, $bg-secondary-light);
   background-color: $bg-secondary-dark;
   overflow: hidden;
   border-top: 1px solid #e6e6e6;
 
   @media screen and (min-width: 768px) {
     padding-top: 45px;
-    background-image: linear-gradient(to bottom,
-        #ffffff 618px,
-        $bg-secondary-light 70px,
-        $bg-secondary-light );
+    background-image: linear-gradient(to bottom, #ffffff 618px, $bg-secondary-light 70px, $bg-secondary-light);
     min-height: 1081px;
     height: auto;
   }
@@ -23,10 +17,7 @@
   @media screen and (min-width: 1440px) {
     padding-top: 35px;
     border: none;
-    background-image: linear-gradient(to bottom,
-        #ffffff 210px,
-        $bg-secondary-light 70px,
-        $bg-secondary-light );
+    background-image: linear-gradient(to bottom, #ffffff 210px, $bg-secondary-light 70px, $bg-secondary-light);
     min-height: 670px;
     height: auto;
   }
@@ -209,8 +200,6 @@
     font-size: 20px;
   }
 }
-
-
 
 .living-example__expenses-sum {
   color: $secondary-dark-text;

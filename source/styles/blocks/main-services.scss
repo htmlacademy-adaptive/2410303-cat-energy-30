@@ -40,7 +40,7 @@
   background: $bg-secondary-light;
 
   @media screen and (min-width: 768px) {
-    padding: 76px 53px 38px 50px
+    padding: 76px 53px 38px 50px;
   }
 
   @media screen and (min-width: 1440px) {
@@ -56,7 +56,7 @@
   &--icon-weight::before {
     position: absolute;
     content: "";
-    left: 0px;
+    left: 0;
     top: -10px;
     display: block;
     background-image: url("../../images/icons/stack.svg#services-1");
@@ -233,7 +233,6 @@
     &::after {
       top: 16px;
       right: -19px;
-
     }
   }
 }
