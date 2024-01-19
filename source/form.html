@@ -2,14 +2,14 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Кэт энерджи - Каталог продукции</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicons/icon.svg" sizes="any" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="favicons/apple.png" sizes="180x180" type="image/png">
-  <link rel="manifest" href="manifest.webmanifest">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicons/icon.svg" sizes="any" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="favicons/apple.png" sizes="180x180" type="image/png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles/styles.css" />
   <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU" defer></script>
   <script src="scripts/index.js" defer></script>
 </head>
@@ -21,13 +21,17 @@
         <a class="page-header__logo logo" href="index.html" aria-current="page">
           <h3 class="visually-hidden">Cat Energy</h3>
           <picture>
-            <source media="(min-width:1440px)" srcset="images/icons/logo-desctop.svg" width="202" height="59" type="image/svg+xml">
-            <source media="(min-width: 768px)" srcset="images/icons/logo-tablet.svg" width="174" height="50" type="image/svg+xml">
-            <img class="logo__image logo__image--icon" src="images/icons/logo-mobile.svg" width="33" height="38" alt="Логотип Шапки">
+            <source media="(min-width:1440px)" srcset="images/icons/logo-desctop.svg" width="202" height="59"
+              type="image/svg+xml" />
+            <source media="(min-width: 768px)" srcset="images/icons/logo-tablet.svg" width="174" height="50"
+              type="image/svg+xml" />
+            <img class="logo__image logo__image--icon" src="images/icons/logo-mobile.svg" width="33" height="38"
+              alt="Логотип Шапки" />
           </picture>
         </a>
         <a class="page-header__logo-text-link" href="index.html">
-          <img class="page-header__logo-text-image" src="images/icons/logo-mobile-text.svg" width="101" height="18" alt="Текст логотипа шапки">
+          <img class="page-header__logo-text-image" src="images/icons/logo-mobile-text.svg" width="101" height="18"
+            alt="Текст логотипа шапки" />
         </a>
         <ul class="page-header__list suite-list">
           <li class="page-header__item">
@@ -53,7 +57,7 @@
         <div class="main-container main-container--small">
           <h1 class="program-filter__title">Подбор программы</h1>
           <p class="program-filter__text">
-            Заполните анкету, и мы подберем<br>
+            Заполните анкету, и мы подберем<br />
             программу питания для вашего кота
           </p>
         </div>
@@ -70,17 +74,17 @@
                 <li class="program__item program__item-characteristics">
                   <label class="program__label program__label-characteristics" for="animal-name">ИМЯ:*</label>
                   <input class="program__input program__input-characteristics" id="animal-name" name="name" type="text"
-                    placeholder="БАРСИК">
+                    placeholder="БАРСИК" />
                 </li>
                 <li class="program__item program__item-characteristics">
                   <label class="program__label program__label-characteristics" for="animal-weight">Вес (кг):*</label>
                   <input class="program__input program__input-characteristics" id="animal-weight" name="weight"
-                    type="number" placeholder="7">
+                    type="number" placeholder="7" />
                 </li>
                 <li class="program__item program__item-characteristics">
                   <label class="program__label program__label-characteristics" for="animal-age">Возраст (лет):</label>
                   <input class="program__input program__input-characteristics" id="animal-age" name="age" type="number"
-                    placeholder="7">
+                    placeholder="7" />
                 </li>
               </ul>
             </fieldset>
@@ -92,21 +96,21 @@
                 <li class="program__item program__item-radio">
                   <label class="program__label program__label-radio">
                     <input class="program__input program__input-radio" name="program-radio" type="radio" value="loss"
-                      disabled checked>
+                      disabled checked />
                     <span class="program-text program-radio">похудение</span>
                   </label>
                 </li>
                 <li class="program__item program__item-radio">
                   <label class="program__label program__label-radio">
                     <input class="program__input program__input-radio" name="program-radio" type="radio"
-                      value="mass gain">
+                      value="mass gain" />
                     <span class="program-radio program-text">Набор массы</span>
                   </label>
                 </li>
                 <li class="program__item program__item-radio">
                   <label class="program__label program__label-radio">
                     <input class="program__input program__input-radio" name="program-radio" type="radio"
-                      value="Don't know">
+                      value="Don't know" />
                     <span class="program-radio program-text">Не знаю (Нужен ваш совет)</span>
                   </label>
                 </li>
@@ -123,12 +127,12 @@
               <li class="program__owner-item program__owner-item--email">
                 <label class="program__label program__owner-label" for="email">E-mail:*</label>
                 <input class="program__owner-input" id="email" name="email" type="email"
-                  placeholder="kuklachev@gmail.com">
+                  placeholder="kuklachev@gmail.com" />
               </li>
               <li class="program__owner-item program__owner-item--phone">
                 <label class="program__label program__owner-label" for="phone">Телефон:*</label>
                 <input class="program__owner-input program__owner-input--phone" id="phone" name="tel" type="tel"
-                  placeholder="8 (960) 900-60-90">
+                  placeholder="8 (960) 900-60-90" />
               </li>
             </ul>
           </div>
@@ -152,28 +156,28 @@
               <li class="program__item program__additionally-item">
                 <label class="program__label program__additionally-label">
                   <input class="program__input program__additionally-input" name="program__input-checkbox"
-                    type="checkbox" value="sweetener">
+                    type="checkbox" value="sweetener" />
                   <span class="program-checkbox program-text">сахарозаменитель</span>
                 </label>
               </li>
               <li class="program__item program__additionally-item">
                 <label class="program__label program__additionally-label">
                   <input class="program__input program__additionally-input" name="program__input-checkbox"
-                    type="checkbox" value="drinking water">
+                    type="checkbox" value="drinking water" />
                   <span class="program-checkbox program-text">питьевая вода</span>
                 </label>
               </li>
               <li class="program__item program__additionally-item">
                 <label class="program__label program__additionally-label">
                   <input class="program__input program__additionally-input" name="program__input-checkbox"
-                    type="checkbox" value="milk" disabled>
+                    type="checkbox" value="milk" disabled />
                   <span class="program-checkbox program-text">молоко</span>
                 </label>
               </li>
               <li class="program__item program__additionally-item">
                 <label class="program__label program__additionally-label">
                   <input class="program__input program__additionally-input" name="program__input-checkbox"
-                    type="checkbox" value="vitamins">
+                    type="checkbox" value="vitamins" />
                   <span class="program-checkbox program-text">витамины</span>
                 </label>
               </li>
@@ -196,7 +200,7 @@
           <div class="main-location__wrapper">
             <div class="main-location__inner">
               <h3 class="main-location__title">
-                приглашаем<br>к сотрудничеству дилеров!
+                приглашаем<br />к сотрудничеству дилеров!
               </h3>
               <div class="main-location__wrapper-content">
                 <p class="main-location__text">
@@ -216,7 +220,7 @@
       <div class="main-footer__wrapper">
         <a class="main-footer__logo-text-link" href="https://htmlacademy.ru/intensive/adaptive" aria-current="page">
           <img class="main-footer__logo-text-image" src="images/icons/logo-mobile-text.svg" width="128" height="24"
-            alt="Текст логотипа подвала">
+            alt="Текст логотипа подвала" />
         </a>
         <ul class="main-footer__social">
           <li class="main-footer__social-item">
