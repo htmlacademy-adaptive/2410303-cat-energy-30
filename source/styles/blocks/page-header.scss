@@ -1,33 +1,233 @@
 .page-header {
+  padding: 7px 0;
   background-color: $bg-primary;
+  border-bottom: 1px solid #d9d9d9;
+  z-index: 10;
 
+  @media screen and (min-width: 768px) {
+    padding: 22px 0 0 0;
+    background-color: transparent;
+    border-bottom: none;
+  }
+}
 
+.page-header--main {
+  @media screen and (min-width: 1440px) {
+    top: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    min-height: 694px;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: calc(100% / 2);
+      background-image:
+        linear-gradient($bg-opacity-green, $bg-opacity-green),
+        url("../../images/main-banner-bg-desktop@1x.png");
+      background-size: 100% 694px;
+      background-repeat: no-repeat;
+      background-position: right top;
+    }
+  }
+
+  @media screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+    &::before {
+      background-image:
+        linear-gradient($bg-opacity-green, $bg-opacity-green),
+        url("../../images/main-banner-bg-desktop@2x.png");
+    }
+  }
 }
 
 .page-header__nav {
-  padding: 7px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+  z-index: 5;
 
-.page-header__list {}
+  @media screen and (min-width: 1440px) {
+    padding: 30px 0 30px 0;
+  }
+}
 
 .page-header__item {
   background-color: $bg-primary;
   border-top: 1px solid #e6e6e6;
+  color: inherit;
 
   &:last-child {
     border-bottom: 1px solid #e6e6e6;
   }
 
+  @media screen and (min-width: 768px) {
+    background-color: transparent;
+    border: none;
+
+    &:last-child {
+      border: none;
+
+      &:last-child > .page-header__link {
+        padding-right: 0;
+      }
+
+      &:last-child > .page-header__link::before {
+        width: calc(100% - 18px);
+      }
+    }
+  }
 }
 
 .page-header__link {
   @include link-reset;
+  padding: 18px 16px;
   display: block;
-  padding: 18px 25px;
   text-align: center;
+  color: inherit;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 18px 14px;
+    font-size: $fz-18;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: $fz-20;
+  }
 }
 
-.page-header__item--current {}
+.page-header__link--current.page-header__link--current-index {
+  @media screen and (min-width: 768px) {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: calc(100% - 34px);
+      height: 2px;
+      top: 51px;
+      right: 0;
+      left: 17px;
+      background-color: $bg-basic-green;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    &::before {
+      background-color: $bg-secondary-light;
+    }
+  }
+}
+
+.page-header__link--current {
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    &::before {
+      position: absolute;
+      content: "";
+      width: calc(100% - 34px);
+      height: 2px;
+      top: 48px;
+      right: 0;
+      left: 17px;
+      background-color: $bg-basic-green;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    &::before {
+      top: 55px;
+      width: calc(100% - 34px);
+    }
+  }
+}
+
+.page-header__toggle.page-header__toggle--close {
+  display: block;
+  position: relative;
+  z-index: 2;
+  width: 42px;
+  height: 50px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 17px;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    box-shadow:
+      0 8px 0 0#000000,
+      0 16px 0 0#000000;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 17px;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    box-shadow:
+      0 8px 0 0#000000,
+      0 16px 0 0#000000;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.page-header__toggle.page-header__toggle--open {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 42px;
+  height: 50px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
+  &::before {
+    transform: rotate(-45deg);
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 36px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::after {
+    transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 36px;
+    height: 2px;
+    background-color: #000000;
+  }
+}

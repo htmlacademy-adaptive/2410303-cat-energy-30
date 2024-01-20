@@ -1,0 +1,330 @@
+.living-example {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  background-image: linear-gradient(to bottom, $bg-secondary-light 70px, $bg-secondary-light 70px, $bg-secondary-light);
+  background-color: $bg-secondary-dark;
+  overflow: hidden;
+  border-top: 1px solid #e6e6e6;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 45px;
+    background-image: linear-gradient(to bottom, #ffffff 618px, $bg-secondary-light 70px, $bg-secondary-light);
+    min-height: 1081px;
+    height: auto;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 35px;
+    border: none;
+    background-image: linear-gradient(to bottom, #ffffff 210px, $bg-secondary-light 70px, $bg-secondary-light);
+    min-height: 670px;
+    height: auto;
+  }
+}
+
+.living-example__wrapper {
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    column-gap: 224px;
+  }
+}
+
+.living-example__inner {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+}
+
+.living-example__content {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 366px;
+    align-items: start;
+    flex-direction: column;
+    row-gap: 69px;
+  }
+}
+
+.living-example__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: $secondary-dark-text;
+  font-size: $fz-36;
+  font-weight: $fw-regular;
+  line-height: $lh-40;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+    font-size: $fz-60;
+    line-height: $lh-60;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-top: 38px;
+  }
+}
+
+.living-example__text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: $primary-color-text;
+  font-family: $font-lato;
+  font-size: $fz-14;
+  font-weight: $fw-regular;
+  line-height: $lh-18;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 55px;
+    max-width: 708px;
+    font-size: $fz-16;
+    line-height: $lh-24;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 433px;
+    margin-top: 86px;
+    margin-bottom: 70px;
+  }
+}
+
+.living-example__list {
+  @include list-reset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 32px;
+
+  @media screen and (min-width: 768px) {
+    column-gap: 42px;
+  }
+}
+
+.living-example__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px 20px 15px 20px;
+  min-width: 124px;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+
+  @media screen and (min-width: 768px) {
+    min-width: 162px;
+    padding: 18px 17px 24px 16px;
+  }
+}
+
+.living-example__paste-text {
+  color: $secondary-dark-text;
+  text-align: center;
+  font-size: $fz-24;
+  font-weight: $fw-regular;
+  line-height: $lh-24;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: $fz-30;
+    line-height: 30px;
+  }
+}
+
+.living-example__decline-text {
+  position: absolute;
+  bottom: -15px;
+  left: 20px;
+  right: 0;
+  background-color: $bg-secondary-light;
+  color: $primary-color-text;
+  font-family: $font-lato;
+  font-size: $fz-12;
+  font-weight: $fw-regular;
+  line-height: $lh-12;
+  text-align: center;
+  width: 77px;
+  height: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 125px;
+    font-size: $fz-14;
+    line-height: $lh-14;
+    background-color: $bg-primary;
+    left: 17px;
+    bottom: -5px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    background-color: $bg-secondary-light;
+  }
+}
+
+.living-example__expenses-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+  column-gap: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: -12px;
+    max-height: 45px;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    column-gap: 63px;
+    row-gap: 11px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    flex-direction: row;
+  }
+}
+
+.living-example__expenses-text {
+  color: $secondary-dark-text;
+  text-align: center;
+  font-size: 14px;
+  font-weight: $fw-regular;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.living-example__expenses-sum {
+  color: $secondary-dark-text;
+  text-align: center;
+  font-size: 14px;
+  font-weight: $fw-regular;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.living-example-slider {
+  position: relative;
+}
+
+.living-example-slider__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  width: 280px;
+  height: 256px;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    left: 71px;
+    top: 52px;
+    width: 560px;
+    height: 512px;
+    margin: 0 auto 0 auto;
+  }
+
+  @media screen and (min-width: 1440px) {
+    top: -117px;
+    left: 4px;
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.living-example-slider__before {
+  display: flex;
+  justify-content: flex-start;
+  width: 140px;
+  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    width: 280px;
+  }
+}
+
+.living-example-slider__after {
+  display: flex;
+  justify-content: flex-end;
+  width: 140px;
+  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    width: 280px;
+  }
+}
+
+.living-example-slider__image-before,
+.living-example-slider__image-after {
+  max-width: none;
+  object-fit: none;
+  height: 100%;
+}
+
+.living-example-slider__control {
+  position: absolute;
+  top: 107px;
+  left: 115px;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 23px;
+    top: -107px;
+    width: 3px;
+    height: 256px;
+    background-color: #666666;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+  }
+
+  &:hover svg path {
+    fill: $bg-basic-green;
+  }
+
+  &:hover svg rect {
+    stroke: $bg-basic-green;
+  }
+
+  .living-example-slider__rect {
+    stroke: #666666;
+    stroke-width: 2;
+  }
+
+  &:hover::before {
+    background-color: $bg-basic-green;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media screen and (min-width: 768px) {
+    top: 234px;
+    left: 255px;
+
+    &::before {
+      top: -235px;
+      height: 512px;
+    }
+  }
+}

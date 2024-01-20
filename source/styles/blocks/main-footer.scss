@@ -1,37 +1,76 @@
-.main-footer {}
+.main-footer {
+  padding: 40px 0;
+  background: $bg-secondary-light;
+
+  @media (min-width: 768px) {
+    padding: 55px 0;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 68px 0;
+  }
+}
 
 .main-footer__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
 
-  @media screen and (max-width:576px) {
-    flex-direction: column;
+  @media (min-width: 768px) {
+    flex-direction: row;
   }
-
 }
 
-.main-footer__logo-energy {}
+.main-footer__logo-text-link {
+  display: block;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+  min-width: 128px;
+  height: 24px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
 
 .main-footer__social {
   @include list-reset;
+  width: 100%;
+  margin-left: 0;
+  padding: 20px 0;
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 40px;
+  column-gap: 25px;
+  text-align: center;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+    border: none;
+    padding: 0;
+    margin: 0 0 0 157px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0 0 0 416px;
+  }
 }
-
-.main-footer__social-item {}
 
 .main-footer__social-link {
   display: block;
-
-  @media screen and (max-width:320px) {
-    width: 28px;
-    height: auto;
-
-  }
-
+  width: 28px;
+  height: auto;
 }
 
 .main-footer__social-link--vk {
@@ -43,6 +82,10 @@
 
   &:hover {
     background-color: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -56,6 +99,10 @@
   &:hover {
     background-color: #68b738;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-footer__social-link--telegram {
@@ -68,20 +115,37 @@
   &:hover {
     background-color: #68b738;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-
-
-
 .main-footer__logo-academy {
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
   width: 100%;
+  flex-shrink: 0;
+  transition: all 0.3s ease-in-out;
 
   &:hover svg {
     background-color: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 20px;
+    align-items: center;
+    width: 162px;
+    margin-top: 0;
   }
 }
 
@@ -102,7 +166,3 @@
   font-weight: 400;
   line-height: 20px;
 }
-
-
-
-
