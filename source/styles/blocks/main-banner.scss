@@ -95,14 +95,14 @@
   z-index: -1;
 
   @media (min-width: 768px) {
-    top: 260px;
-    left: -45px;
+    top: 257px;
+    left: 0;
   }
 
   @media (min-width: 1440px) {
-    top: 110px;
-    left: 462px;
-    width: 552px;
+    top: 143px;
+    left: 448px;
+    min-width: 552px;
     height: 499px;
   }
 }

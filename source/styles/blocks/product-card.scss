@@ -46,7 +46,7 @@
   }
 
   @media screen and (min-width: 1440px) {
-    column-gap: 79px;
+    column-gap: 80px;
   }
 }
 
@@ -124,6 +124,10 @@
   @media screen and (min-width: 768px) {
     width: 100%;
     min-height: 208px;
+  }
+  @media screen and (min-width: 1440px) {
+    min-width: 169px;
+    min-height: 210px;
   }
 }
 

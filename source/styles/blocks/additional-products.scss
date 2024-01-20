@@ -9,7 +9,7 @@
   }
 
   @media screen and (min-width: 1440px) {
-    padding-bottom: 90px;
+    padding-bottom:85px;
   }
 }
 
@@ -143,6 +143,7 @@
     min-width: 42px;
     font-size: 16px;
     line-height: 20px;
+    text-align: left;
   }
 }
 
@@ -173,40 +174,47 @@
   height: auto;
 
   @media (min-resolution: 1dppx) {
-    background-image: linear-gradient($bg-opacity-green, $bg-opacity-green), url("../../images/bg-additional-products-mobile@1x.jpg");
+    background-image: linear-gradient($bg-opacity-green, $bg-opacity-green),
+      url("../../images/bg-additional-products-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-color: #d3d3d3;
+    background-size: cover;
     width: 100%;
     min-height: 290px;
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: linear-gradient($bg-opacity-green, $bg-opacity-green), url("../../images/bg-additional-products-mobile@2x.jpg");
+    background-image: linear-gradient($bg-opacity-green, $bg-opacity-green),
+      url("../../images/bg-additional-products-mobile@2x.jpg");
   }
 
   @media screen and (min-width: 768px) and (min-resolution: 1dppx) {
     background-size: cover;
-    background-image: linear-gradient($bg-opacity-green, $bg-opacity-green), url("../../images/bg-additional-products-tablet@1x.png");
+    background-image: linear-gradient($bg-opacity-green, $bg-opacity-green),
+      url("../../images/bg-additional-products-tablet@1x.png");
     min-height: 200px;
   }
 
   @media screen and (min-width: 768px) and (min-resolution: 2dppx) {
     background-size: cover;
-    background-image: linear-gradient($bg-opacity-green, $bg-opacity-green), url("../../images/bg-additional-products-tablet@2x.png");
+    background-image: linear-gradient($bg-opacity-green, $bg-opacity-green),
+      url("../../images/bg-additional-products-tablet@2x.png");
     min-height: 200px;
   }
 
   @media screen and (min-width: 1440px) and (min-resolution: 1dppx) {
     max-width: 245px;
     min-height: 288px;
-    background-image: linear-gradient($bg-opacity-green, $bg-opacity-green), url("../../images/bg-additional-products-mobile@1x.jpg");
+    background-image: linear-gradient($bg-opacity-green, $bg-opacity-green),
+      url("../../images/bg-additional-products-mobile@1x.jpg");
   }
 
   @media screen and (min-width: 1440px) and (min-resolution: 2dppx) {
     max-width: 245px;
     min-height: 288px;
-    background-image: linear-gradient($bg-opacity-green, $bg-opacity-green), url("../../images/bg-additional-products-mobile@2x.jpg");
+    background-image: linear-gradient($bg-opacity-green, $bg-opacity-green),
+      url("../../images/bg-additional-products-mobile@2x.jpg");
   }
 }
 
@@ -289,6 +297,11 @@
   @media screen and (min-width: 768px) {
     &::before {
       margin-top: 2px;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    &::before {
+      margin-top: -2px;
     }
   }
 }
